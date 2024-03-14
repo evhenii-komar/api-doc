@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface INetwork | API </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface INetwork | API ">
+    
+    <meta name="description" content="Allows access and modifying to the network-level activities.">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Net.INetwork">
+
+
+
+  <h1 id="DotNetBrowser_Net_INetwork" data-uid="DotNetBrowser.Net.INetwork" class="text-break">Interface INetwork</h1>
+  <div class="markdown level0 summary"><p>Allows access and modifying to the network-level activities.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DotNetBrowser.IAutoDisposable.IsDisposed.html#DotNetBrowser_IAutoDisposable_IsDisposed">IAutoDisposable.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.IAutoDisposable.Disposed.html">IAutoDisposable.Disposed</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Net.html">Net</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
+  <h5 id="DotNetBrowser_Net_INetwork_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface INetwork : IAutoDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_AcceptLanguage" data-uid="DotNetBrowser.Net.INetwork.AcceptLanguage">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.AcceptLanguage.html#DotNetBrowser_Net_INetwork_AcceptLanguage">AcceptLanguage</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the <code>Accept-Language</code> request header value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_AuthenticateHandler" data-uid="DotNetBrowser.Net.INetwork.AuthenticateHandler">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.AuthenticateHandler.html#DotNetBrowser_Net_INetwork_AuthenticateHandler">AuthenticateHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the website requests authentication.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_CanAccessFileHandler" data-uid="DotNetBrowser.Net.INetwork.CanAccessFileHandler">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.CanAccessFileHandler.html#DotNetBrowser_Net_INetwork_CanAccessFileHandler">CanAccessFileHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the Chromium engine is about to access the requested file. Can be used
+to disallow accessing the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_CanGetCookiesHandler" data-uid="DotNetBrowser.Net.INetwork.CanGetCookiesHandler">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.CanGetCookiesHandler.html#DotNetBrowser_Net_INetwork_CanGetCookiesHandler">CanGetCookiesHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when Chromium engine decides
+whether cookies can be sent back to the web server.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_CanSetCookieHandler" data-uid="DotNetBrowser.Net.INetwork.CanSetCookieHandler">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.CanSetCookieHandler.html#DotNetBrowser_Net_INetwork_CanSetCookieHandler">CanSetCookieHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when Chromium engine decides
+whether cookie can be saved for the URL or not.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_Engine" data-uid="DotNetBrowser.Net.INetwork.Engine">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.Engine.html#DotNetBrowser_Net_INetwork_Engine">Engine</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance associated with this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_HttpAuthPreferences" data-uid="DotNetBrowser.Net.INetwork.HttpAuthPreferences">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.HttpAuthPreferences.html#DotNetBrowser_Net_INetwork_HttpAuthPreferences">HttpAuthPreferences</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the HTTP authorization preferences.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_Profile" data-uid="DotNetBrowser.Net.INetwork.Profile">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.Profile.html#DotNetBrowser_Net_INetwork_Profile">Profile</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Profile.IProfile.html">IProfile</a> instance associated with this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_ReceiveHeadersHandler" data-uid="DotNetBrowser.Net.INetwork.ReceiveHeadersHandler">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.ReceiveHeadersHandler.html#DotNetBrowser_Net_INetwork_ReceiveHeadersHandler">ReceiveHeadersHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used each time that an HTTP(S) response header is received. Due to redirects
+and authentication requests this can happen multiple times per request. This event is intended
+to allow adding, modifying, and deleting HTTP response headers, such as incoming &quot;Set-Cookie&quot; headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_SendUploadDataHandler" data-uid="DotNetBrowser.Net.INetwork.SendUploadDataHandler">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.SendUploadDataHandler.html#DotNetBrowser_Net_INetwork_SendUploadDataHandler">SendUploadDataHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the upload data is about to send to the web server.
+Can be used to override the upload data before it is sent.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_SendUrlRequestHandler" data-uid="DotNetBrowser.Net.INetwork.SendUrlRequestHandler">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.SendUrlRequestHandler.html#DotNetBrowser_Net_INetwork_SendUrlRequestHandler">SendUrlRequestHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when an HTTP request is about to occur. It can be used to override the
+requested URL and
+redirect the request to another location.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_StartTransactionHandler" data-uid="DotNetBrowser.Net.INetwork.StartTransactionHandler">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.StartTransactionHandler.html#DotNetBrowser_Net_INetwork_StartTransactionHandler">StartTransactionHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the request is about to start the transaction process.
+It allows adding, modifying, and deleting HTTP request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_UserAgent" data-uid="DotNetBrowser.Net.INetwork.UserAgent">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.UserAgent.html#DotNetBrowser_Net_INetwork_UserAgent">UserAgent</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the default user-agent string.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_VerifyCertificateHandler" data-uid="DotNetBrowser.Net.INetwork.VerifyCertificateHandler">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.VerifyCertificateHandler.html#DotNetBrowser_Net_INetwork_VerifyCertificateHandler">VerifyCertificateHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used to verify the SSL certificate provided by the web server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_CreateUrlRequestJob_DotNetBrowser_Net_UrlRequest_DotNetBrowser_Net_Handlers_UrlRequestJobOptions_" data-uid="DotNetBrowser.Net.INetwork.CreateUrlRequestJob(DotNetBrowser.Net.UrlRequest,DotNetBrowser.Net.Handlers.UrlRequestJobOptions)">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.CreateUrlRequestJob.html#DotNetBrowser_Net_INetwork_CreateUrlRequestJob_DotNetBrowser_Net_UrlRequest_DotNetBrowser_Net_Handlers_UrlRequestJobOptions_">CreateUrlRequestJob(UrlRequest, UrlRequestJobOptions)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new <a class="xref" href="DotNetBrowser.Net.UrlRequestJob.html">UrlRequestJob</a> instance with the given <code class="paramref">options</code>.</p>
+<p>The URL request job is used to provide the response data for the intercepted URL request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_ConnectionTypeChanged" data-uid="DotNetBrowser.Net.INetwork.ConnectionTypeChanged">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.ConnectionTypeChanged.html">ConnectionTypeChanged</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the network connection type has been changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_PacScriptErrorOccurred" data-uid="DotNetBrowser.Net.INetwork.PacScriptErrorOccurred">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.PacScriptErrorOccurred.html">PacScriptErrorOccurred</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the error has been occured in the PAC script.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_RedirectResponseCodeReceived" data-uid="DotNetBrowser.Net.INetwork.RedirectResponseCodeReceived">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.RedirectResponseCodeReceived.html">RedirectResponseCodeReceived</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the redirect has been occured.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_RequestCompleted" data-uid="DotNetBrowser.Net.INetwork.RequestCompleted">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.RequestCompleted.html">RequestCompleted</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the request has been completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_RequestDestroyed" data-uid="DotNetBrowser.Net.INetwork.RequestDestroyed">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.RequestDestroyed.html">RequestDestroyed</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the request has been destroyed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_ResponseBytesReceived" data-uid="DotNetBrowser.Net.INetwork.ResponseBytesReceived">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.ResponseBytesReceived.html">ResponseBytesReceived</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when a part of HTTP response body has been received over the network.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_INetwork_ResponseStarted" data-uid="DotNetBrowser.Net.INetwork.ResponseStarted">
+          <a class="xref" href="DotNetBrowser.Net.INetwork.ResponseStarted.html">ResponseStarted</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the response has been started.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

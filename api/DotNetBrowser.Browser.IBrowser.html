@@ -1,0 +1,672 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IBrowser | API </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IBrowser | API ">
+    
+    <meta name="description" content="A web browser control that allows loading a web page or a local HTML file, accessing DOM and executing JavaScript on the loaded web page, getting notifications about loading progress, dispatching keyboard and mouse events, etc.">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Browser.IBrowser">
+
+
+
+  <h1 id="DotNetBrowser_Browser_IBrowser" data-uid="DotNetBrowser.Browser.IBrowser" class="text-break">Interface IBrowser</h1>
+  <div class="markdown level0 summary"><p>A web browser control that allows loading a web page or a local HTML file, accessing DOM and
+executing JavaScript on the loaded web page, getting notifications about loading progress,
+dispatching keyboard and mouse events, etc.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.IAutoDisposable.IsDisposed.html#DotNetBrowser_IAutoDisposable_IsDisposed">IAutoDisposable.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.IAutoDisposable.Disposed.html">IAutoDisposable.Disposed</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Browser.html">Browser</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
+  <h5 id="DotNetBrowser_Browser_IBrowser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBrowser : IDisposable, IAutoDisposable</code></pre>
+  </div>
+  <h5 id="DotNetBrowser_Browser_IBrowser_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+    The <code>IBrowser</code> instance itself is running in a separate native process that allocates
+    memory and system resources that must be released. So, when a <code>IBrowser</code> instance is no
+    longer needed, it must be disposed through the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> method to release all the
+    allocated memory and system resources. For example:
+</p>
+<pre><code class="lang-csharp">IBrowser browser = engine.CreateBrowser();
+...
+browser.Dispose();</code></pre>
+<p>
+    Any attempt to use an already disposed <code>IBrowser</code> instance will lead to the
+    <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a>.
+</p>
+<p>
+    The <code>IBrowser</code> instance is disposed automatically when its <code> IEngine</code> is disposed or
+    unexpectedly crashed. If the instance represents a popup window created by JavaScript via the
+    <code>window.open()</code> function, then JavaScript can close the instance using the
+    <code>window.close()</code> function.
+</p>
+<p>
+    To get notifications that the <code>IBrowser</code> instance has been disposed please subscribe to
+    the following event:
+</p>
+<pre><code class="lang-csharp">browser.Disposed += (s, e) =&gt; {
+    // The Browser instance has been disposed.
+};</code></pre>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_AllFrames" data-uid="DotNetBrowser.Browser.IBrowser.AllFrames">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.AllFrames.html#DotNetBrowser_Browser_IBrowser_AllFrames">AllFrames</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets all the frames on the currently loaded web page.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Audio" data-uid="DotNetBrowser.Browser.IBrowser.Audio">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Audio.html#DotNetBrowser_Browser_IBrowser_Audio">Audio</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Media.IAudio.html">IAudio</a> instance that allows controlling audio on the loaded web page and receive
+notifications when audio has been
+started or stopped playing.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Capture" data-uid="DotNetBrowser.Browser.IBrowser.Capture">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Capture.html#DotNetBrowser_Browser_IBrowser_Capture">Capture</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Capture.ICapture.html">ICapture</a> instance that can be used for listening and handling capture sessions.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Cast" data-uid="DotNetBrowser.Browser.IBrowser.Cast">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Cast.html#DotNetBrowser_Browser_IBrowser_Cast">Cast</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Cast.ICast.html">ICast</a> instance that can be used for casting media on receivers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_ConvertJsNameHandler" data-uid="DotNetBrowser.Browser.IBrowser.ConvertJsNameHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.ConvertJsNameHandler.html#DotNetBrowser_Browser_IBrowser_ConvertJsNameHandler">ConvertJsNameHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used for the JavaScript name converting.
+Implement this handler to have control of how the names are converted
+when binding or executing JavaScript.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_CreatePopupHandler" data-uid="DotNetBrowser.Browser.IBrowser.CreatePopupHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.CreatePopupHandler.html#DotNetBrowser_Browser_IBrowser_CreatePopupHandler">CreatePopupHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the browser decides whether a new popup instance can be created or not.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_CreditCards" data-uid="DotNetBrowser.Browser.IBrowser.CreditCards">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.CreditCards.html#DotNetBrowser_Browser_IBrowser_CreditCards">CreditCards</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Card.ICreditCards.html">ICreditCards</a> instance that can be used for working with credit cards
+saved in the Chromium credit card store.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_DevTools" data-uid="DotNetBrowser.Browser.IBrowser.DevTools">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.DevTools.html#DotNetBrowser_Browser_IBrowser_DevTools">DevTools</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.DevTools.IDevTools.html">IDevTools</a> instance that allows working with Chromium Developer Tools for this browser.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Dialogs" data-uid="DotNetBrowser.Browser.IBrowser.Dialogs">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Dialogs.html#DotNetBrowser_Browser_IBrowser_Dialogs">Dialogs</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Browser.Dialogs.IDialogs.html">IDialogs</a> instance that can be used for configuring the dialogs that can be shown by
+browser.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_DragAndDrop" data-uid="DotNetBrowser.Browser.IBrowser.DragAndDrop">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.DragAndDrop.html#DotNetBrowser_Browser_IBrowser_DragAndDrop">DragAndDrop</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Input.DragAndDrop.IDragAndDrop.html">IDragAndDrop</a> instance that can be used for managing drag&amp;drop operations for the
+browser.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Engine" data-uid="DotNetBrowser.Browser.IBrowser.Engine">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Engine.html#DotNetBrowser_Browser_IBrowser_Engine">Engine</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance associated with this browser.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Favicon" data-uid="DotNetBrowser.Browser.IBrowser.Favicon">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Favicon.html#DotNetBrowser_Browser_IBrowser_Favicon">Favicon</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the favicon of the currently loaded web page.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_FocusedFrame" data-uid="DotNetBrowser.Browser.IBrowser.FocusedFrame">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.FocusedFrame.html#DotNetBrowser_Browser_IBrowser_FocusedFrame">FocusedFrame</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the focused frame on the currently loaded web page.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_FullScreen" data-uid="DotNetBrowser.Browser.IBrowser.FullScreen">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.FullScreen.html#DotNetBrowser_Browser_IBrowser_FullScreen">FullScreen</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Browser.FullScreen.IFullScreen.html">IFullScreen</a> instance that can be used for controlling the browser's fullscreen mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_InjectCssHandler" data-uid="DotNetBrowser.Browser.IBrowser.InjectCssHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.InjectCssHandler.html#DotNetBrowser_Browser_IBrowser_InjectCssHandler">InjectCssHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the document element has been created and a custom stylesheet can
+be injected into the document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_InjectJsHandler" data-uid="DotNetBrowser.Browser.IBrowser.InjectJsHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.InjectJsHandler.html#DotNetBrowser_Browser_IBrowser_InjectJsHandler">InjectJsHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the document element has been created and a custom JavaScript can
+be injected into the document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_JsDialogs" data-uid="DotNetBrowser.Browser.IBrowser.JsDialogs">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.JsDialogs.html#DotNetBrowser_Browser_IBrowser_JsDialogs">JsDialogs</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Browser.Dialogs.IJsDialogs.html">IJsDialogs</a> instance that can be used for configuring the JavaScript dialogs that can be
+shown by browser.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Keyboard" data-uid="DotNetBrowser.Browser.IBrowser.Keyboard">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Keyboard.html#DotNetBrowser_Browser_IBrowser_Keyboard">Keyboard</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Input.Keyboard.IKeyboard.html">IKeyboard</a> instance that can be used for listening and simulating keyboard input events.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_MainFrame" data-uid="DotNetBrowser.Browser.IBrowser.MainFrame">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.MainFrame.html#DotNetBrowser_Browser_IBrowser_MainFrame">MainFrame</a>
+        </td>
+        <td class="markdown level1 summary"><p>The main frame on the currently loaded web page, if it exists.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Mouse" data-uid="DotNetBrowser.Browser.IBrowser.Mouse">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Mouse.html#DotNetBrowser_Browser_IBrowser_Mouse">Mouse</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Input.Mouse.IMouse.html">IMouse</a> instance that can be used for listening and simulating mouse input events.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Navigation" data-uid="DotNetBrowser.Browser.IBrowser.Navigation">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Navigation.html#DotNetBrowser_Browser_IBrowser_Navigation">Navigation</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Navigation.INavigation.html">INavigation</a> instance that can be used for controlling navigation in the current browser
+instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_OpenPopupHandler" data-uid="DotNetBrowser.Browser.IBrowser.OpenPopupHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.OpenPopupHandler.html#DotNetBrowser_Browser_IBrowser_OpenPopupHandler">OpenPopupHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when a new popup browser instance should be opened.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Passwords" data-uid="DotNetBrowser.Browser.IBrowser.Passwords">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Passwords.html#DotNetBrowser_Browser_IBrowser_Passwords">Passwords</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Passwords.IPasswords.html">IPasswords</a> instance that can be used for working with logins and passwords
+saved in the Chromium password store.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_PrintHtmlContentHandler" data-uid="DotNetBrowser.Browser.IBrowser.PrintHtmlContentHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.PrintHtmlContentHandler.html#DotNetBrowser_Browser_IBrowser_PrintHtmlContentHandler">PrintHtmlContentHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the HTML content printing is initiated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_PrintPdfContentHandler" data-uid="DotNetBrowser.Browser.IBrowser.PrintPdfContentHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.PrintPdfContentHandler.html#DotNetBrowser_Browser_IBrowser_PrintPdfContentHandler">PrintPdfContentHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the PDF content printing is initiated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Profile" data-uid="DotNetBrowser.Browser.IBrowser.Profile">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Profile.html#DotNetBrowser_Browser_IBrowser_Profile">Profile</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Profile.IProfile.html">IProfile</a> instance associated with this browser.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_RequestPdfDocumentPasswordHandler" data-uid="DotNetBrowser.Browser.IBrowser.RequestPdfDocumentPasswordHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.RequestPdfDocumentPasswordHandler.html#DotNetBrowser_Browser_IBrowser_RequestPdfDocumentPasswordHandler">RequestPdfDocumentPasswordHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the frame requests the password for an encrypted PDF document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_RequestPrintHandler" data-uid="DotNetBrowser.Browser.IBrowser.RequestPrintHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.RequestPrintHandler.html#DotNetBrowser_Browser_IBrowser_RequestPrintHandler">RequestPrintHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the printing is initiated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_SelectCertificateHandler" data-uid="DotNetBrowser.Browser.IBrowser.SelectCertificateHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.SelectCertificateHandler.html#DotNetBrowser_Browser_IBrowser_SelectCertificateHandler">SelectCertificateHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the web server requires authorization via client certificate.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Settings" data-uid="DotNetBrowser.Browser.IBrowser.Settings">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Settings.html#DotNetBrowser_Browser_IBrowser_Settings">Settings</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Browser.IBrowserSettings.html">IBrowserSettings</a> instance that can be used for modifying the settings of the browser.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_ShowContextMenuHandler" data-uid="DotNetBrowser.Browser.IBrowser.ShowContextMenuHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.ShowContextMenuHandler.html#DotNetBrowser_Browser_IBrowser_ShowContextMenuHandler">ShowContextMenuHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the browser should show a context menu.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Size" data-uid="DotNetBrowser.Browser.IBrowser.Size">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Size.html#DotNetBrowser_Browser_IBrowser_Size">Size</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the browser size.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_StartDownloadHandler" data-uid="DotNetBrowser.Browser.IBrowser.StartDownloadHandler">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.StartDownloadHandler.html#DotNetBrowser_Browser_IBrowser_StartDownloadHandler">StartDownloadHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a handler that is used when the browser is about to start downloading the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_TextFinder" data-uid="DotNetBrowser.Browser.IBrowser.TextFinder">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.TextFinder.html#DotNetBrowser_Browser_IBrowser_TextFinder">TextFinder</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Search.ITextFinder.html">ITextFinder</a> instance that can be used for finding text on a web page loaded in the
+browser.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Title" data-uid="DotNetBrowser.Browser.IBrowser.Title">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Title.html#DotNetBrowser_Browser_IBrowser_Title">Title</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the title of the currently loaded web page.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Touch" data-uid="DotNetBrowser.Browser.IBrowser.Touch">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Touch.html#DotNetBrowser_Browser_IBrowser_Touch">Touch</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Input.Touch.ITouch.html">ITouch</a> instance that can be used for listening touch input events.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Url" data-uid="DotNetBrowser.Browser.IBrowser.Url">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Url.html#DotNetBrowser_Browser_IBrowser_Url">Url</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the URL of the currently loaded web page or an empty string if
+the browser hasn't loaded any web page yet.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_UserAgent" data-uid="DotNetBrowser.Browser.IBrowser.UserAgent">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.UserAgent.html#DotNetBrowser_Browser_IBrowser_UserAgent">UserAgent</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the <code>user-agent</code> of the current browser instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_UserDataProfiles" data-uid="DotNetBrowser.Browser.IBrowser.UserDataProfiles">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.UserDataProfiles.html#DotNetBrowser_Browser_IBrowser_UserDataProfiles">UserDataProfiles</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.UserData.IUserDataProfiles.html">IUserDataProfiles</a> instance that can be used for working with user data profiles
+saved in the Chromium user data store.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Zoom" data-uid="DotNetBrowser.Browser.IBrowser.Zoom">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Zoom.html#DotNetBrowser_Browser_IBrowser_Zoom">Zoom</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Zoom.IZoom.html">IZoom</a> instance that can be used for zooming content of a web page loaded in the current
+browser instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_DisposeAsync_DotNetBrowser_Browser_BrowserDisposeOptions_" data-uid="DotNetBrowser.Browser.IBrowser.DisposeAsync(DotNetBrowser.Browser.BrowserDisposeOptions)">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.DisposeAsync.html#DotNetBrowser_Browser_IBrowser_DisposeAsync_DotNetBrowser_Browser_BrowserDisposeOptions_">DisposeAsync(BrowserDisposeOptions)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Asynchronously disposes the current browser instance according to the given options.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Focus" data-uid="DotNetBrowser.Browser.IBrowser.Focus">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Focus.html#DotNetBrowser_Browser_IBrowser_Focus">Focus()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells the browser that it has focus and must be activated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_ReplaceMisspelledWord_System_String_" data-uid="DotNetBrowser.Browser.IBrowser.ReplaceMisspelledWord(System.String)">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.ReplaceMisspelledWord.html#DotNetBrowser_Browser_IBrowser_ReplaceMisspelledWord_System_String_">ReplaceMisspelledWord(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Replaces misspelled word under cursor on the currently loaded web page with the given <code class="paramref">word</code>.
+If there is no misspelled word under cursor, this method does nothing.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_SaveWebPage_System_String_System_String_DotNetBrowser_Browser_SavePageType_" data-uid="DotNetBrowser.Browser.IBrowser.SaveWebPage(System.String,System.String,DotNetBrowser.Browser.SavePageType)">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.SaveWebPage.html#DotNetBrowser_Browser_IBrowser_SaveWebPage_System_String_System_String_DotNetBrowser_Browser_SavePageType_">SaveWebPage(string, string, SavePageType)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initiates the saving process of the currently loaded web page. The web page can be saved as a
+single HTML file or the file with resources. Before saving a web page make sure that it is
+not being loaded. It is recommended to completely loaded the web page and only then save it.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_SetPrivateKeyProviderPin_DotNetBrowser_Browser_CspParameters_" data-uid="DotNetBrowser.Browser.IBrowser.SetPrivateKeyProviderPin(DotNetBrowser.Browser.CspParameters)">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.SetPrivateKeyProviderPin.html#DotNetBrowser_Browser_IBrowser_SetPrivateKeyProviderPin_DotNetBrowser_Browser_CspParameters_">SetPrivateKeyProviderPin(CspParameters)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the key exchange PIN for the particular cryptographic
+service provider (CSP) and the particular key container in it.
+This functionality can be used to set the PIN that is requested when
+trying to use a client certificate stored on the smart card.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_TakeImage" data-uid="DotNetBrowser.Browser.IBrowser.TakeImage">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.TakeImage.html#DotNetBrowser_Browser_IBrowser_TakeImage">TakeImage()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates and returns an image of the currently loaded web page.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_Unfocus" data-uid="DotNetBrowser.Browser.IBrowser.Unfocus">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.Unfocus.html#DotNetBrowser_Browser_IBrowser_Unfocus">Unfocus()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells the browser that it does not have focus and must be deactivated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_BrowserBecameResponsive" data-uid="DotNetBrowser.Browser.IBrowser.BrowserBecameResponsive">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.BrowserBecameResponsive.html">BrowserBecameResponsive</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the browser instance has become responsive.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_BrowserBecameUnresponsive" data-uid="DotNetBrowser.Browser.IBrowser.BrowserBecameUnresponsive">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.BrowserBecameUnresponsive.html">BrowserBecameUnresponsive</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the browser instance has become unresponsive.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_ConsoleMessageReceived" data-uid="DotNetBrowser.Browser.IBrowser.ConsoleMessageReceived">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.ConsoleMessageReceived.html">ConsoleMessageReceived</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the message was added to the console.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_FaviconChanged" data-uid="DotNetBrowser.Browser.IBrowser.FaviconChanged">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.FaviconChanged.html">FaviconChanged</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the web page favicon has changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_FocusGained" data-uid="DotNetBrowser.Browser.IBrowser.FocusGained">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.FocusGained.html">FocusGained</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the browser instance has gained the focus.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_FocusLost" data-uid="DotNetBrowser.Browser.IBrowser.FocusLost">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.FocusLost.html">FocusLost</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the browser instance has lost the focus.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_FocusRequested" data-uid="DotNetBrowser.Browser.IBrowser.FocusRequested">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.FocusRequested.html">FocusRequested</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when JavaScript sends a request to focus the Browser instance by calling the
+<code>window.focus()</code> method.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_FrameCreated" data-uid="DotNetBrowser.Browser.IBrowser.FrameCreated">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.FrameCreated.html">FrameCreated</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the <a class="xref" href="DotNetBrowser.Frames.IFrame.html">IFrame</a> has been created.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_FrameDeleted" data-uid="DotNetBrowser.Browser.IBrowser.FrameDeleted">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.FrameDeleted.html">FrameDeleted</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the <a class="xref" href="DotNetBrowser.Frames.IFrame.html">IFrame</a> has been deleted.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_MediaStreamCaptureStarted" data-uid="DotNetBrowser.Browser.IBrowser.MediaStreamCaptureStarted">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.MediaStreamCaptureStarted.html">MediaStreamCaptureStarted</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the web page has started capturing an audio or video stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_MediaStreamCaptureStopped" data-uid="DotNetBrowser.Browser.IBrowser.MediaStreamCaptureStopped">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.MediaStreamCaptureStopped.html">MediaStreamCaptureStopped</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the web page has stopped capturing an audio or video stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_PrintPreviewClosed" data-uid="DotNetBrowser.Browser.IBrowser.PrintPreviewClosed">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.PrintPreviewClosed.html">PrintPreviewClosed</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when print preview dialog is closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_PrintPreviewOpened" data-uid="DotNetBrowser.Browser.IBrowser.PrintPreviewOpened">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.PrintPreviewOpened.html">PrintPreviewOpened</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when print preview dialog is opened.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_RenderProcessTerminated" data-uid="DotNetBrowser.Browser.IBrowser.RenderProcessTerminated">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.RenderProcessTerminated.html">RenderProcessTerminated</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when a render process has been terminated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_SpellCheckCompleted" data-uid="DotNetBrowser.Browser.IBrowser.SpellCheckCompleted">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.SpellCheckCompleted.html">SpellCheckCompleted</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when spell checking on the frame has been completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_StatusChanged" data-uid="DotNetBrowser.Browser.IBrowser.StatusChanged">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.StatusChanged.html">StatusChanged</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the status text has been changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_TitleChanged" data-uid="DotNetBrowser.Browser.IBrowser.TitleChanged">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.TitleChanged.html">TitleChanged</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the web page title has been changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Browser_IBrowser_UpdateBoundsRequested" data-uid="DotNetBrowser.Browser.IBrowser.UpdateBoundsRequested">
+          <a class="xref" href="DotNetBrowser.Browser.IBrowser.UpdateBoundsRequested.html">UpdateBoundsRequested</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when JavaScript requests to update bounds of the Browser instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

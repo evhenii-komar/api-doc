@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Property InjectJsHandler | API </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Property InjectJsHandler | API ">
+    
+    
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Browser.IBrowser.InjectJsHandler*">
+
+
+
+<h1 id="DotNetBrowser_Browser_IBrowser_InjectJsHandler_" data-uid="DotNetBrowser.Browser.IBrowser.InjectJsHandler*">Property InjectJsHandler</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<a id="DotNetBrowser_Browser_IBrowser_InjectJsHandler_" data-uid="DotNetBrowser.Browser.IBrowser.InjectJsHandler*"></a>
+<h4 id="DotNetBrowser_Browser_IBrowser_InjectJsHandler" data-uid="DotNetBrowser.Browser.IBrowser.InjectJsHandler">InjectJsHandler</h4>
+<div class="markdown level1 summary"><p>Gets or sets a handler that is used when the document element has been created and a custom JavaScript can
+be injected into the document.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">IHandler&lt;InjectJsParameters&gt; InjectJsHandler { get; set; }</code></pre>
+</div>
+<h5 class="propertyValue">Property Value</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="DotNetBrowser.Handlers.IHandler-1.html">IHandler</a>&lt;<a class="xref" href="DotNetBrowser.Browser.Handlers.InjectJsParameters.html">InjectJsParameters</a>&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="DotNetBrowser_Browser_IBrowser_InjectJsHandler_remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>
+    You can inject a custom JavaScript code using the <a class="xref" href="DotNetBrowser.Frames.IFrame.ExecuteJavaScript.html#DotNetBrowser_Frames_IFrame_ExecuteJavaScript_System_String_System_Boolean_">ExecuteJavaScript(string, bool)</a>
+    method.This callback is intended to give you an opportunity to inject a .NET object into
+    JavaScript code or inject a custom JavaScript code for further execution before any scripts are
+    executed in the particular frame. For example:
+    <pre><code class="lang-csharp">Browser.InjectJsHandler = new Handler&lt;InjectJsParameters&gt;(args =&gt;
+    {
+        IJsObject window = args.Frame.ExecuteJavaScript&lt;IJsObject&gt;("window").Result;
+        window["myObject"] = new MyObject();
+    });</code></pre>
+
+<p>
+    The MyObject class may look like this:
+    <pre><code class="lang-csharp">public class MyObject
+    {
+        public string SayHelloTo(string firstName) =&gt; "Hello " + firstName + "!";
+    }</code></pre>
+
+<p>
+    When the property is set, you can call methods of the injected .NET object from JavaScript:
+    <pre><code class="lang-csharp">window.myObject.SayHelloTo('John');</code></pre>
+
+<p>This handler may be invoked several times for the same frame.</p>
+<p>
+    <b>Important:</b> you should avoid executing a JavaScript code that modifies the DOM tree of
+    the web page being loaded.You must not use DotNetBrowser DOM API to remove the frame for which this
+    callback is invoked, otherwise the render process will crash.
+</p>
+<p><b>Important:</b> the engine will be blocked until you return control from the callback.</p>
+</div>
+<h5 class="exceptions">Exceptions</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+      <td><p>The <a class="xref" href="DotNetBrowser.Browser.IBrowser.html">IBrowser</a> has already been disposed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IJsMap | API </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IJsMap | API ">
+    
+    <meta name="description" content="A JavaScript map.">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Js.Collections.IJsMap">
+
+
+
+  <h1 id="DotNetBrowser_Js_Collections_IJsMap" data-uid="DotNetBrowser.Js.Collections.IJsMap" class="text-break">Interface IJsMap</h1>
+  <div class="markdown level0 summary"><p>A JavaScript map.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DotNetBrowser.Js.IJsObject.Frame.html#DotNetBrowser_Js_IJsObject_Frame">IJsObject.Frame</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.Js.IJsObject.Properties.html#DotNetBrowser_Js_IJsObject_Properties">IJsObject.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.Js.IJsObject.Invoke.html#DotNetBrowser_Js_IJsObject_Invoke__1_System_String_System_Object___">IJsObject.Invoke&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.Js.IJsObject.Invoke.html#DotNetBrowser_Js_IJsObject_Invoke_System_String_System_Object___">IJsObject.Invoke(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.Js.IJsObject.InvokeAsync.html#DotNetBrowser_Js_IJsObject_InvokeAsync_System_String_System_Object___">IJsObject.InvokeAsync(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.Js.IJsObject.InvokeAsync.html#DotNetBrowser_Js_IJsObject_InvokeAsync__1_System_String_System_Object___">IJsObject.InvokeAsync&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.IAutoDisposable.IsDisposed.html#DotNetBrowser_IAutoDisposable_IsDisposed">IAutoDisposable.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="DotNetBrowser.IAutoDisposable.Disposed.html">IAutoDisposable.Disposed</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Js.html">Js</a>.<a class="xref" href="DotNetBrowser.Js.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
+  <h5 id="DotNetBrowser_Js_Collections_IJsMap_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IJsMap : IJsObject, IAutoDisposable</code></pre>
+  </div>
+  <h5 id="DotNetBrowser_Js_Collections_IJsMap_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>A map object can be passed between .NET and JavaScript as a method argument or a return value.
+The object lifetime is bound to the lifetime of the frame this object belongs to.When the owner
+frame is unloaded, all the bound JavaScript objects are automatically disposed.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Js_Collections_IJsMap_Count" data-uid="DotNetBrowser.Js.Collections.IJsMap.Count">
+          <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.Count.html#DotNetBrowser_Js_Collections_IJsMap_Count">Count</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the number of key-value mappings in this <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.html">IJsMap</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Js_Collections_IJsMap_Item_System_Object_" data-uid="DotNetBrowser.Js.Collections.IJsMap.Item(System.Object)">
+          <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.Item.html#DotNetBrowser_Js_Collections_IJsMap_Item_System_Object_">this[object]</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the element with the specified <code class="paramref">key</code>.
+If this map contains a value associated with the <code class="paramref">key</code>, it will be replaced.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Js_Collections_IJsMap_Clear" data-uid="DotNetBrowser.Js.Collections.IJsMap.Clear">
+          <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.Clear.html#DotNetBrowser_Js_Collections_IJsMap_Clear">Clear()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Removes all items from this <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.html">IJsMap</a>. Does nothing if the map is empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Js_Collections_IJsMap_ContainsKey_System_Object_" data-uid="DotNetBrowser.Js.Collections.IJsMap.ContainsKey(System.Object)">
+          <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.ContainsKey.html#DotNetBrowser_Js_Collections_IJsMap_ContainsKey_System_Object_">ContainsKey(object)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Determines whether the <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.html">IJsMap</a> contains an element with
+the specified <code class="paramref">key</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Js_Collections_IJsMap_Remove_System_Object_" data-uid="DotNetBrowser.Js.Collections.IJsMap.Remove(System.Object)">
+          <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.Remove.html#DotNetBrowser_Js_Collections_IJsMap_Remove_System_Object_">Remove(object)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Removes the element with the specified key from the <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.html">IJsMap</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Js_Collections_IJsMap_ToReadOnlyDictionary" data-uid="DotNetBrowser.Js.Collections.IJsMap.ToReadOnlyDictionary">
+          <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.ToReadOnlyDictionary.html#DotNetBrowser_Js_Collections_IJsMap_ToReadOnlyDictionary">ToReadOnlyDictionary()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Copies the contents of the <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.html">IJsMap</a> to a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary&lt;TKey, TValue&gt;</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Js_Collections_IJsMap_ToReadOnlyDictionary__2" data-uid="DotNetBrowser.Js.Collections.IJsMap.ToReadOnlyDictionary``2">
+          <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.ToReadOnlyDictionary.html#DotNetBrowser_Js_Collections_IJsMap_ToReadOnlyDictionary__2">ToReadOnlyDictionary&lt;TKey, TVal&gt;()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Copies the contents of the <a class="xref" href="DotNetBrowser.Js.Collections.IJsMap.html">IJsMap</a> to a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary&lt;TKey, TValue&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="DotNetBrowser.Js.JsonExtensions.ToJsonString.html#DotNetBrowser_Js_JsonExtensions_ToJsonString_DotNetBrowser_Js_IJsObject_">JsonExtensions.ToJsonString(IJsObject)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

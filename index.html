@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Introduction | API </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Introduction | API ">
+    
+    
+      <link rel="shortcut icon" href="icons/favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction">Introduction</h1>
+
+<p>DotNetBrowser is a .NET component which allows embedding a Chromium-based browser control into .NET applications to display web pages built with HTML5, CSS3, JavaScript, etc. DotNetBrowser supports WPF, Windows Forms, and Avalonia UI, and provides UI controls which you can embed into your .NET Desktop Application to display web pages.</p>
+<h2 id="chromium">Chromium</h2>
+<p>All required Chromium binaries are deployed with the library. You don't need to install Google Chrome to work with DotNetBrowser. DotNetBrowser uses Chromium build <code>121.0.6167.184.</code></p>
+<h2 id="multi-process-architecture">Multi-Process Architecture</h2>
+<p>DotNetBrowser inherits Chromium’s Multi-Process Architecture. Each web page is rendered in a separate native process <code>(chromium.exe)</code>. JavaScript on the web page and plugins are executed in separate native processes as well. If an unexpected error happens in the web page’s plugin or DOM, your application will continue working. You can listen to events about an unexpected termination of Chromium process and restore the Browser component if necessary.</p>
+<h3 id="api"><a href="./api/DotNetBrowser.html">API</a></h3>
+<ul>
+<li>See our <a href="./api/DotNetBrowser.html">API References</a>.</li>
+<li>Visit the <a href="https://teamdev.com/dotnetbrowser/">DotnetBrowser website</a>.</li>
+<li>Get the <a href="https://teamdev.com/dotnetbrowser/#evaluate">free trial</a> to try.</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

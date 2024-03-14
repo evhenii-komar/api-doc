@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Property TextContent | API </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Property TextContent | API ">
+    
+    
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Dom.INode.TextContent*">
+
+
+
+<h1 id="DotNetBrowser_Dom_INode_TextContent_" data-uid="DotNetBrowser.Dom.INode.TextContent*">Property TextContent</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<a id="DotNetBrowser_Dom_INode_TextContent_" data-uid="DotNetBrowser.Dom.INode.TextContent*"></a>
+<h4 id="DotNetBrowser_Dom_INode_TextContent" data-uid="DotNetBrowser.Dom.INode.TextContent">TextContent</h4>
+<div class="markdown level1 summary"><p>Gets or sets the text content of the node and its descendants.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">string TextContent { get; set; }</code></pre>
+</div>
+<h5 class="propertyValue">Property Value</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="DotNetBrowser_Dom_INode_TextContent_remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>
+    Setting this property on a node removes all of its children and replaces them with a single text node with the
+    given value.
+</p>
+<p>
+    The property value depends on the type of the node, whhich can be checked via the <a class="xref" href="DotNetBrowser.Dom.INode.Type.html#DotNetBrowser_Dom_INode_Type">Type</a>
+    property.
+</p>
+<p>
+    The property value is an empty string if the element is a document, a document type, or a notation.
+</p>
+<p>
+    If the node is a CDATA section, a comment, a processing instruction, or a text node, this method returns
+    the text inside this node (the <a class="xref" href="DotNetBrowser.Dom.INode.NodeValue.html#DotNetBrowser_Dom_INode_NodeValue">NodeValue</a>).
+</p>
+<p>
+    For other node types, this method returns the concatenation of the TextContent attribute value
+    of every child node, excluding comments and processing instruction nodes. This is an empty string if the
+    node has no children.
+</p>
+<p>
+    Differences from InnerText:
+    <ul>
+        <li>
+            The TextContent property gets the content of all elements, including &lt;script&gt; and &lt;style
+            > elements, and the mostly equivalent <code>InnerText</code> property does not.
+        </li>
+        <li>
+            <code>InnerText</code> is also aware of style and will not return the text of hidden elements, whereas
+            TextContent
+            will.
+        </li>
+        <li>As <code>InnerText</code> is aware of CSS styling, it will trigger a reflow, whereas TextContent will not.</li>
+    </ul>
+
+</div>
+<h5 class="exceptions">Exceptions</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+      <td><p>The <code class="paramref">value</code> is null.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+      <td><p>The <a class="xref" href="DotNetBrowser.Dom.INode.html">INode</a> has already been disposed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

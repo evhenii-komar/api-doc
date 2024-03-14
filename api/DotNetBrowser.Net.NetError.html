@@ -1,0 +1,1142 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Enum NetError | API </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Enum NetError | API ">
+    
+    <meta name="description" content="The network errors.">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Net.NetError">
+
+
+
+
+  <h1 id="DotNetBrowser_Net_NetError" data-uid="DotNetBrowser.Net.NetError" class="text-break">Enum NetError</h1>
+  <div class="markdown level0 summary"><p>The network errors.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Net.html">Net</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
+  <h5 id="DotNetBrowser_Net_NetError_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum NetError</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    </thead></thead><tbody>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Aborted">Aborted</td>
+        <td><p>An operation was aborted ( due to user action).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_AccessDenied">AccessDenied</td>
+        <td><p>Permission to access a resource, other than the network, was denied.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_AddUserCertFailed">AddUserCertFailed</td>
+        <td><p>An error adding to the OS certificate database  = e.g. OS X Keychain,.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_AddressInUse">AddressInUse</td>
+        <td><p>Returned when attempting to bind an address that is already in use.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_AddressInvalid">AddressInvalid</td>
+        <td><p>The IP address or port number is invalid  = e.g., cannot connect to the IP
+address 0 or the port 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_AddressUnreachable">AddressUnreachable</td>
+        <td><p>The IP address is unreachable.  This usually means that there is no route
+to the specified host or network.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_BadSslClientAuthCert">BadSslClientAuthCert</td>
+        <td><p>The SSL handshake failed because of a bad or missing client certificate.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_BlockedByAdministrator">BlockedByAdministrator</td>
+        <td><p>The request was blocked by the URL blacklist configured by the domain administrator.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_BlockedByClient">BlockedByClient</td>
+        <td><p>The client chose to block the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CacheChecksumMismatch">CacheChecksumMismatch</td>
+        <td><p>The cache found an entry with an invalid checksum. This can be returned from
+attempts to read from the cache. It is an internal error, returned by the
+SimpleCache backend, but not by any URLRequest methods or members.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CacheChecksumReadFailure">CacheChecksumReadFailure</td>
+        <td><p>The cache was unable to read a checksum record on an entry. This can be
+returned from attempts to read from the cache. It is an internal error,
+returned by the SimpleCache backend, but not by any URLRequest methods
+or members.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CacheCreateFailure">CacheCreateFailure</td>
+        <td><p>The disk cache is unable to create this entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CacheMiss">CacheMiss</td>
+        <td><p>The cache does not have the requested entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CacheOpenFailure">CacheOpenFailure</td>
+        <td><p>The disk cache is unable to open this entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CacheOperationNotSupported">CacheOperationNotSupported</td>
+        <td><p>The operation is not supported for this entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CacheRace">CacheRace</td>
+        <td><p>Multiple transactions are racing to create disk cache entries. This is an
+internal error returned from the HttpCache to the HttpCacheTransaction that
+tells the transaction to restart the entry-creation logic because the state
+of the cache has changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CacheReadFailure">CacheReadFailure</td>
+        <td><p>Unable to read from the disk cache.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CacheWriteFailure">CacheWriteFailure</td>
+        <td><p>Unable to write to the disk cache.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertAuthorityInvalid">CertAuthorityInvalid</td>
+        <td><p>
+    The server responded with a certificate that is signed by an authority we don't trust.
+    The could mean:
+</p>
+<p>
+    1. An attacker has substituted the real certificate for a cert that
+    contains his public key and is signed by his cousin.
+</p>
+<p>
+    2. The server operator has a legitimate certificate from a CA we don't
+    know about, but should trust.
+</p>
+<p>
+    3. The server is presenting a self-signed certificate, providing no
+    defense against active attackers  = but foiling passive attackers.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertCommonNameInvalid">CertCommonNameInvalid</td>
+        <td><p>
+    The server responded with a certificate whose common name did not match the host name.
+    This could mean:
+</p>
+<p>
+    1. An attacker has redirected our traffic to his server and is presenting a certificate
+    for which he knows the private key.
+</p>
+<p>
+    2. The server is misconfigured and responding with the wrong cert.
+</p>
+<p>
+    3. The user is on a wireless network and is being redirected to the network's login page.
+</p>
+<p>
+    4. The OS has used a DNS search suffix and the server doesn't have a certificate for
+    the abbreviated name in the address bar.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertContainsErrors">CertContainsErrors</td>
+        <td><p>
+    The server responded with a certificate that contains errors.
+    This error is not recoverable.
+</p>
+<p>
+    MSDN describes this error as follows:
+    "The SSL certificate contains errors."
+    NOTE: It's unclear how this differs from ERR_CERT_INVALID. For consistency,
+    use that code instead of this one from now on.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertDateInvalid">CertDateInvalid</td>
+        <td><p>
+    The server responded with a certificate that, by our clock, appears to
+    either not yet be valid or to have expired.  This could mean:
+</p>
+<p>
+    1. An attacker is presenting an old certificate for which he has managed
+    to obtain the private key.
+</p>
+<p>
+    2. The server is misconfigured and is not presenting a valid cert.
+</p>
+<p>
+    3. Our clock is wrong.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertEnd">CertEnd</td>
+        <td><p>The value immediately past the last certificate error code.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertErrorInSslRenegotiation">CertErrorInSslRenegotiation</td>
+        <td><p>During SSL renegotiation  = rehandshake,, the server sent a certificate with an error.
+Note: this error is not in the -2xx range so that it won't be handled as a certificate error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertInvalid">CertInvalid</td>
+        <td><p>
+    The server responded with a certificate that is invalid.
+    This error is not recoverable.
+</p>
+<p>
+    MSDN describes this error as follows:
+    "The SSL certificate is invalid."
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertNoRevocationMechanism">CertNoRevocationMechanism</td>
+        <td><p>The certificate has no mechanism for determining if it is revoked.  In
+effect, this certificate cannot be revoked.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertNonUniqueName">CertNonUniqueName</td>
+        <td><p>The host name specified in the certificate is not unique.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertRevoked">CertRevoked</td>
+        <td><p>The server responded with a certificate has been revoked.
+We have the capability to ignore this error, but it is probably not the
+thing to do.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertUnableToCheckRevocation">CertUnableToCheckRevocation</td>
+        <td><p>
+    Revocation information for the security certificate for this site is not
+    available.  This could mean:
+</p>
+<p>
+    1. An attacker has compromised the private key in the certificate and is
+    blocking our attempt to find out that the cert was revoked.
+</p>
+<p>
+    2. The certificate is unrevoked, but the revocation server is busy or
+    unavailable.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertWeakKey">CertWeakKey</td>
+        <td><p>The server responded with a certificate that contains a weak key  = e.g.
+a too-small RSA key.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_CertWeakSignatureAlgorithm">CertWeakSignatureAlgorithm</td>
+        <td><p>The server responded with a certificate that is signed using a weak
+signature algorithm.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ClientAuthCertTypeUnsupported">ClientAuthCertTypeUnsupported</td>
+        <td><p>Server request for client certificate did not contain any types we support.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ConnectionAborted">ConnectionAborted</td>
+        <td><p>A connection timed out as a result of not receiving an ACK for data sent.
+This can include a FIN packet that did not get ACK'd.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ConnectionClosed">ConnectionClosed</td>
+        <td><p>A connection was closed  = corresponding to a TCP FIN.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ConnectionFailed">ConnectionFailed</td>
+        <td><p>A connection attempt failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ConnectionRefused">ConnectionRefused</td>
+        <td><p>A connection attempt was refused.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ConnectionReset">ConnectionReset</td>
+        <td><p>A connection was reset  = corresponding to a TCP RST.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ConnectionTimedOut">ConnectionTimedOut</td>
+        <td><p>A connection attempt timed out.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ContentDecodingFailed">ContentDecodingFailed</td>
+        <td><p>Content decoding of the response body failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ContentLengthMismatch">ContentLengthMismatch</td>
+        <td><p>The HTTP response body transferred fewer bytes than were advertised by the
+Content-Length header when the connection is closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_DisallowedUrlScheme">DisallowedUrlScheme</td>
+        <td><p>The scheme of the URL is disallowed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_DnsCacheMiss">DnsCacheMiss</td>
+        <td><p>The entry was not found in cache, for cache-only lookups.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_DnsMalformedResponse">DnsMalformedResponse</td>
+        <td><p>DNS resolver received a malformed response.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_DnsSearchEmpty">DnsSearchEmpty</td>
+        <td><p>Suffix search list rules prevent resolution of the given host name.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_DnsServerFailed">DnsServerFailed</td>
+        <td><p>
+    DNS server failed.  This error is returned for all of the following
+    error conditions:
+</p>
+<p>
+    1 - Format error - The name server was unable to interpret the query.
+</p>
+<p>
+    2 - Server failure - The name server was unable to process this query
+    due to a problem with the name server.
+</p>
+<p>
+    4 - Not Implemented - The name server does not support the requested
+    kind of query.
+</p>
+<p>
+    5 - Refused - The name server refuses to perform the specified
+    operation for policy reasons.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_DnsServerRequiresTcp">DnsServerRequiresTcp</td>
+        <td><p>DNS server requires TCP</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_DnsSortError">DnsSortError</td>
+        <td><p>Failed to sort addresses according to RFC3484.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_DnsTimedOut">DnsTimedOut</td>
+        <td><p>DNS transaction timed out.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_EmptyResponse">EmptyResponse</td>
+        <td><p>The server closed the connection without sending any data.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_EncodingConversionFailed">EncodingConversionFailed</td>
+        <td><p>Converting the response to target encoding failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_EncodingDetectionFailed">EncodingDetectionFailed</td>
+        <td><p>Detecting the encoding of the response failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Failed">Failed</td>
+        <td><p>A generic failure occurred.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FileExists">FileExists</td>
+        <td><p>The file already exists.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FileNoSpace">FileNoSpace</td>
+        <td><p>Not enough room left on the disk.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FileNotFound">FileNotFound</td>
+        <td><p>The file or directory cannot be found.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FilePathTooLong">FilePathTooLong</td>
+        <td><p>The path or file name is too long.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FileTooBig">FileTooBig</td>
+        <td><p>The file is too large.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FileVirusInfected">FileVirusInfected</td>
+        <td><p>The file has a virus.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FtpBadCommandSequence">FtpBadCommandSequence</td>
+        <td><p>Server rejected our command because we didn't issue the commands in right
+order.
+FTP response code 503.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FtpCommandNotSupported">FtpCommandNotSupported</td>
+        <td><p>Server does not support the command we issued.
+FTP response codes 502, 504.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FtpFailed">FtpFailed</td>
+        <td><p>A generic error for failed FTP control connection command.
+If possible, please use or add a more specific error code.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FtpFileBusy">FtpFileBusy</td>
+        <td><p>The file is busy, or some other temporary error condition on opening
+the file.
+FTP response code 450.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FtpServiceUnavailable">FtpServiceUnavailable</td>
+        <td><p>The server cannot fulfill the request at this point. This is a temporary
+error.
+FTP response code 421.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FtpSyntaxError">FtpSyntaxError</td>
+        <td><p>Server rejected our command because of syntax errors.
+FTP response codes 500, 501.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_FtpTransferAborted">FtpTransferAborted</td>
+        <td><p>The server has aborted the transfer.
+FTP response code 426.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_HeadersTruncated">HeadersTruncated</td>
+        <td><p>The HTTP headers were truncated by an EOF.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_HostResolverQueueTooLarge">HostResolverQueueTooLarge</td>
+        <td><p>There are too many pending DNS resolves, so a request in the queue was aborted.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_HttpsProxyTunnelResponse">HttpsProxyTunnelResponse</td>
+        <td><p>A request to create an SSL tunnel connection through the HTTPS proxy
+received a non-200  = OK, and non-407  = Proxy Auth, response. The response body
+might include a description of why the request failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ImportCaCertFailed">ImportCaCertFailed</td>
+        <td><p>CA import failed due to some other error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ImportCaCertNotCa">ImportCaCertNotCa</td>
+        <td><p>CA import failed - not a CA cert.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ImportCertAlreadyExists">ImportCertAlreadyExists</td>
+        <td><p>Import failed - certificate already exists in database.
+Note it's a little weird this is an error but reimporting a PKCS12 is ok
+= no-op,.  That's how Mozilla does it, though.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ImportServerCertFailed">ImportServerCertFailed</td>
+        <td><p>Server certificate import failed due to some internal error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_IncompleteChunkedEncoding">IncompleteChunkedEncoding</td>
+        <td><p>The HTTP response body is transferred with Chunked-Encoding, but the
+terminating zero-length chunk was never sent when the connection is closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_IncompleteSpdyHeaders">IncompleteSpdyHeaders</td>
+        <td><p>SPDY Headers have been received, but not all of them - status or version
+headers are missing, so we're expecting additional frames to complete them.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InsecureResponse">InsecureResponse</td>
+        <td><p>The server's response was insecure  = e.g. there was a cert error,.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InsufficientResources">InsufficientResources</td>
+        <td><p>There were not enough resources to complete the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InternetDisconnected">InternetDisconnected</td>
+        <td><p>The Internet connection has been lost.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InvalidArgument">InvalidArgument</td>
+        <td><p>An argument to the function is incorrect.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InvalidAuthCredentials">InvalidAuthCredentials</td>
+        <td><p>Credentials could not be established during HTTP Authentication.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InvalidChunkedEncoding">InvalidChunkedEncoding</td>
+        <td><p>Error in chunked transfer encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InvalidHandle">InvalidHandle</td>
+        <td><p>The handle or file descriptor is invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InvalidResponse">InvalidResponse</td>
+        <td><p>The server's response was invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InvalidSpdyStream">InvalidSpdyStream</td>
+        <td><p>Attempted use of an unknown SPDY stream id.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_InvalidUrl">InvalidUrl</td>
+        <td><p>The URL is invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_IoPending">IoPending</td>
+        <td><p>An asynchronous IO operation is not yet complete.  This usually does not
+indicate a fatal error.  Typically this error will be generated as a
+notification to wait for some external notification that the IO operation
+finally completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_KeyGenerationFailed">KeyGenerationFailed</td>
+        <td><p>Key generation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_MalformedIdentity">MalformedIdentity</td>
+        <td><p>The identity used for authentication is invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_MandatoryProxyConfigurationFailed">MandatoryProxyConfigurationFailed</td>
+        <td><p>A mandatory proxy configuration could not be used. Currently this means that
+a mandatory PAC script could not be fetched, parsed or executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_MethodNotSupported">MethodNotSupported</td>
+        <td><p>The server did not support the request method.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_MisconfiguredAuthEnvironment">MisconfiguredAuthEnvironment</td>
+        <td><p>The environment was not set up correctly for authentication  = for
+example, no KDC could be found or the principal is unknown.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_MissingAuthCredentials">MissingAuthCredentials</td>
+        <td><p>= GSSAPI, No Kerberos credentials were available during HTTP Authentication.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_MsgTooBig">MsgTooBig</td>
+        <td><p>The message was too large for the transport.
+= for example a UDP message which exceeds size threshold,.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NameNotResolved">NameNotResolved</td>
+        <td><p>The host name could not be resolved.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NameResolutionFailed">NameResolutionFailed</td>
+        <td><p>An error occurred when trying to do a name resolution  = DNS,.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NetworkAccessDenied">NetworkAccessDenied</td>
+        <td><p>Permission to access the network was denied. This is used to distinguish
+errors that were most likely caused by a firewall from other access denied errors.
+See also ERR_ACCESS_DENIED.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NetworkChanged">NetworkChanged</td>
+        <td><p>The network changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NetworkIoSuspended">NetworkIoSuspended</td>
+        <td><p>An operation could not be completed because all network IO
+is suspended.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NoPrivateKeyForCert">NoPrivateKeyForCert</td>
+        <td><p>The server responded to a &lt;keygen&gt; with a generated client cert that we
+don't have the matching private key for.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NoSslVersionsEnabled">NoSslVersionsEnabled</td>
+        <td><p>No SSL protocol versions are enabled.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NoSupportedProxies">NoSupportedProxies</td>
+        <td><p>There are no supported proxies in the provided list.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NotImplemented">NotImplemented</td>
+        <td><p>The operation failed because of unimplemented functionality.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_NpnNegotiationFailed">NpnNegotiationFailed</td>
+        <td><p>The request to negotiate an alternate protocol failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Ok">Ok</td>
+        <td><p>No error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_OriginBoundCertGenerationFailed">OriginBoundCertGenerationFailed</td>
+        <td><p>Server-bound certificate generation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_OriginBoundCertGenerationTypeMismatch">OriginBoundCertGenerationTypeMismatch</td>
+        <td><p>Server requested one type of cert, then requested a different type while
+the first was still being generated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_OutOfMemory">OutOfMemory</td>
+        <td><p>Memory allocation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_PacNotInDhcp">PacNotInDhcp</td>
+        <td><p>No PAC URL configuration could be retrieved from DHCP. This can indicate
+either a failure to retrieve the DHCP configuration, or that there was no
+PAC URL configured in DHCP.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_PacScriptFailed">PacScriptFailed</td>
+        <td><p>The evaluation of the PAC script failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_PacStatusNotOk">PacStatusNotOk</td>
+        <td><p>The PAC requested by HTTP did not have a valid status code  = non-200.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_PipelineEviction">PipelineEviction</td>
+        <td><p>The request couldn't be completed on an HTTP pipeline. Client should retry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Pkcs12ImportBadPassword">Pkcs12ImportBadPassword</td>
+        <td><p>PKCS #12 import failed due to incorrect password.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Pkcs12ImportFailed">Pkcs12ImportFailed</td>
+        <td><p>PKCS #12 import failed due to other error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Pkcs12ImportInvalidFile">Pkcs12ImportInvalidFile</td>
+        <td><p>PKCS #12 import failed due to invalid/corrupt file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Pkcs12ImportInvalidMac">Pkcs12ImportInvalidMac</td>
+        <td><p>PKCS #12 import failed due to invalid MAC.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Pkcs12ImportUnsupported">Pkcs12ImportUnsupported</td>
+        <td><p>PKCS #12 import failed due to unsupported features.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_PreconnectMaxSocketLimit">PreconnectMaxSocketLimit</td>
+        <td><p>We've hit the max socket limit for the socket pool while preconnecting.
+We don't bother trying to preconnect more sockets.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_PrivateKeyExportFailed">PrivateKeyExportFailed</td>
+        <td><p>Failure to export private key.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ProtocolSwitched">ProtocolSwitched</td>
+        <td><p>Connection was aborted for switching to another protocol. WebSocket abort
+SocketStream connection when alternate protocol is found.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ProxyAuthRequested">ProxyAuthRequested</td>
+        <td><p>The proxy requested authentication  = for tunnel establishment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ProxyAuthUnsupported">ProxyAuthUnsupported</td>
+        <td><p>The proxy requested authentication  = for tunnel establishment, with an unsupported method.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ProxyCertificateInvalid">ProxyCertificateInvalid</td>
+        <td><p>The certificate presented by the HTTPS Proxy was invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ProxyConnectionFailed">ProxyConnectionFailed</td>
+        <td><p>Could not create a connection to the proxy server. An error occurred either
+in resolving its name, or in connecting a socket to it. Note that this does
+NOT include failures during the actual &quot;CONNECT&quot; method of an HTTP proxy.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_QuicProtocolError">QuicProtocolError</td>
+        <td><p>There is a QUIC protocol error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_RequestRangeNotSatisfiable">RequestRangeNotSatisfiable</td>
+        <td><p>The response was 416  = Requested range not satisfiable, and the server cannot
+satisfy the range requested.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ResponseBodyTooBigToDrain">ResponseBodyTooBigToDrain</td>
+        <td><p>The HTTP response was too big to drain.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ResponseHeadersMultipleContentDisposition">ResponseHeadersMultipleContentDisposition</td>
+        <td><p>The HTTP response contained multiple Content-Disposition headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ResponseHeadersMultipleContentLength">ResponseHeadersMultipleContentLength</td>
+        <td><p>The HTTP response contained multiple distinct Content-Length headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ResponseHeadersMultipleLocation">ResponseHeadersMultipleLocation</td>
+        <td><p>The HTTP response contained multiple Location headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_ResponseHeadersTooBig">ResponseHeadersTooBig</td>
+        <td><p>The headers section of the response is too large.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SocketIsConnected">SocketIsConnected</td>
+        <td><p>The socket is already connected.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SocketNotConnected">SocketNotConnected</td>
+        <td><p>The socket is not connected.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SocksConnectionFailed">SocksConnectionFailed</td>
+        <td><p>Failed establishing a connection to the SOCKS proxy server for a target host.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SocksConnectionHostUnreachable">SocksConnectionHostUnreachable</td>
+        <td><p>The SOCKS proxy server failed establishing connection to the target host
+because that host is unreachable.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SpdyPingFailed">SpdyPingFailed</td>
+        <td><p>SPDY server didn't respond to the PING message.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SpdyProtocolError">SpdyProtocolError</td>
+        <td><p>There is a SPDY protocol error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SpdyServerRefusedStream">SpdyServerRefusedStream</td>
+        <td><p>SPDY server refused the stream. Client should retry. This should never be a
+user-visible error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SpdySessionAlreadyExists">SpdySessionAlreadyExists</td>
+        <td><p>A SPDY session already exists, and should be used instead of this connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslBadPeerPublicKey">SslBadPeerPublicKey</td>
+        <td><p>SSL peer's public key is invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslBadRecordMacAlert">SslBadRecordMacAlert</td>
+        <td><p>An SSL peer sent us a fatal bad_record_mac alert. This has been observed from servers with
+buggy DEFLATE support.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslClientAuthCertNeeded">SslClientAuthCertNeeded</td>
+        <td><p>The server requested a client certificate for SSL client authentication.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslClientAuthCertNoPrivateKey">SslClientAuthCertNoPrivateKey</td>
+        <td><p>The SSL client certificate has no private key.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslClientAuthPrivateKeyAccessDenied">SslClientAuthPrivateKeyAccessDenied</td>
+        <td><p>The permission to use the SSL client certificate's private key was denied.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslClientAuthSignatureFailed">SslClientAuthSignatureFailed</td>
+        <td><p>
+    We were unable to sign the CertificateVerify data of an SSL client auth
+    handshake with the client certificate's private key.
+</p>
+<p>
+    Possible causes for this include the user implicitly or explicitly
+    denying access to the private key, the private key may not be valid for
+    signing, the key may be relying on a cached handle which is no longer
+    valid, or the CSP won't allow arbitrary data to be signed.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslDecompressionFailureAlert">SslDecompressionFailureAlert</td>
+        <td><p>An SSL peer sent us a fatal decompression_failure alert. This typically occurs when a peer
+selects DEFLATE compression in the mistaken belief that it supports it.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslHandshakeNotCompleted">SslHandshakeNotCompleted</td>
+        <td><p>An operation failed because the SSL handshake has not completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslNoRenegotiation">SslNoRenegotiation</td>
+        <td><p>The peer sent an SSL no_renegotiation alert message.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslPinnedKeyNotInCertChain">SslPinnedKeyNotInCertChain</td>
+        <td><p>The certificate didn't match the built-in public key pins for the host name.
+The pins are set in net/http/transport_security_state.cc and require that one
+of a set of public keys exist on the path from the leaf to the root.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslProtocolError">SslProtocolError</td>
+        <td><p>An SSL protocol error occurred.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslRenegotiationRequested">SslRenegotiationRequested</td>
+        <td><p>The server requested a renegotiation  = rehandshake,.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslUnsafeNegotiation">SslUnsafeNegotiation</td>
+        <td><p>A known TLS strict server didn't offer the renegotiation extension.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslVersionOrCipherMismatch">SslVersionOrCipherMismatch</td>
+        <td><p>The client and server don't support a common SSL protocol version or cipher suite.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SslWeakServerEphemeralDhKey">SslWeakServerEphemeralDhKey</td>
+        <td><p>The SSL server attempted to use a weak ephemeral Diffie-Hellman key.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_SynReplyNotReceived">SynReplyNotReceived</td>
+        <td><p>FLIP data received without receiving a SYN_REPLY on the stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_TemporarilyThrottled">TemporarilyThrottled</td>
+        <td><p>The request throttler module cancelled this request to avoid DDOS.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_TimedOut">TimedOut</td>
+        <td><p>An operation timed out.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_TooManyRedirects">TooManyRedirects</td>
+        <td><p>Attempting to load an URL resulted in too many redirects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_TunnelConnectionFailed">TunnelConnectionFailed</td>
+        <td><p>A tunnel connection through the proxy could not be established.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Undefined">Undefined</td>
+        <td><p>Undefined</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_UndocumentedSecurityLibraryStatus">UndocumentedSecurityLibraryStatus</td>
+        <td><p>An undocumented SSPI or GSSAPI status code was returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_Unexpected">Unexpected</td>
+        <td><p>An unexpected error.  This may be caused by a programming mistake or an invalid assumption.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_UnexpectedProxyAuth">UnexpectedProxyAuth</td>
+        <td><p>The response was 407  = Proxy Authentication Required,, yet we did not send
+the request to a proxy.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_UnexpectedSecurityLibraryStatus">UnexpectedSecurityLibraryStatus</td>
+        <td><p>An unexpected, but documented, SSPI or GSSAPI status code was returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_UnknownUrlScheme">UnknownUrlScheme</td>
+        <td><p>The scheme of the URL is unknown.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_UnrecognizedFtpDirectoryListingFormat">UnrecognizedFtpDirectoryListingFormat</td>
+        <td><p>The server sent an FTP directory listing in a format we do not understand.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_UnsafePort">UnsafePort</td>
+        <td><p>Attempting to load an URL with an unsafe port number.  These are port
+numbers that correspond to services, which are not robust to spurious input
+that may be constructed as a result of an allowed web construct  = e.g., HTTP
+looks a lot like SMTP, so form submission to port 25 is denied,.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_UnsafeRedirect">UnsafeRedirect</td>
+        <td><p>Attempting to load an URL resulted in an unsafe redirect  = e.g., a redirect
+to file:// is considered unsafe.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_UnsupportedAuthScheme">UnsupportedAuthScheme</td>
+        <td><p>An HTTP Authentication scheme was tried which is not supported on this
+machine.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_UploadFileChanged">UploadFileChanged</td>
+        <td><p>The file upload failed because the file's modification time was different from the expectation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_WinsockUnexpectedWrittenBytes">WinsockUnexpectedWrittenBytes</td>
+        <td><p>Winsock sometimes reports more data written than passed.  This is probably due to a broken LSP.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Net_NetError_WsProtocolError">WsProtocolError</td>
+        <td><p>Websocket protocol error. Indicates that we are terminating the connection
+due to a malformed frame or other protocol violation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
