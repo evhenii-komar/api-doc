@@ -30,6 +30,11 @@
   --sidenav-width: 450px;
 }
 
+body {
+  position: absolute;
+  width: 1900px;
+}
+
 /* HEADINGS */
 
 h1 {
@@ -180,4 +185,21 @@ code {
   border-radius: var(--bs-border-radius);
   margin: 4px 2px;
   box-shadow: var(--card-box-shadow);
+}
+
+.sidefilter {
+  width: auto;
+}
+
+
+.sidetoc {
+  width: var(--sidenav-width);
+}
+
+.article.grid-right {
+  margin-left: var(--sidenav-width);
+}
+
+.container {
+  width: 100%;
 }
