@@ -1,86 +1,122 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class EngineOptions | API </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class EngineOptions | API ">
-    
-    <meta name="description" content="The options that are used to configure  instances.">
-      <link rel="shortcut icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      
+      <meta name="description" content="The options that are used to configure  instances.">
+      <link rel="icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_Engine_EngineOptions.md&amp;value=---%0Auid%3A%20DotNetBrowser.Engine.EngineOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+  <script type="module" src="./../public/docfx.min.js"></script>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+            DotNetBrowser
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
+    </header>
 
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
+      </div>
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Engine.EngineOptions">
+
+        <article data-uid="DotNetBrowser.Engine.EngineOptions">
 
 
 
-  <h1 id="DotNetBrowser_Engine_EngineOptions" data-uid="DotNetBrowser.Engine.EngineOptions" class="text-break">Class EngineOptions</h1>
-  <div class="markdown level0 summary"><p>The options that are used to configure <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instances.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">EngineOptions</span></div>
+  <h1 id="DotNetBrowser_Engine_EngineOptions" data-uid="DotNetBrowser.Engine.EngineOptions" class="text-break">
+Class EngineOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser/Engine/EngineOptions.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Engine.html">Engine</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DotNetBrowser.dll</dd></dl>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+  <div class="markdown summary"><p>The options that are used to configure <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instances.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EngineOptions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EngineOptions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -102,263 +138,181 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Engine.html">Engine</a></h6>
-  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
-  <h5 id="DotNetBrowser_Engine_EngineOptions_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EngineOptions</code></pre>
-  </div>
-  <h3 id="properties">Properties
-</h3>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_BinariesExtractionOptions" data-uid="DotNetBrowser.Engine.EngineOptions.BinariesExtractionOptions">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.BinariesExtractionOptions.html#DotNetBrowser_Engine_EngineOptions_BinariesExtractionOptions">BinariesExtractionOptions</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the options that are used to configure the Chromium binaries extraction process.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_ChromiumDirectory" data-uid="DotNetBrowser.Engine.EngineOptions.ChromiumDirectory">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.ChromiumDirectory.html#DotNetBrowser_Engine_EngineOptions_ChromiumDirectory">ChromiumDirectory</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the absolute path to the directory where the Chromium binaries are located.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_ChromiumSwitches" data-uid="DotNetBrowser.Engine.EngineOptions.ChromiumSwitches">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.ChromiumSwitches.html#DotNetBrowser_Engine_EngineOptions_ChromiumSwitches">ChromiumSwitches</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets an immutable collection of the Chromium switches that will be passed to the Chromium Main
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.BinariesExtractionOptions.html#DotNetBrowser_Engine_EngineOptions_BinariesExtractionOptions">BinariesExtractionOptions</a></dt>
+    <dd><p>Gets the options that are used to configure the Chromium binaries extraction process.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.ChromiumDirectory.html#DotNetBrowser_Engine_EngineOptions_ChromiumDirectory">ChromiumDirectory</a></dt>
+    <dd><p>Gets the absolute path to the directory where the Chromium binaries are located.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.ChromiumSwitches.html#DotNetBrowser_Engine_EngineOptions_ChromiumSwitches">ChromiumSwitches</a></dt>
+    <dd><p>Gets an immutable collection of the Chromium switches that will be passed to the Chromium Main
 process.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_CrashDumpDirectory" data-uid="DotNetBrowser.Engine.EngineOptions.CrashDumpDirectory">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.CrashDumpDirectory.html#DotNetBrowser_Engine_EngineOptions_CrashDumpDirectory">CrashDumpDirectory</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the path that will be used to store the automatically generated Chromium crash dumps.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_DiskCacheSize" data-uid="DotNetBrowser.Engine.EngineOptions.DiskCacheSize">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.DiskCacheSize.html#DotNetBrowser_Engine_EngineOptions_DiskCacheSize">DiskCacheSize</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the disk cache size.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_GoogleApiKey" data-uid="DotNetBrowser.Engine.EngineOptions.GoogleApiKey">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.GoogleApiKey.html#DotNetBrowser_Engine_EngineOptions_GoogleApiKey">GoogleApiKey</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the Google API key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_GoogleDefaultClientId" data-uid="DotNetBrowser.Engine.EngineOptions.GoogleDefaultClientId">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.GoogleDefaultClientId.html#DotNetBrowser_Engine_EngineOptions_GoogleDefaultClientId">GoogleDefaultClientId</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the Google client ID.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_GoogleDefaultClientSecret" data-uid="DotNetBrowser.Engine.EngineOptions.GoogleDefaultClientSecret">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.GoogleDefaultClientSecret.html#DotNetBrowser_Engine_EngineOptions_GoogleDefaultClientSecret">GoogleDefaultClientSecret</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the Google client secret.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsAutoplayEnabled" data-uid="DotNetBrowser.Engine.EngineOptions.IsAutoplayEnabled">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsAutoplayEnabled.html#DotNetBrowser_Engine_EngineOptions_IsAutoplayEnabled">IsAutoplayEnabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indicates whether video playback will automatically start after page loading.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsFileAccessFromFilesAllowed" data-uid="DotNetBrowser.Engine.EngineOptions.IsFileAccessFromFilesAllowed">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsFileAccessFromFilesAllowed.html#DotNetBrowser_Engine_EngineOptions_IsFileAccessFromFilesAllowed">IsFileAccessFromFilesAllowed</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indicates whether file access from files is allowed.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsGoogleTrafficDisabled" data-uid="DotNetBrowser.Engine.EngineOptions.IsGoogleTrafficDisabled">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsGoogleTrafficDisabled.html#DotNetBrowser_Engine_EngineOptions_IsGoogleTrafficDisabled">IsGoogleTrafficDisabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indicates whether Chromium services that cause additional traffic are disabled.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsGpuDisabled" data-uid="DotNetBrowser.Engine.EngineOptions.IsGpuDisabled">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsGpuDisabled.html#DotNetBrowser_Engine_EngineOptions_IsGpuDisabled">IsGpuDisabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indicates whether GPU is disabled.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsIncognitoEnabled" data-uid="DotNetBrowser.Engine.EngineOptions.IsIncognitoEnabled">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsIncognitoEnabled.html#DotNetBrowser_Engine_EngineOptions_IsIncognitoEnabled">IsIncognitoEnabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indicates whether the incognito mode for the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance is enabled.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsMediaRoutingEnabled" data-uid="DotNetBrowser.Engine.EngineOptions.IsMediaRoutingEnabled">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsMediaRoutingEnabled.html#DotNetBrowser_Engine_EngineOptions_IsMediaRoutingEnabled">IsMediaRoutingEnabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indicates whether media routing is enabled for the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.CrashDumpDirectory.html#DotNetBrowser_Engine_EngineOptions_CrashDumpDirectory">CrashDumpDirectory</a></dt>
+    <dd><p>Gets the path that will be used to store the automatically generated Chromium crash dumps.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.DiskCacheSize.html#DotNetBrowser_Engine_EngineOptions_DiskCacheSize">DiskCacheSize</a></dt>
+    <dd><p>Gets the disk cache size.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.GoogleApiKey.html#DotNetBrowser_Engine_EngineOptions_GoogleApiKey">GoogleApiKey</a></dt>
+    <dd><p>Gets the Google API key.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.GoogleDefaultClientId.html#DotNetBrowser_Engine_EngineOptions_GoogleDefaultClientId">GoogleDefaultClientId</a></dt>
+    <dd><p>Gets the Google client ID.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.GoogleDefaultClientSecret.html#DotNetBrowser_Engine_EngineOptions_GoogleDefaultClientSecret">GoogleDefaultClientSecret</a></dt>
+    <dd><p>Gets the Google client secret.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsAutoplayEnabled.html#DotNetBrowser_Engine_EngineOptions_IsAutoplayEnabled">IsAutoplayEnabled</a></dt>
+    <dd><p>Indicates whether video playback will automatically start after page loading.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsFileAccessFromFilesAllowed.html#DotNetBrowser_Engine_EngineOptions_IsFileAccessFromFilesAllowed">IsFileAccessFromFilesAllowed</a></dt>
+    <dd><p>Indicates whether file access from files is allowed.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsGoogleTrafficDisabled.html#DotNetBrowser_Engine_EngineOptions_IsGoogleTrafficDisabled">IsGoogleTrafficDisabled</a></dt>
+    <dd><p>Indicates whether Chromium services that cause additional traffic are disabled.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsGpuDisabled.html#DotNetBrowser_Engine_EngineOptions_IsGpuDisabled">IsGpuDisabled</a></dt>
+    <dd><p>Indicates whether GPU is disabled.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsIncognitoEnabled.html#DotNetBrowser_Engine_EngineOptions_IsIncognitoEnabled">IsIncognitoEnabled</a></dt>
+    <dd><p>Indicates whether the incognito mode for the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance is enabled.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsMediaRoutingEnabled.html#DotNetBrowser_Engine_EngineOptions_IsMediaRoutingEnabled">IsMediaRoutingEnabled</a></dt>
+    <dd><p>Indicates whether media routing is enabled for the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance.</p>
 <p>
     By default, it is disabled.
 </p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsSandboxDisabled" data-uid="DotNetBrowser.Engine.EngineOptions.IsSandboxDisabled">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsSandboxDisabled.html#DotNetBrowser_Engine_EngineOptions_IsSandboxDisabled">IsSandboxDisabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indicates whether the sandbox is disabled.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsTouchMenuDisabled" data-uid="DotNetBrowser.Engine.EngineOptions.IsTouchMenuDisabled">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsTouchMenuDisabled.html#DotNetBrowser_Engine_EngineOptions_IsTouchMenuDisabled">IsTouchMenuDisabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indicates whether touch popup menu is disabled.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsWebSecurityDisabled" data-uid="DotNetBrowser.Engine.EngineOptions.IsWebSecurityDisabled">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsWebSecurityDisabled.html#DotNetBrowser_Engine_EngineOptions_IsWebSecurityDisabled">IsWebSecurityDisabled</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indicates whether the same-origin policy is disabled.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_Language" data-uid="DotNetBrowser.Engine.EngineOptions.Language">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.Language.html#DotNetBrowser_Engine_EngineOptions_Language">Language</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the Chromium language that is used on the default error pages and message dialogs.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_LicenseKey" data-uid="DotNetBrowser.Engine.EngineOptions.LicenseKey">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.LicenseKey.html#DotNetBrowser_Engine_EngineOptions_LicenseKey">LicenseKey</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the license key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_PasswordStore" data-uid="DotNetBrowser.Engine.EngineOptions.PasswordStore">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.PasswordStore.html#DotNetBrowser_Engine_EngineOptions_PasswordStore">PasswordStore</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the password store type which specifies the
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsSandboxDisabled.html#DotNetBrowser_Engine_EngineOptions_IsSandboxDisabled">IsSandboxDisabled</a></dt>
+    <dd><p>Indicates whether the sandbox is disabled.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsTouchMenuDisabled.html#DotNetBrowser_Engine_EngineOptions_IsTouchMenuDisabled">IsTouchMenuDisabled</a></dt>
+    <dd><p>Indicates whether touch popup menu is disabled.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsWebSecurityDisabled.html#DotNetBrowser_Engine_EngineOptions_IsWebSecurityDisabled">IsWebSecurityDisabled</a></dt>
+    <dd><p>Indicates whether the same-origin policy is disabled.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.Language.html#DotNetBrowser_Engine_EngineOptions_Language">Language</a></dt>
+    <dd><p>Gets the Chromium language that is used on the default error pages and message dialogs.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.LicenseKey.html#DotNetBrowser_Engine_EngineOptions_LicenseKey">LicenseKey</a></dt>
+    <dd><p>Gets the license key.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.PasswordStore.html#DotNetBrowser_Engine_EngineOptions_PasswordStore">PasswordStore</a></dt>
+    <dd><p>Gets the password store type which specifies the
 storage backend should be used to encrypt cookies on Linux.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_ProprietaryFeatures" data-uid="DotNetBrowser.Engine.EngineOptions.ProprietaryFeatures">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.ProprietaryFeatures.html#DotNetBrowser_Engine_EngineOptions_ProprietaryFeatures">ProprietaryFeatures</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the proprietary features enabled for the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_RemoteDebuggingPort" data-uid="DotNetBrowser.Engine.EngineOptions.RemoteDebuggingPort">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.RemoteDebuggingPort.html#DotNetBrowser_Engine_EngineOptions_RemoteDebuggingPort">RemoteDebuggingPort</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the remote debugging port.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_RenderingMode" data-uid="DotNetBrowser.Engine.EngineOptions.RenderingMode">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.RenderingMode.html#DotNetBrowser_Engine_EngineOptions_RenderingMode">RenderingMode</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the rendering mode indicating how the content of the web pages will be rendered.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_Schemes" data-uid="DotNetBrowser.Engine.EngineOptions.Schemes">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.Schemes.html#DotNetBrowser_Engine_EngineOptions_Schemes">Schemes</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the readonly dictionary of the schemes that will be intercepted.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_UserAgent" data-uid="DotNetBrowser.Engine.EngineOptions.UserAgent">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.UserAgent.html#DotNetBrowser_Engine_EngineOptions_UserAgent">UserAgent</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets the custom user agent string that is used to override the default user agent for the
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.ProprietaryFeatures.html#DotNetBrowser_Engine_EngineOptions_ProprietaryFeatures">ProprietaryFeatures</a></dt>
+    <dd><p>Gets the proprietary features enabled for the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.RemoteDebuggingPort.html#DotNetBrowser_Engine_EngineOptions_RemoteDebuggingPort">RemoteDebuggingPort</a></dt>
+    <dd><p>Gets the remote debugging port.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.RenderingMode.html#DotNetBrowser_Engine_EngineOptions_RenderingMode">RenderingMode</a></dt>
+    <dd><p>Gets the rendering mode indicating how the content of the web pages will be rendered.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.Schemes.html#DotNetBrowser_Engine_EngineOptions_Schemes">Schemes</a></dt>
+    <dd><p>Gets the readonly dictionary of the schemes that will be intercepted.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.UserAgent.html#DotNetBrowser_Engine_EngineOptions_UserAgent">UserAgent</a></dt>
+    <dd><p>Gets the custom user agent string that is used to override the default user agent for the
 <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a>.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_UserDataDirectory" data-uid="DotNetBrowser.Engine.EngineOptions.UserDataDirectory">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.UserDataDirectory.html#DotNetBrowser_Engine_EngineOptions_UserDataDirectory">UserDataDirectory</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gets an absolute path to the directory where the user data is stored.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="DotNetBrowser_Engine_EngineOptions_IsProprietaryFeatureEnabled_DotNetBrowser_Engine_ProprietaryFeatures_" data-uid="DotNetBrowser.Engine.EngineOptions.IsProprietaryFeatureEnabled(DotNetBrowser.Engine.ProprietaryFeatures)">
-          <a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsProprietaryFeatureEnabled.html#DotNetBrowser_Engine_EngineOptions_IsProprietaryFeatureEnabled_DotNetBrowser_Engine_ProprietaryFeatures_">IsProprietaryFeatureEnabled(ProprietaryFeatures)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Checks whether the given proprietary features are enabled.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.UserDataDirectory.html#DotNetBrowser_Engine_EngineOptions_UserDataDirectory">UserDataDirectory</a></dt>
+    <dd><p>Gets an absolute path to the directory where the user data is stored.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Engine.EngineOptions.IsProprietaryFeatureEnabled.html#DotNetBrowser_Engine_EngineOptions_IsProprietaryFeatureEnabled_DotNetBrowser_Engine_ProprietaryFeatures_">IsProprietaryFeatureEnabled(ProprietaryFeatures)</a></dt>
+    <dd><p>Checks whether the given proprietary features are enabled.</p>
+</dd>
+  </dl>
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
-        </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,1030 +1,686 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Enum KeyCode | API </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum KeyCode | API ">
-    
-    <meta name="description" content="The virtual key codes.">
-      <link rel="shortcut icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      
+      <meta name="description" content="The virtual key codes.">
+      <link rel="icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_Input_Keyboard_Events_KeyCode.md&amp;value=---%0Auid%3A%20DotNetBrowser.Input.Keyboard.Events.KeyCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+  <script type="module" src="./../public/docfx.min.js"></script>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-              </a>
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+            DotNetBrowser
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
+      </nav>
+    </header>
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Input.Keyboard.Events.KeyCode">
-
-
-
-
-  <h1 id="DotNetBrowser_Input_Keyboard_Events_KeyCode" data-uid="DotNetBrowser.Input.Keyboard.Events.KeyCode" class="text-break">Enum KeyCode</h1>
-  <div class="markdown level0 summary"><p>The virtual key codes.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Input.html">Input</a>.<a class="xref" href="DotNetBrowser.Input.Keyboard.html">Keyboard</a>.<a class="xref" href="DotNetBrowser.Input.Keyboard.Events.html">Events</a></h6>
-  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
-  <h5 id="DotNetBrowser_Input_Keyboard_Events_KeyCode_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum KeyCode</code></pre>
-  </div>
-  <h3 id="fields">Fields
-</h3>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    </thead></thead><tbody>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Accept">Accept</td>
-        <td><p>IME accept.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Add">Add</td>
-        <td><p>The add key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Apps">Apps</td>
-        <td><p>Applications key (Natural keyboard).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Attn">Attn</td>
-        <td><p>The Attn key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Back">Back</td>
-        <td><p>The BACKSPACE key (VK_BACK).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserBack">BrowserBack</td>
-        <td><p>The Browser Back  key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserFavorites">BrowserFavorites</td>
-        <td><p>The Browser Favorites key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserForward">BrowserForward</td>
-        <td><p>The Browser Forward key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserHome">BrowserHome</td>
-        <td><p>The Browser Start and Home  key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserRefresh">BrowserRefresh</td>
-        <td><p>The Browser Refresh key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserSearch">BrowserSearch</td>
-        <td><p>The Browser Search key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserStop">BrowserStop</td>
-        <td><p>The Browser Stop key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Cancel">Cancel</td>
-        <td><p>Control-break processing (VK_CANCEL).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Capital">Capital</td>
-        <td><p>The CAPS LOCK key (VK_CAPITAL).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Clear">Clear</td>
-        <td><p>The CLEAR key (VK_CLEAR).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Command">Command</td>
-        <td><p>The Command key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Control">Control</td>
-        <td><p>The CTRL key (VK_CONTROL).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Convert">Convert</td>
-        <td><p>IME convert.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Crsel">Crsel</td>
-        <td><p>The CrSel key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_DbeAlphanumeric">DbeAlphanumeric</td>
-        <td><p>The DBE_ALPHANUMERIC key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Decimal">Decimal</td>
-        <td><p>The decimal key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Delete">Delete</td>
-        <td><p>The DEL key (VK_DELETE).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Divide">Divide</td>
-        <td><p>The divide key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Down">Down</td>
-        <td><p>The DOWN ARROW key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_End">End</td>
-        <td><p>The END key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Ereof">Ereof</td>
-        <td><p>The Erase EOF key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Escape">Escape</td>
-        <td><p>ESC key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Execute">Execute</td>
-        <td><p>The EXECUTE key</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Exsel">Exsel</td>
-        <td><p>The ExSel key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F1">F1</td>
-        <td><p>The 'F1' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F10">F10</td>
-        <td><p>The 'F10' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F11">F11</td>
-        <td><p>The 'F11' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F12">F12</td>
-        <td><p>The 'F1' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F13">F13</td>
-        <td><p>The 'F1' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F14">F14</td>
-        <td><p>The 'F14' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F15">F15</td>
-        <td><p>The 'F15' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F16">F16</td>
-        <td><p>The 'F16' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F17">F17</td>
-        <td><p>The 'F17' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F18">F18</td>
-        <td><p>The 'F18' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F19">F19</td>
-        <td><p>The 'F19' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F2">F2</td>
-        <td><p>The 'F2' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F20">F20</td>
-        <td><p>The 'F20' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F21">F21</td>
-        <td><p>The 'F21' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F22">F22</td>
-        <td><p>The 'F22' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F23">F23</td>
-        <td><p>The 'F23' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F24">F24</td>
-        <td><p>The 'F24' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F3">F3</td>
-        <td><p>The 'F3' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F4">F4</td>
-        <td><p>The 'F4' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F5">F5</td>
-        <td><p>The 'F5' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F6">F6</td>
-        <td><p>The 'F6' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F7">F7</td>
-        <td><p>The 'F7' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F8">F8</td>
-        <td><p>The 'F8' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F9">F9</td>
-        <td><p>The 'F9' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Final">Final</td>
-        <td><p>IME final mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Hanguel">Hanguel</td>
-        <td><p>IME Hanguel mode (maintained for compatibility; use <a class="xref" href="DotNetBrowser.Input.Keyboard.Events.KeyCode.html#DotNetBrowser_Input_Keyboard_Events_KeyCode_Hangul">Hangul</a>).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Hangul">Hangul</td>
-        <td><p>IME Hangul mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Hanja">Hanja</td>
-        <td><p>IME Hanja mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Help">Help</td>
-        <td><p>The HELP key (VK_HELP).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Home">Home</td>
-        <td><p>The HOME key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Insert">Insert</td>
-        <td><p>The INS key (VK_INSERT).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Junja">Junja</td>
-        <td><p>IME Junja mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Kana">Kana</td>
-        <td><p>IME Kana mode (VK_KANA).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Kanji">Kanji</td>
-        <td><p>IME Kanji mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LButton">LButton</td>
-        <td><p>The left mouse button (VK_LBUTTON).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LCmd">LCmd</td>
-        <td><p>The Command key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LControl">LControl</td>
-        <td><p>The Left CONTROL key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LMenu">LMenu</td>
-        <td><p>The Left MENU  key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LShift">LShift</td>
-        <td><p>The Left SHIFT key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LWin">LWin</td>
-        <td><p>Left Windows key (Natural keyboard).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LaunchApp1">LaunchApp1</td>
-        <td><p>The Start Application 1 key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LaunchApp2">LaunchApp2</td>
-        <td><p>The Start Application 2 key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LaunchMail">LaunchMail</td>
-        <td><p>The Start Mail key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LaunchMediaSelect">LaunchMediaSelect</td>
-        <td><p>The Select Media key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Left">Left</td>
-        <td><p>The LEFT ARROW key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MButton">MButton</td>
-        <td><p>The middle mouse button (three-button mouse)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MediaNextTrack">MediaNextTrack</td>
-        <td><p>The Next Track key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MediaPlayPause">MediaPlayPause</td>
-        <td><p>The Play/Pause Media key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MediaPrevTrack">MediaPrevTrack</td>
-        <td><p>The Previous Track key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MediaStop">MediaStop</td>
-        <td><p>The Stop Media key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Menu">Menu</td>
-        <td><p>The ALT key (VK_MENU).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_ModeChange">ModeChange</td>
-        <td><p>IME mode change request.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Multiply">Multiply</td>
-        <td><p>The multiply key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Next">Next</td>
-        <td><p>The PAGE DOWN key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_NoName">NoName</td>
-        <td><p>Reserved.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_NonConvert">NonConvert</td>
-        <td><p>IME nonconvert.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numlock">Numlock</td>
-        <td><p>The NUM LOCK key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad0">Numpad0</td>
-        <td><p>The numeric keypad '0' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad1">Numpad1</td>
-        <td><p>The numeric keypad '1' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad2">Numpad2</td>
-        <td><p>The numeric keypad '2' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad3">Numpad3</td>
-        <td><p>The numeric keypad '3' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad4">Numpad4</td>
-        <td><p>The numeric keypad '4' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad5">Numpad5</td>
-        <td><p>The numeric keypad '5' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad6">Numpad6</td>
-        <td><p>The numeric keypad '6' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad7">Numpad7</td>
-        <td><p>The numeric keypad '7' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad8">Numpad8</td>
-        <td><p>The numeric keypad '8' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad9">Numpad9</td>
-        <td><p>The numeric keypad '9' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem1">Oem1</td>
-        <td><p>Used for miscellaneous characters; it can vary by keyboard.
-For the US standard keyboard, the ';:' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem102">Oem102</td>
-        <td><p>Either the angle bracket key or the backslash key on the RT 102-key keyboard.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem2">Oem2</td>
-        <td><p>Used for miscellaneous characters; it can vary by keyboard.
-For the US standard keyboard, the '[{' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem3">Oem3</td>
-        <td><p>Used for miscellaneous characters; it can vary by keyboard.
-For the US standard keyboard, the '[{' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem4">Oem4</td>
-        <td><p>Used for miscellaneous characters; it can vary by keyboard.
-For the US standard keyboard, the '[{' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem5">Oem5</td>
-        <td><p>Used for miscellaneous characters; it can vary by keyboard.
-For the US standard keyboard, the '|' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem6">Oem6</td>
-        <td><p>Used for miscellaneous characters; it can vary by keyboard.
-For the US standard keyboard, the ']}' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem7">Oem7</td>
-        <td><p>Used for miscellaneous characters; it can vary by keyboard.
-For the US standard keyboard, the 'single-quote/double-quote' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem8">Oem8</td>
-        <td><p>Used for miscellaneous characters; it can vary by keyboard.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemClear">OemClear</td>
-        <td><p>The Clear key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemComma">OemComma</td>
-        <td><p>For any country/region, the ',' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemMinus">OemMinus</td>
-        <td><p>For any country/region, the '-' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemPeriod">OemPeriod</td>
-        <td><p>For any country/region, the '.' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemPlus">OemPlus</td>
-        <td><p>For any country/region, the '+' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Pa1">Pa1</td>
-        <td><p>The PA1 key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Packet">Packet</td>
-        <td><p>Used to pass Unicode characters as if they were keystrokes.
-The VK_PACKET key is the low word of a 32-bit Virtual Key value used for non-keyboard input methods.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Pause">Pause</td>
-        <td><p>The PAUSE key (VK_PAUSE).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Play">Play</td>
-        <td><p>The Play key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Print">Print</td>
-        <td><p>The PRINT key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Prior">Prior</td>
-        <td><p>The PAGE UP key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Processkey">Processkey</td>
-        <td><p>The IME PROCESS key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RButton">RButton</td>
-        <td><p>The right mouse button (VK_RBUTTON).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RCmd">RCmd</td>
-        <td><p>The Right Command key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RControl">RControl</td>
-        <td><p>The Right CONTROL key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RMenu">RMenu</td>
-        <td><p>The Right MENU key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RShift">RShift</td>
-        <td><p>The Right SHIFT key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RWin">RWin</td>
-        <td><p>Right Windows key (Natural keyboard).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Return">Return</td>
-        <td><p>The ENTER key (VK_RETURN).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Right">Right</td>
-        <td><p>The RIGHT ARROW key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Scroll">Scroll</td>
-        <td><p>The SCROLL LOCK key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Select">Select</td>
-        <td><p>The SELECT key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Separator">Separator</td>
-        <td><p>The separator key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Shift">Shift</td>
-        <td><p>The SHIFT key (VK_SHIFT).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Sleep">Sleep</td>
-        <td><p>Computer Sleep key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Snapshot">Snapshot</td>
-        <td><p>The PRINT SCREEN / SysRq key (VK_SNAPSHOT).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Space">Space</td>
-        <td><p>The spacebar (VK_SPACE).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Subtract">Subtract</td>
-        <td><p>The subtract key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Tab">Tab</td>
-        <td><p>The TAB key (VK_TAB).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Unknown">Unknown</td>
-        <td><p>Reserved value.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Up">Up</td>
-        <td><p>The UP ARROW key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk0">Vk0</td>
-        <td><p>The '0' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk1">Vk1</td>
-        <td><p>The '1' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk2">Vk2</td>
-        <td><p>The '2' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk3">Vk3</td>
-        <td><p>The '3' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk4">Vk4</td>
-        <td><p>The '4' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk5">Vk5</td>
-        <td><p>The '5' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk6">Vk6</td>
-        <td><p>The '6' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk7">Vk7</td>
-        <td><p>The '7' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk8">Vk8</td>
-        <td><p>The '8' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk9">Vk9</td>
-        <td><p>The '9' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkA">VkA</td>
-        <td><p>The 'A' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkB">VkB</td>
-        <td><p>The 'B' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkC">VkC</td>
-        <td><p>The 'C' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkD">VkD</td>
-        <td><p>The 'D' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkE">VkE</td>
-        <td><p>The 'E' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkF">VkF</td>
-        <td><p>The 'F' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkG">VkG</td>
-        <td><p>The 'G' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkH">VkH</td>
-        <td><p>The 'H' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkI">VkI</td>
-        <td><p>The 'I' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkJ">VkJ</td>
-        <td><p>The 'J' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkK">VkK</td>
-        <td><p>The 'K' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkL">VkL</td>
-        <td><p>The 'L' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkM">VkM</td>
-        <td><p>The 'M' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkN">VkN</td>
-        <td><p>The 'N' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkO">VkO</td>
-        <td><p>The 'O' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkP">VkP</td>
-        <td><p>The 'P' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkQ">VkQ</td>
-        <td><p>The 'Q' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkR">VkR</td>
-        <td><p>The 'R' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkS">VkS</td>
-        <td><p>The 'S' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkT">VkT</td>
-        <td><p>The 'T' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkU">VkU</td>
-        <td><p>The 'U' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkV">VkV</td>
-        <td><p>The 'V' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkW">VkW</td>
-        <td><p>The 'W' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkX">VkX</td>
-        <td><p>The 'X' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkY">VkY</td>
-        <td><p>The 'Y' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkZ">VkZ</td>
-        <td><p>The 'Z' key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VolumeDown">VolumeDown</td>
-        <td><p>The Volume Down key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VolumeMute">VolumeMute</td>
-        <td><p>The Volume Mute key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VolumeUp">VolumeUp</td>
-        <td><p>The Volume Up key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_XButton1">XButton1</td>
-        <td><p>The X1 mouse button (VK_XBUTTON1).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_XButton2">XButton2</td>
-        <td><p>The X2 mouse button(VK_XBUTTON2).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Zoom">Zoom</td>
-        <td><p>The Zoom key.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DotNetBrowser_Input_Keyboard_Events_KeyCode_seealso">See Also</h5>
-  <div class="seealso">
-      <div><span><a href="https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes">https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes</a></span></div>
-  </div>
-</article>
-          </div>
-
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="DotNetBrowser.Input.Keyboard.Events.KeyCode">
+
+
+
+
+  <h1 id="DotNetBrowser_Input_Keyboard_Events_KeyCode" data-uid="DotNetBrowser.Input.Keyboard.Events.KeyCode" class="text-break">
+Enum KeyCode  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser/Input/Keyboard/Events/KeyCode.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Input.html">Input</a>.<a class="xref" href="DotNetBrowser.Input.Keyboard.html">Keyboard</a>.<a class="xref" href="DotNetBrowser.Input.Keyboard.Events.html">Events</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DotNetBrowser.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The virtual key codes.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum KeyCode</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Accept"><code>Accept = 30</code></dt>
+    <dd><p>IME accept.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Add"><code>Add = 107</code></dt>
+    <dd><p>The add key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Apps"><code>Apps = 93</code></dt>
+    <dd><p>Applications key (Natural keyboard).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Attn"><code>Attn = 246</code></dt>
+    <dd><p>The Attn key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Back"><code>Back = 8</code></dt>
+    <dd><p>The BACKSPACE key (VK_BACK).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserBack"><code>BrowserBack = 166</code></dt>
+    <dd><p>The Browser Back  key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserFavorites"><code>BrowserFavorites = 171</code></dt>
+    <dd><p>The Browser Favorites key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserForward"><code>BrowserForward = 167</code></dt>
+    <dd><p>The Browser Forward key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserHome"><code>BrowserHome = 172</code></dt>
+    <dd><p>The Browser Start and Home  key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserRefresh"><code>BrowserRefresh = 168</code></dt>
+    <dd><p>The Browser Refresh key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserSearch"><code>BrowserSearch = 170</code></dt>
+    <dd><p>The Browser Search key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_BrowserStop"><code>BrowserStop = 169</code></dt>
+    <dd><p>The Browser Stop key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Cancel"><code>Cancel = 3</code></dt>
+    <dd><p>Control-break processing (VK_CANCEL).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Capital"><code>Capital = 20</code></dt>
+    <dd><p>The CAPS LOCK key (VK_CAPITAL).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Clear"><code>Clear = 12</code></dt>
+    <dd><p>The CLEAR key (VK_CLEAR).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Command"><code>Command = 157</code></dt>
+    <dd><p>The Command key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Control"><code>Control = 17</code></dt>
+    <dd><p>The CTRL key (VK_CONTROL).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Convert"><code>Convert = 28</code></dt>
+    <dd><p>IME convert.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Crsel"><code>Crsel = 247</code></dt>
+    <dd><p>The CrSel key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_DbeAlphanumeric"><code>DbeAlphanumeric = 240</code></dt>
+    <dd><p>The DBE_ALPHANUMERIC key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Decimal"><code>Decimal = 110</code></dt>
+    <dd><p>The decimal key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Delete"><code>Delete = 46</code></dt>
+    <dd><p>The DEL key (VK_DELETE).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Divide"><code>Divide = 111</code></dt>
+    <dd><p>The divide key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Down"><code>Down = 40</code></dt>
+    <dd><p>The DOWN ARROW key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_End"><code>End = 35</code></dt>
+    <dd><p>The END key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Ereof"><code>Ereof = 249</code></dt>
+    <dd><p>The Erase EOF key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Escape"><code>Escape = 27</code></dt>
+    <dd><p>ESC key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Execute"><code>Execute = 43</code></dt>
+    <dd><p>The EXECUTE key</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Exsel"><code>Exsel = 248</code></dt>
+    <dd><p>The ExSel key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F1"><code>F1 = 112</code></dt>
+    <dd><p>The 'F1' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F10"><code>F10 = 121</code></dt>
+    <dd><p>The 'F10' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F11"><code>F11 = 122</code></dt>
+    <dd><p>The 'F11' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F12"><code>F12 = 123</code></dt>
+    <dd><p>The 'F1' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F13"><code>F13 = 124</code></dt>
+    <dd><p>The 'F1' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F14"><code>F14 = 125</code></dt>
+    <dd><p>The 'F14' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F15"><code>F15 = 126</code></dt>
+    <dd><p>The 'F15' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F16"><code>F16 = 127</code></dt>
+    <dd><p>The 'F16' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F17"><code>F17 = 128</code></dt>
+    <dd><p>The 'F17' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F18"><code>F18 = 129</code></dt>
+    <dd><p>The 'F18' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F19"><code>F19 = 130</code></dt>
+    <dd><p>The 'F19' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F2"><code>F2 = 113</code></dt>
+    <dd><p>The 'F2' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F20"><code>F20 = 131</code></dt>
+    <dd><p>The 'F20' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F21"><code>F21 = 132</code></dt>
+    <dd><p>The 'F21' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F22"><code>F22 = 133</code></dt>
+    <dd><p>The 'F22' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F23"><code>F23 = 134</code></dt>
+    <dd><p>The 'F23' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F24"><code>F24 = 135</code></dt>
+    <dd><p>The 'F24' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F3"><code>F3 = 114</code></dt>
+    <dd><p>The 'F3' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F4"><code>F4 = 115</code></dt>
+    <dd><p>The 'F4' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F5"><code>F5 = 116</code></dt>
+    <dd><p>The 'F5' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F6"><code>F6 = 117</code></dt>
+    <dd><p>The 'F6' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F7"><code>F7 = 118</code></dt>
+    <dd><p>The 'F7' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F8"><code>F8 = 119</code></dt>
+    <dd><p>The 'F8' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_F9"><code>F9 = 120</code></dt>
+    <dd><p>The 'F9' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Final"><code>Final = 24</code></dt>
+    <dd><p>IME final mode.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Hanguel"><code>Hanguel = 21</code></dt>
+    <dd><p>IME Hanguel mode (maintained for compatibility; use <a class="xref" href="DotNetBrowser.Input.Keyboard.Events.KeyCode.html#DotNetBrowser_Input_Keyboard_Events_KeyCode_Hangul">Hangul</a>).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Hangul"><code>Hangul = 21</code></dt>
+    <dd><p>IME Hangul mode.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Hanja"><code>Hanja = 25</code></dt>
+    <dd><p>IME Hanja mode.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Help"><code>Help = 47</code></dt>
+    <dd><p>The HELP key (VK_HELP).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Home"><code>Home = 36</code></dt>
+    <dd><p>The HOME key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Insert"><code>Insert = 45</code></dt>
+    <dd><p>The INS key (VK_INSERT).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Junja"><code>Junja = 23</code></dt>
+    <dd><p>IME Junja mode.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Kana"><code>Kana = 21</code></dt>
+    <dd><p>IME Kana mode (VK_KANA).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Kanji"><code>Kanji = 25</code></dt>
+    <dd><p>IME Kanji mode.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LButton"><code>LButton = 1</code></dt>
+    <dd><p>The left mouse button (VK_LBUTTON).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LCmd"><code>LCmd = 91</code></dt>
+    <dd><p>The Command key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LControl"><code>LControl = 162</code></dt>
+    <dd><p>The Left CONTROL key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LMenu"><code>LMenu = 164</code></dt>
+    <dd><p>The Left MENU  key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LShift"><code>LShift = 160</code></dt>
+    <dd><p>The Left SHIFT key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LWin"><code>LWin = 91</code></dt>
+    <dd><p>Left Windows key (Natural keyboard).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LaunchApp1"><code>LaunchApp1 = 182</code></dt>
+    <dd><p>The Start Application 1 key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LaunchApp2"><code>LaunchApp2 = 183</code></dt>
+    <dd><p>The Start Application 2 key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LaunchMail"><code>LaunchMail = 180</code></dt>
+    <dd><p>The Start Mail key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_LaunchMediaSelect"><code>LaunchMediaSelect = 181</code></dt>
+    <dd><p>The Select Media key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Left"><code>Left = 37</code></dt>
+    <dd><p>The LEFT ARROW key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MButton"><code>MButton = 4</code></dt>
+    <dd><p>The middle mouse button (three-button mouse)</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MediaNextTrack"><code>MediaNextTrack = 176</code></dt>
+    <dd><p>The Next Track key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MediaPlayPause"><code>MediaPlayPause = 179</code></dt>
+    <dd><p>The Play/Pause Media key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MediaPrevTrack"><code>MediaPrevTrack = 177</code></dt>
+    <dd><p>The Previous Track key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_MediaStop"><code>MediaStop = 178</code></dt>
+    <dd><p>The Stop Media key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Menu"><code>Menu = 18</code></dt>
+    <dd><p>The ALT key (VK_MENU).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_ModeChange"><code>ModeChange = 31</code></dt>
+    <dd><p>IME mode change request.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Multiply"><code>Multiply = 106</code></dt>
+    <dd><p>The multiply key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Next"><code>Next = 34</code></dt>
+    <dd><p>The PAGE DOWN key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_NoName"><code>NoName = 252</code></dt>
+    <dd><p>Reserved.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_NonConvert"><code>NonConvert = 29</code></dt>
+    <dd><p>IME nonconvert.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numlock"><code>Numlock = 144</code></dt>
+    <dd><p>The NUM LOCK key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad0"><code>Numpad0 = 96</code></dt>
+    <dd><p>The numeric keypad '0' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad1"><code>Numpad1 = 97</code></dt>
+    <dd><p>The numeric keypad '1' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad2"><code>Numpad2 = 98</code></dt>
+    <dd><p>The numeric keypad '2' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad3"><code>Numpad3 = 99</code></dt>
+    <dd><p>The numeric keypad '3' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad4"><code>Numpad4 = 100</code></dt>
+    <dd><p>The numeric keypad '4' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad5"><code>Numpad5 = 101</code></dt>
+    <dd><p>The numeric keypad '5' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad6"><code>Numpad6 = 102</code></dt>
+    <dd><p>The numeric keypad '6' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad7"><code>Numpad7 = 103</code></dt>
+    <dd><p>The numeric keypad '7' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad8"><code>Numpad8 = 104</code></dt>
+    <dd><p>The numeric keypad '8' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Numpad9"><code>Numpad9 = 105</code></dt>
+    <dd><p>The numeric keypad '9' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem1"><code>Oem1 = 186</code></dt>
+    <dd><p>Used for miscellaneous characters; it can vary by keyboard.
+For the US standard keyboard, the ';:' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem102"><code>Oem102 = 226</code></dt>
+    <dd><p>Either the angle bracket key or the backslash key on the RT 102-key keyboard.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem2"><code>Oem2 = 191</code></dt>
+    <dd><p>Used for miscellaneous characters; it can vary by keyboard.
+For the US standard keyboard, the '[{' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem3"><code>Oem3 = 192</code></dt>
+    <dd><p>Used for miscellaneous characters; it can vary by keyboard.
+For the US standard keyboard, the '[{' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem4"><code>Oem4 = 219</code></dt>
+    <dd><p>Used for miscellaneous characters; it can vary by keyboard.
+For the US standard keyboard, the '[{' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem5"><code>Oem5 = 220</code></dt>
+    <dd><p>Used for miscellaneous characters; it can vary by keyboard.
+For the US standard keyboard, the '|' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem6"><code>Oem6 = 221</code></dt>
+    <dd><p>Used for miscellaneous characters; it can vary by keyboard.
+For the US standard keyboard, the ']}' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem7"><code>Oem7 = 222</code></dt>
+    <dd><p>Used for miscellaneous characters; it can vary by keyboard.
+For the US standard keyboard, the 'single-quote/double-quote' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Oem8"><code>Oem8 = 223</code></dt>
+    <dd><p>Used for miscellaneous characters; it can vary by keyboard.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemClear"><code>OemClear = 254</code></dt>
+    <dd><p>The Clear key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemComma"><code>OemComma = 188</code></dt>
+    <dd><p>For any country/region, the ',' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemMinus"><code>OemMinus = 189</code></dt>
+    <dd><p>For any country/region, the '-' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemPeriod"><code>OemPeriod = 190</code></dt>
+    <dd><p>For any country/region, the '.' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_OemPlus"><code>OemPlus = 187</code></dt>
+    <dd><p>For any country/region, the '+' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Pa1"><code>Pa1 = 253</code></dt>
+    <dd><p>The PA1 key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Packet"><code>Packet = 231</code></dt>
+    <dd><p>Used to pass Unicode characters as if they were keystrokes.
+The VK_PACKET key is the low word of a 32-bit Virtual Key value used for non-keyboard input methods.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Pause"><code>Pause = 19</code></dt>
+    <dd><p>The PAUSE key (VK_PAUSE).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Play"><code>Play = 250</code></dt>
+    <dd><p>The Play key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Print"><code>Print = 42</code></dt>
+    <dd><p>The PRINT key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Prior"><code>Prior = 33</code></dt>
+    <dd><p>The PAGE UP key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Processkey"><code>Processkey = 229</code></dt>
+    <dd><p>The IME PROCESS key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RButton"><code>RButton = 2</code></dt>
+    <dd><p>The right mouse button (VK_RBUTTON).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RCmd"><code>RCmd = 93</code></dt>
+    <dd><p>The Right Command key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RControl"><code>RControl = 163</code></dt>
+    <dd><p>The Right CONTROL key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RMenu"><code>RMenu = 165</code></dt>
+    <dd><p>The Right MENU key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RShift"><code>RShift = 161</code></dt>
+    <dd><p>The Right SHIFT key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_RWin"><code>RWin = 92</code></dt>
+    <dd><p>Right Windows key (Natural keyboard).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Return"><code>Return = 13</code></dt>
+    <dd><p>The ENTER key (VK_RETURN).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Right"><code>Right = 39</code></dt>
+    <dd><p>The RIGHT ARROW key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Scroll"><code>Scroll = 145</code></dt>
+    <dd><p>The SCROLL LOCK key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Select"><code>Select = 41</code></dt>
+    <dd><p>The SELECT key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Separator"><code>Separator = 108</code></dt>
+    <dd><p>The separator key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Shift"><code>Shift = 16</code></dt>
+    <dd><p>The SHIFT key (VK_SHIFT).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Sleep"><code>Sleep = 95</code></dt>
+    <dd><p>Computer Sleep key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Snapshot"><code>Snapshot = 44</code></dt>
+    <dd><p>The PRINT SCREEN / SysRq key (VK_SNAPSHOT).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Space"><code>Space = 32</code></dt>
+    <dd><p>The spacebar (VK_SPACE).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Subtract"><code>Subtract = 109</code></dt>
+    <dd><p>The subtract key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Tab"><code>Tab = 9</code></dt>
+    <dd><p>The TAB key (VK_TAB).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Unknown"><code>Unknown = 0</code></dt>
+    <dd><p>Reserved value.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Up"><code>Up = 38</code></dt>
+    <dd><p>The UP ARROW key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk0"><code>Vk0 = 48</code></dt>
+    <dd><p>The '0' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk1"><code>Vk1 = 49</code></dt>
+    <dd><p>The '1' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk2"><code>Vk2 = 50</code></dt>
+    <dd><p>The '2' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk3"><code>Vk3 = 51</code></dt>
+    <dd><p>The '3' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk4"><code>Vk4 = 52</code></dt>
+    <dd><p>The '4' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk5"><code>Vk5 = 53</code></dt>
+    <dd><p>The '5' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk6"><code>Vk6 = 54</code></dt>
+    <dd><p>The '6' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk7"><code>Vk7 = 55</code></dt>
+    <dd><p>The '7' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk8"><code>Vk8 = 56</code></dt>
+    <dd><p>The '8' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Vk9"><code>Vk9 = 57</code></dt>
+    <dd><p>The '9' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkA"><code>VkA = 65</code></dt>
+    <dd><p>The 'A' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkB"><code>VkB = 66</code></dt>
+    <dd><p>The 'B' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkC"><code>VkC = 67</code></dt>
+    <dd><p>The 'C' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkD"><code>VkD = 68</code></dt>
+    <dd><p>The 'D' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkE"><code>VkE = 69</code></dt>
+    <dd><p>The 'E' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkF"><code>VkF = 70</code></dt>
+    <dd><p>The 'F' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkG"><code>VkG = 71</code></dt>
+    <dd><p>The 'G' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkH"><code>VkH = 72</code></dt>
+    <dd><p>The 'H' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkI"><code>VkI = 73</code></dt>
+    <dd><p>The 'I' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkJ"><code>VkJ = 74</code></dt>
+    <dd><p>The 'J' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkK"><code>VkK = 75</code></dt>
+    <dd><p>The 'K' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkL"><code>VkL = 76</code></dt>
+    <dd><p>The 'L' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkM"><code>VkM = 77</code></dt>
+    <dd><p>The 'M' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkN"><code>VkN = 78</code></dt>
+    <dd><p>The 'N' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkO"><code>VkO = 79</code></dt>
+    <dd><p>The 'O' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkP"><code>VkP = 80</code></dt>
+    <dd><p>The 'P' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkQ"><code>VkQ = 81</code></dt>
+    <dd><p>The 'Q' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkR"><code>VkR = 82</code></dt>
+    <dd><p>The 'R' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkS"><code>VkS = 83</code></dt>
+    <dd><p>The 'S' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkT"><code>VkT = 84</code></dt>
+    <dd><p>The 'T' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkU"><code>VkU = 85</code></dt>
+    <dd><p>The 'U' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkV"><code>VkV = 86</code></dt>
+    <dd><p>The 'V' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkW"><code>VkW = 87</code></dt>
+    <dd><p>The 'W' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkX"><code>VkX = 88</code></dt>
+    <dd><p>The 'X' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkY"><code>VkY = 89</code></dt>
+    <dd><p>The 'Y' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VkZ"><code>VkZ = 90</code></dt>
+    <dd><p>The 'Z' key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VolumeDown"><code>VolumeDown = 174</code></dt>
+    <dd><p>The Volume Down key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VolumeMute"><code>VolumeMute = 173</code></dt>
+    <dd><p>The Volume Mute key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_VolumeUp"><code>VolumeUp = 175</code></dt>
+    <dd><p>The Volume Up key.</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_XButton1"><code>XButton1 = 5</code></dt>
+    <dd><p>The X1 mouse button (VK_XBUTTON1).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_XButton2"><code>XButton2 = 6</code></dt>
+    <dd><p>The X2 mouse button(VK_XBUTTON2).</p>
+</dd>
+    <dt id="DotNetBrowser_Input_Keyboard_Events_KeyCode_Zoom"><code>Zoom = 251</code></dt>
+    <dd><p>The Zoom key.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><span><a href="https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes">https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes</a></span></div>
+  </div>
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
