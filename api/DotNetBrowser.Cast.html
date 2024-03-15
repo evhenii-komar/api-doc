@@ -1,222 +1,183 @@
 ﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Namespace DotNetBrowser.Cast | API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Namespace DotNetBrowser.Cast | API ">
-      
-      
-      <link rel="icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
+    
+    
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <script type="module" src="./../public/docfx.min.js"></script>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
-
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-            DotNetBrowser
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
-
-        <article data-uid="DotNetBrowser.Cast">
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Cast">
 
   <h1 id="DotNetBrowser_Cast" data-uid="DotNetBrowser.Cast" class="text-break">Namespace DotNetBrowser.Cast</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-
     <h3 id="classes">
 Classes
 </h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.CastSessionStartFailedException.html">CastSessionStartFailedException</a></dt>
-      <dd><p>Thrown when the cast session start has been failed.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.MediaRoutingException.html">MediaRoutingException</a></dt>
-      <dd><p>Thrown when the media routing is disabled.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.PresentationRequest.html">PresentationRequest</a></dt>
-      <dd><p>The JavaScript <pre><code class="lang-csharp">PresentationRequest</code></pre>.
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.ReceiverDisconnectedException.html">ReceiverDisconnectedException</a></dt>
-      <dd><p>Thrown when the receiver has been disconnected.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.ReceiverNotDiscoveredException.html">ReceiverNotDiscoveredException</a></dt>
-      <dd><p>Thrown when the receiver has not been discovered within the specified timeout.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.Screen.html">Screen</a></dt>
-      <dd><p>The screen whose content can be cast.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.ScreenCastOptions.html">ScreenCastOptions</a></dt>
-      <dd><p>Configuration options for screen casting.</p>
-</dd>
-    </dl>
+      <h4><a class="xref" href="DotNetBrowser.Cast.CastSessionStartFailedException.html">CastSessionStartFailedException</a></h4>
+      <section><p>Thrown when the cast session start has been failed.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.MediaRoutingException.html">MediaRoutingException</a></h4>
+      <section><p>Thrown when the media routing is disabled.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.PresentationRequest.html">PresentationRequest</a></h4>
+      <section><p>The JavaScript <pre><code class="lang-csharp">PresentationRequest</code></pre>.
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.ReceiverDisconnectedException.html">ReceiverDisconnectedException</a></h4>
+      <section><p>Thrown when the receiver has been disconnected.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.ReceiverNotDiscoveredException.html">ReceiverNotDiscoveredException</a></h4>
+      <section><p>Thrown when the receiver has not been discovered within the specified timeout.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.Screen.html">Screen</a></h4>
+      <section><p>The screen whose content can be cast.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.ScreenCastOptions.html">ScreenCastOptions</a></h4>
+      <section><p>Configuration options for screen casting.</p>
+</section>
     <h3 id="interfaces">
 Interfaces
 </h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.ICast.html">ICast</a></dt>
-      <dd><p>A service that provides access for casting media on receivers.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.ICastSession.html">ICastSession</a></dt>
-      <dd><p>A session of casting media content to a media <a class="xref" href="DotNetBrowser.Cast.IMediaReceiver.html">IMediaReceiver</a> receiver.</p>
+      <h4><a class="xref" href="DotNetBrowser.Cast.ICast.html">ICast</a></h4>
+      <section><p>A service that provides access for casting media on receivers.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.ICastSession.html">ICastSession</a></h4>
+      <section><p>A session of casting media content to a media <a class="xref" href="DotNetBrowser.Cast.IMediaReceiver.html">IMediaReceiver</a> receiver.</p>
 <p>
     The session is <a class="xref" href="DotNetBrowser.Cast.ICastSessions.Discovered.html">Discovered</a> discovered when the user starts casting
     the browser/screen content or a presentation of media content via the DotNetBrowser API, or another
     application, i.e.Google Chrome. To indicate that the cast session has been started by another
     profile and, accordingly, a Chromium instance the <a class="xref" href="DotNetBrowser.Cast.ICastSession.IsLocal.html#DotNetBrowser_Cast_ICastSession_IsLocal">IsLocal</a> property is provided.
 </p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.ICastSessions.html">ICastSessions</a></dt>
-      <dd><p>A service that allows observing <a class="xref" href="DotNetBrowser.Cast.ICastSession.IsAlive.html#DotNetBrowser_Cast_ICastSession_IsAlive">IsAlive</a> cast
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.ICastSessions.html">ICastSessions</a></h4>
+      <section><p>A service that allows observing <a class="xref" href="DotNetBrowser.Cast.ICastSession.IsAlive.html#DotNetBrowser_Cast_ICastSession_IsAlive">IsAlive</a> cast
 <a class="xref" href="DotNetBrowser.Cast.ICastSession.html">ICastSession</a> sessions.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.IMediaCasting.html">IMediaCasting</a></dt>
-      <dd><p>A service that provides access to all the required media casting services.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.IMediaReceiver.html">IMediaReceiver</a></dt>
-      <dd><p>A media receiver to which media content can be cast.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.IMediaCasting.html">IMediaCasting</a></h4>
+      <section><p>A service that provides access to all the required media casting services.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.IMediaReceiver.html">IMediaReceiver</a></h4>
+      <section><p>A media receiver to which media content can be cast.</p>
 <p>
     Usually, a media receiver is a device that supports the ChromeCast technology,
     but in Chromium's logic it can be even a wired display (HDMI, DVI, or similar).
 </p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.IMediaReceivers.html">IMediaReceivers</a></dt>
-      <dd><p>The service that allows observing media <a class="xref" href="DotNetBrowser.Cast.IMediaReceiver.html">IMediaReceiver</a> receivers in the environment.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.IScreens.html">IScreens</a></dt>
-      <dd><p>The service that allows obtaining connected screens whose content can be cast.</p>
-</dd>
-    </dl>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.IMediaReceivers.html">IMediaReceivers</a></h4>
+      <section><p>The service that allows observing media <a class="xref" href="DotNetBrowser.Cast.IMediaReceiver.html">IMediaReceiver</a> receivers in the environment.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.IScreens.html">IScreens</a></h4>
+      <section><p>The service that allows obtaining connected screens whose content can be cast.</p>
+</section>
     <h3 id="enums">
 Enums
 </h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.AudioMode.html">AudioMode</a></dt>
-      <dd><p>The audio casting mode for the content cast session.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.CastMode.html">CastMode</a></dt>
-      <dd><p>The types of content that can be cast to a media receiver.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.MediaReceiverState.html">MediaReceiverState</a></dt>
-      <dd><p>The state of the media receiver.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="DotNetBrowser.Cast.ResultCode.html">ResultCode</a></dt>
-      <dd><p>Contains the codes indicating the result of creating a cast session.</p>
-</dd>
-    </dl>
+      <h4><a class="xref" href="DotNetBrowser.Cast.AudioMode.html">AudioMode</a></h4>
+      <section><p>The audio casting mode for the content cast session.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.CastMode.html">CastMode</a></h4>
+      <section><p>The types of content that can be cast to a media receiver.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.MediaReceiverState.html">MediaReceiverState</a></h4>
+      <section><p>The state of the media receiver.</p>
+</section>
+      <h4><a class="xref" href="DotNetBrowser.Cast.ResultCode.html">ResultCode</a></h4>
+      <section><p>Contains the codes indicating the result of creating a cast session.</p>
+</section>
 
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

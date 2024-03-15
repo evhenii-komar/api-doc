@@ -1,259 +1,305 @@
 ﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Enum DownloadInterruptionReason | API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Enum DownloadInterruptionReason | API ">
-      
-      <meta name="description" content="Possible download interruption reason.">
-      <link rel="icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_Downloads_Events_DownloadInterruptionReason.md&amp;value=---%0Auid%3A%20DotNetBrowser.Downloads.Events.DownloadInterruptionReason%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
+    
+    <meta name="description" content="Possible download interruption reason.">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <script type="module" src="./../public/docfx.min.js"></script>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
-
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-            DotNetBrowser
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Downloads.Events.DownloadInterruptionReason">
 
-        <article data-uid="DotNetBrowser.Downloads.Events.DownloadInterruptionReason">
 
 
 
-
-  <h1 id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason" data-uid="DotNetBrowser.Downloads.Events.DownloadInterruptionReason" class="text-break">
-Enum DownloadInterruptionReason  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser/Downloads/Events/DownloadInterruptionReason.cs/#L14"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Downloads.html">Downloads</a>.<a class="xref" href="DotNetBrowser.Downloads.Events.html">Events</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>DotNetBrowser.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Possible download interruption reason.</p>
+  <h1 id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason" data-uid="DotNetBrowser.Downloads.Events.DownloadInterruptionReason" class="text-break">Enum DownloadInterruptionReason</h1>
+  <div class="markdown level0 summary"><p>Possible download interruption reason.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Downloads.html">Downloads</a>.<a class="xref" href="DotNetBrowser.Downloads.Events.html">Events</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
+  <h5 id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum DownloadInterruptionReason</code></pre>
   </div>
-
-
-
-
-
-
-
-
-
-  <h2 id="fields">Fields
-</h2>
-  <dl class="parameters">
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_Crash"><code>Crash = 50</code></dt>
-    <dd><p>The browser crashed.
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    </thead></thead><tbody>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_Crash">Crash</td>
+        <td><p>The browser crashed.
 Internal use only:  resume pending downloads if possible.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileAccessDenied"><code>FileAccessDenied = 3</code></dt>
-    <dd><p>The file cannot be accessed due to security restrictions.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileAccessDenied">FileAccessDenied</td>
+        <td><p>The file cannot be accessed due to security restrictions.
 &quot;Access Denied&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileBlocked"><code>FileBlocked = 11</code></dt>
-    <dd><p>The file was blocked due to local policy.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileBlocked">FileBlocked</td>
+        <td><p>The file was blocked due to local policy.
 &quot;Blocked&quot;</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileFailed"><code>FileFailed = 2</code></dt>
-    <dd><p>Generic file operation failure.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileFailed">FileFailed</td>
+        <td><p>Generic file operation failure.
 &quot;File Error&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileHashMismatch"><code>FileHashMismatch = 14</code></dt>
-    <dd><p>The partial file didn't match the expected hash.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileNameTooLong"><code>FileNameTooLong = 5</code></dt>
-    <dd><p>The directory or file name is too long.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileHashMismatch">FileHashMismatch</td>
+        <td><p>The partial file didn't match the expected hash.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileNameTooLong">FileNameTooLong</td>
+        <td><p>The directory or file name is too long.
 &quot;Path Too Long&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileNoSpace"><code>FileNoSpace = 4</code></dt>
-    <dd><p>There is not enough room on the drive.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileNoSpace">FileNoSpace</td>
+        <td><p>There is not enough room on the drive.
 &quot;Disk Full&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileSameAsSource"><code>FileSameAsSource = 15</code></dt>
-    <dd><p>The source and the target of the download were the same</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileSecurityCheckFailed"><code>FileSecurityCheckFailed = 12</code></dt>
-    <dd><p>An attempt to check the safety of the download failed due to unexpected
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileSameAsSource">FileSameAsSource</td>
+        <td><p>The source and the target of the download were the same</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileSecurityCheckFailed">FileSecurityCheckFailed</td>
+        <td><p>An attempt to check the safety of the download failed due to unexpected
 reasons. See http:///crbug.com/153212.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileTooLarge"><code>FileTooLarge = 6</code></dt>
-    <dd><p>The file is too large for the file system to handle.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileTooLarge">FileTooLarge</td>
+        <td><p>The file is too large for the file system to handle.
 &quot;File Too Large&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileTooShort"><code>FileTooShort = 13</code></dt>
-    <dd><p>An attempt was made to seek past the end of a file in opening
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileTooShort">FileTooShort</td>
+        <td><p>An attempt was made to seek past the end of a file in opening
 a file (as part of resuming a previously interrupted download).</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileTransientError"><code>FileTransientError = 10</code></dt>
-    <dd><p>The file was in use.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileTransientError">FileTransientError</td>
+        <td><p>The file was in use.
 Too many files are opened at once.
 We have run out of memory.
 &quot;Temporary Problem&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileVirusInfected"><code>FileVirusInfected = 7</code></dt>
-    <dd><p>The file contains a virus.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_FileVirusInfected">FileVirusInfected</td>
+        <td><p>The file contains a virus.
 &quot;Virus&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkDisconnected"><code>NetworkDisconnected = 22</code></dt>
-    <dd><p>The network connection has been lost.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkDisconnected">NetworkDisconnected</td>
+        <td><p>The network connection has been lost.
 &quot;Connection Lost&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkFailed"><code>NetworkFailed = 20</code></dt>
-    <dd><p>Generic network failure.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkFailed">NetworkFailed</td>
+        <td><p>Generic network failure.
 &quot;Network Error&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkInvalidRequest"><code>NetworkInvalidRequest = 24</code></dt>
-    <dd><p>The network request was invalid. This may be due to the original URL or a
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkInvalidRequest">NetworkInvalidRequest</td>
+        <td><p>The network request was invalid. This may be due to the original URL or a
 redirected URL:</p>
 <ul>
 <li>Having an unsupported scheme.</li>
 <li>Being an invalid URL.</li>
 <li>Being disallowed by policy.</li>
 </ul>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkServerDown"><code>NetworkServerDown = 23</code></dt>
-    <dd><p>The server has gone down.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkServerDown">NetworkServerDown</td>
+        <td><p>The server has gone down.
 &quot;Server Down&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkTimeout"><code>NetworkTimeout = 21</code></dt>
-    <dd><p>The network operation timed out.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_NetworkTimeout">NetworkTimeout</td>
+        <td><p>The network operation timed out.
 &quot;Operation Timed Out&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerBadContent"><code>ServerBadContent = 33</code></dt>
-    <dd><p>The server does not have the requested data.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerBadContent">ServerBadContent</td>
+        <td><p>The server does not have the requested data.
 &quot;Unable to get file&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerCertProblem"><code>ServerCertProblem = 35</code></dt>
-    <dd><p>Server certificate problem.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerContentLengthMismatch"><code>ServerContentLengthMismatch = 38</code></dt>
-    <dd><p>The server sent fewer bytes than the content-length header. It may indicate
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerCertProblem">ServerCertProblem</td>
+        <td><p>Server certificate problem.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerContentLengthMismatch">ServerContentLengthMismatch</td>
+        <td><p>The server sent fewer bytes than the content-length header. It may indicate
 that the connection was closed prematurely, or the Content-Length header was
 invalid. The download is only interrupted if strong validators are present.
 Otherwise, it is treated as finished.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerFailed"><code>ServerFailed = 30</code></dt>
-    <dd><p>The server indicates that the operation has failed (generic).
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerFailed">ServerFailed</td>
+        <td><p>The server indicates that the operation has failed (generic).
 &quot;Server Error&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerForbidden"><code>ServerForbidden = 36</code></dt>
-    <dd><p>Server access forbidden.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerNoRange"><code>ServerNoRange = 31</code></dt>
-    <dd><p>The server does not support range requests.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerForbidden">ServerForbidden</td>
+        <td><p>Server access forbidden.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerNoRange">ServerNoRange</td>
+        <td><p>The server does not support range requests.
 Internal use only:  must restart from the beginning.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerUnauthorized"><code>ServerUnauthorized = 34</code></dt>
-    <dd><p>Server didn't authorize access to resource.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerUnreachable"><code>ServerUnreachable = 37</code></dt>
-    <dd><p>Unexpected server response. This might indicate that the responding server
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerUnauthorized">ServerUnauthorized</td>
+        <td><p>Server didn't authorize access to resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_ServerUnreachable">ServerUnreachable</td>
+        <td><p>Unexpected server response. This might indicate that the responding server
 may not be the intended server.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_Unknown"><code>Unknown = 1</code></dt>
-    <dd><p>There is no interruption reason.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_UserCanceled"><code>UserCanceled = 40</code></dt>
-    <dd><p>The user canceled the download.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_Unknown">Unknown</td>
+        <td><p>There is no interruption reason.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_UserCanceled">UserCanceled</td>
+        <td><p>The user canceled the download.
 &quot;Canceled&quot;.</p>
-</dd>
-    <dt id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_UserShutdown"><code>UserShutdown = 41</code></dt>
-    <dd><p>The user shut down the browser.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Downloads_Events_DownloadInterruptionReason_UserShutdown">UserShutdown</td>
+        <td><p>The user shut down the browser.
 Internal use only:  resume pending downloads if possible.</p>
-</dd>
-  </dl>
-
-
-
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

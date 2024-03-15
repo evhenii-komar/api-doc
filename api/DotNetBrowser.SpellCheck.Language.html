@@ -1,123 +1,87 @@
 ﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class Language | API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class Language | API ">
-      
-      <meta name="description" content="The language for which Chromium can perform spell checking.">
-      <link rel="icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_SpellCheck_Language.md&amp;value=---%0Auid%3A%20DotNetBrowser.SpellCheck.Language%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
+    
+    <meta name="description" content="The language for which Chromium can perform spell checking.">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <script type="module" src="./../public/docfx.min.js"></script>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
-
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-            DotNetBrowser
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.SpellCheck.Language">
 
-        <article data-uid="DotNetBrowser.SpellCheck.Language">
 
 
-
-  <h1 id="DotNetBrowser_SpellCheck_Language" data-uid="DotNetBrowser.SpellCheck.Language" class="text-break">
-Class Language  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser/SpellCheck/Language.cs/#L20"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.SpellCheck.html">SpellCheck</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>DotNetBrowser.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>The language for which Chromium can perform spell checking.</p>
+  <h1 id="DotNetBrowser_SpellCheck_Language" data-uid="DotNetBrowser.SpellCheck.Language" class="text-break">Class Language</h1>
+  <div class="markdown level0 summary"><p>The language for which Chromium can perform spell checking.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class Language : TypedEnum&lt;string&gt;</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="DotNetBrowser.Util.TypedEnum-1.html">TypedEnum</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+    <div class="level2"><span class="xref">Language</span></div>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="DotNetBrowser.Util.TypedEnum-1.html">TypedEnum</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
-      <div><span class="xref">Language</span></div>
-    </dd>
-  </dl>
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -136,269 +100,401 @@ Class Language  <a class="header-action link-secondary" title="View source" href
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </dd></dl>
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Bulgarian.html">Bulgarian</a></dt>
-    <dd><p>Bulgarian language (&quot;bg&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Catalan.html">Catalan</a></dt>
-    <dd><p>Catalan language (&quot;ca&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Croatian.html">Croatian</a></dt>
-    <dd><p>Croatian language (&quot;hr&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Czech.html">Czech</a></dt>
-    <dd><p>Czech language (&quot;cs&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Danish.html">Danish</a></dt>
-    <dd><p>Danish language (&quot;da&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Default.html">Default</a></dt>
-    <dd><p>Default language (English).</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Dutch.html">Dutch</a></dt>
-    <dd><p>Dutch language (&quot;nl&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.EnglishUk.html">EnglishUk</a></dt>
-    <dd><p>English (UK) language (&quot;en-gb&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.EnglishUs.html">EnglishUs</a></dt>
-    <dd><p>English (US) language (&quot;en-us&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Estonian.html">Estonian</a></dt>
-    <dd><p>Estonian language (&quot;et&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.French.html">French</a></dt>
-    <dd><p>French (France) language (&quot;fr&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.German.html">German</a></dt>
-    <dd><p>German language (&quot;de&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Greek.html">Greek</a></dt>
-    <dd><p>Greek language (&quot;el&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Hebrew.html">Hebrew</a></dt>
-    <dd><p>Hebrew language (&quot;he&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Hindi.html">Hindi</a></dt>
-    <dd><p>Hindi language (&quot;hi&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Hungarian.html">Hungarian</a></dt>
-    <dd><p>Hungarian language (&quot;hu&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Indonesian.html">Indonesian</a></dt>
-    <dd><p>Indonesian language (&quot;id&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Italian.html">Italian</a></dt>
-    <dd><p>Italian language (&quot;it&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Korean.html">Korean</a></dt>
-    <dd><p>Korean language (&quot;ko&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Latvian.html">Latvian</a></dt>
-    <dd><p>Latvian language (&quot;lv&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Lithuanian.html">Lithuanian</a></dt>
-    <dd><p>Lithuanian language (&quot;lt&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Norwegian.html">Norwegian</a></dt>
-    <dd><p>Norwegian language (&quot;nb&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Persian.html">Persian</a></dt>
-    <dd><p>Persian language (&quot;fa&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Polish.html">Polish</a></dt>
-    <dd><p>Polish language (&quot;pl&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.PortugueseBrazil.html">PortugueseBrazil</a></dt>
-    <dd><p>Portuguese (Brazil) language (&quot;pt-br&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.PortuguesePortugal.html">PortuguesePortugal</a></dt>
-    <dd><p>Portuguese (Portugal) language (&quot;pt-pt&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Romanian.html">Romanian</a></dt>
-    <dd><p>Romanian language (&quot;ro&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Russian.html">Russian</a></dt>
-    <dd><p>Russian language (&quot;ru&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Serbian.html">Serbian</a></dt>
-    <dd><p>Serbian language (&quot;sr&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Slovak.html">Slovak</a></dt>
-    <dd><p>Slovak language (&quot;sk&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Slovenian.html">Slovenian</a></dt>
-    <dd><p>Slovenian language (&quot;sl&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.SpanishSpain.html">SpanishSpain</a></dt>
-    <dd><p>Spanish language (Spain) (&quot;es&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Swedish.html">Swedish</a></dt>
-    <dd><p>Swedish language (&quot;sv&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Turkish.html">Turkish</a></dt>
-    <dd><p>Turkish language (&quot;tr&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Ukrainian.html">Ukrainian</a></dt>
-    <dd><p>Ukrainian language (&quot;uk&quot;)</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Vietnamese.html">Vietnamese</a></dt>
-    <dd><p>Vietnamese language (&quot;vi&quot;)</p>
-</dd>
-  </dl>
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Code.html#DotNetBrowser_SpellCheck_Language_Code">Code</a></dt>
-    <dd><p>Gets the language code.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Region.html#DotNetBrowser_SpellCheck_Language_Region">Region</a></dt>
-    <dd><p>Gets the region code. Empty if the region is not specified.</p>
-</dd>
-  </dl>
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Create.html#DotNetBrowser_SpellCheck_Language_Create_System_String_">Create(string)</a></dt>
-    <dd><p>Initializes the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance with the given <a class="xref" href="DotNetBrowser.SpellCheck.Language.Code.html#DotNetBrowser_SpellCheck_Language_Code">Code</a>.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.Create.html#DotNetBrowser_SpellCheck_Language_Create_System_String_System_String_">Create(string, string)</a></dt>
-    <dd><p>Initializes the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance with the given <a class="xref" href="DotNetBrowser.SpellCheck.Language.Code.html#DotNetBrowser_SpellCheck_Language_Code">Code</a>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.SpellCheck.html">SpellCheck</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
+  <h5 id="DotNetBrowser_SpellCheck_Language_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Language : TypedEnum&lt;string&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Bulgarian" data-uid="DotNetBrowser.SpellCheck.Language.Bulgarian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Bulgarian.html">Bulgarian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Bulgarian language (&quot;bg&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Catalan" data-uid="DotNetBrowser.SpellCheck.Language.Catalan">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Catalan.html">Catalan</a>
+        </td>
+        <td class="markdown level1 summary"><p>Catalan language (&quot;ca&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Croatian" data-uid="DotNetBrowser.SpellCheck.Language.Croatian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Croatian.html">Croatian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Croatian language (&quot;hr&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Czech" data-uid="DotNetBrowser.SpellCheck.Language.Czech">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Czech.html">Czech</a>
+        </td>
+        <td class="markdown level1 summary"><p>Czech language (&quot;cs&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Danish" data-uid="DotNetBrowser.SpellCheck.Language.Danish">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Danish.html">Danish</a>
+        </td>
+        <td class="markdown level1 summary"><p>Danish language (&quot;da&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Default" data-uid="DotNetBrowser.SpellCheck.Language.Default">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Default.html">Default</a>
+        </td>
+        <td class="markdown level1 summary"><p>Default language (English).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Dutch" data-uid="DotNetBrowser.SpellCheck.Language.Dutch">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Dutch.html">Dutch</a>
+        </td>
+        <td class="markdown level1 summary"><p>Dutch language (&quot;nl&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_EnglishUk" data-uid="DotNetBrowser.SpellCheck.Language.EnglishUk">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.EnglishUk.html">EnglishUk</a>
+        </td>
+        <td class="markdown level1 summary"><p>English (UK) language (&quot;en-gb&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_EnglishUs" data-uid="DotNetBrowser.SpellCheck.Language.EnglishUs">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.EnglishUs.html">EnglishUs</a>
+        </td>
+        <td class="markdown level1 summary"><p>English (US) language (&quot;en-us&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Estonian" data-uid="DotNetBrowser.SpellCheck.Language.Estonian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Estonian.html">Estonian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Estonian language (&quot;et&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_French" data-uid="DotNetBrowser.SpellCheck.Language.French">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.French.html">French</a>
+        </td>
+        <td class="markdown level1 summary"><p>French (France) language (&quot;fr&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_German" data-uid="DotNetBrowser.SpellCheck.Language.German">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.German.html">German</a>
+        </td>
+        <td class="markdown level1 summary"><p>German language (&quot;de&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Greek" data-uid="DotNetBrowser.SpellCheck.Language.Greek">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Greek.html">Greek</a>
+        </td>
+        <td class="markdown level1 summary"><p>Greek language (&quot;el&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Hebrew" data-uid="DotNetBrowser.SpellCheck.Language.Hebrew">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Hebrew.html">Hebrew</a>
+        </td>
+        <td class="markdown level1 summary"><p>Hebrew language (&quot;he&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Hindi" data-uid="DotNetBrowser.SpellCheck.Language.Hindi">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Hindi.html">Hindi</a>
+        </td>
+        <td class="markdown level1 summary"><p>Hindi language (&quot;hi&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Hungarian" data-uid="DotNetBrowser.SpellCheck.Language.Hungarian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Hungarian.html">Hungarian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Hungarian language (&quot;hu&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Indonesian" data-uid="DotNetBrowser.SpellCheck.Language.Indonesian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Indonesian.html">Indonesian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Indonesian language (&quot;id&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Italian" data-uid="DotNetBrowser.SpellCheck.Language.Italian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Italian.html">Italian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Italian language (&quot;it&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Korean" data-uid="DotNetBrowser.SpellCheck.Language.Korean">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Korean.html">Korean</a>
+        </td>
+        <td class="markdown level1 summary"><p>Korean language (&quot;ko&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Latvian" data-uid="DotNetBrowser.SpellCheck.Language.Latvian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Latvian.html">Latvian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Latvian language (&quot;lv&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Lithuanian" data-uid="DotNetBrowser.SpellCheck.Language.Lithuanian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Lithuanian.html">Lithuanian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Lithuanian language (&quot;lt&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Norwegian" data-uid="DotNetBrowser.SpellCheck.Language.Norwegian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Norwegian.html">Norwegian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Norwegian language (&quot;nb&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Persian" data-uid="DotNetBrowser.SpellCheck.Language.Persian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Persian.html">Persian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Persian language (&quot;fa&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Polish" data-uid="DotNetBrowser.SpellCheck.Language.Polish">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Polish.html">Polish</a>
+        </td>
+        <td class="markdown level1 summary"><p>Polish language (&quot;pl&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_PortugueseBrazil" data-uid="DotNetBrowser.SpellCheck.Language.PortugueseBrazil">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.PortugueseBrazil.html">PortugueseBrazil</a>
+        </td>
+        <td class="markdown level1 summary"><p>Portuguese (Brazil) language (&quot;pt-br&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_PortuguesePortugal" data-uid="DotNetBrowser.SpellCheck.Language.PortuguesePortugal">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.PortuguesePortugal.html">PortuguesePortugal</a>
+        </td>
+        <td class="markdown level1 summary"><p>Portuguese (Portugal) language (&quot;pt-pt&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Romanian" data-uid="DotNetBrowser.SpellCheck.Language.Romanian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Romanian.html">Romanian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Romanian language (&quot;ro&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Russian" data-uid="DotNetBrowser.SpellCheck.Language.Russian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Russian.html">Russian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Russian language (&quot;ru&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Serbian" data-uid="DotNetBrowser.SpellCheck.Language.Serbian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Serbian.html">Serbian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Serbian language (&quot;sr&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Slovak" data-uid="DotNetBrowser.SpellCheck.Language.Slovak">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Slovak.html">Slovak</a>
+        </td>
+        <td class="markdown level1 summary"><p>Slovak language (&quot;sk&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Slovenian" data-uid="DotNetBrowser.SpellCheck.Language.Slovenian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Slovenian.html">Slovenian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Slovenian language (&quot;sl&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_SpanishSpain" data-uid="DotNetBrowser.SpellCheck.Language.SpanishSpain">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.SpanishSpain.html">SpanishSpain</a>
+        </td>
+        <td class="markdown level1 summary"><p>Spanish language (Spain) (&quot;es&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Swedish" data-uid="DotNetBrowser.SpellCheck.Language.Swedish">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Swedish.html">Swedish</a>
+        </td>
+        <td class="markdown level1 summary"><p>Swedish language (&quot;sv&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Turkish" data-uid="DotNetBrowser.SpellCheck.Language.Turkish">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Turkish.html">Turkish</a>
+        </td>
+        <td class="markdown level1 summary"><p>Turkish language (&quot;tr&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Ukrainian" data-uid="DotNetBrowser.SpellCheck.Language.Ukrainian">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Ukrainian.html">Ukrainian</a>
+        </td>
+        <td class="markdown level1 summary"><p>Ukrainian language (&quot;uk&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Vietnamese" data-uid="DotNetBrowser.SpellCheck.Language.Vietnamese">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Vietnamese.html">Vietnamese</a>
+        </td>
+        <td class="markdown level1 summary"><p>Vietnamese language (&quot;vi&quot;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Code" data-uid="DotNetBrowser.SpellCheck.Language.Code">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Code.html#DotNetBrowser_SpellCheck_Language_Code">Code</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the language code.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Region" data-uid="DotNetBrowser.SpellCheck.Language.Region">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Region.html#DotNetBrowser_SpellCheck_Language_Region">Region</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the region code. Empty if the region is not specified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Create_System_String_" data-uid="DotNetBrowser.SpellCheck.Language.Create(System.String)">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Create.html#DotNetBrowser_SpellCheck_Language_Create_System_String_">Create(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance with the given <a class="xref" href="DotNetBrowser.SpellCheck.Language.Code.html#DotNetBrowser_SpellCheck_Language_Code">Code</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_Create_System_String_System_String_" data-uid="DotNetBrowser.SpellCheck.Language.Create(System.String,System.String)">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.Create.html#DotNetBrowser_SpellCheck_Language_Create_System_String_System_String_">Create(string, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance with the given <a class="xref" href="DotNetBrowser.SpellCheck.Language.Code.html#DotNetBrowser_SpellCheck_Language_Code">Code</a>
 and <a class="xref" href="DotNetBrowser.SpellCheck.Language.Region.html#DotNetBrowser_SpellCheck_Language_Region">Region</a>.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.FromCulture.html#DotNetBrowser_SpellCheck_Language_FromCulture_System_Globalization_CultureInfo_">FromCulture(CultureInfo)</a></dt>
-    <dd><p>Initializes the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance from the specified culture information.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.FromString.html#DotNetBrowser_SpellCheck_Language_FromString_System_String_">FromString(string)</a></dt>
-    <dd><p>Returns the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance by its string representation.</p>
-</dd>
-  </dl>
-
-  <h2 class="section" id="operators">Operators
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.op_Explicit.html#DotNetBrowser_SpellCheck_Language_op_Explicit_System_Globalization_CultureInfo__DotNetBrowser_SpellCheck_Language">explicit operator Language(CultureInfo)</a></dt>
-    <dd><p>Returns the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance by the specified culture information.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.SpellCheck.Language.op_Explicit.html#DotNetBrowser_SpellCheck_Language_op_Explicit_System_String__DotNetBrowser_SpellCheck_Language">explicit operator Language(string)</a></dt>
-    <dd><p>Returns the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance by its string representation.</p>
-</dd>
-  </dl>
-
-
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_FromCulture_System_Globalization_CultureInfo_" data-uid="DotNetBrowser.SpellCheck.Language.FromCulture(System.Globalization.CultureInfo)">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.FromCulture.html#DotNetBrowser_SpellCheck_Language_FromCulture_System_Globalization_CultureInfo_">FromCulture(CultureInfo)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance from the specified culture information.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_FromString_System_String_" data-uid="DotNetBrowser.SpellCheck.Language.FromString(System.String)">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.FromString.html#DotNetBrowser_SpellCheck_Language_FromString_System_String_">FromString(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance by its string representation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_op_Explicit_System_Globalization_CultureInfo__DotNetBrowser_SpellCheck_Language" data-uid="DotNetBrowser.SpellCheck.Language.op_Explicit(System.Globalization.CultureInfo)~DotNetBrowser.SpellCheck.Language">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.op_Explicit.html#DotNetBrowser_SpellCheck_Language_op_Explicit_System_Globalization_CultureInfo__DotNetBrowser_SpellCheck_Language">explicit operator Language(CultureInfo)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance by the specified culture information.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_SpellCheck_Language_op_Explicit_System_String__DotNetBrowser_SpellCheck_Language" data-uid="DotNetBrowser.SpellCheck.Language.op_Explicit(System.String)~DotNetBrowser.SpellCheck.Language">
+          <a class="xref" href="DotNetBrowser.SpellCheck.Language.op_Explicit.html#DotNetBrowser_SpellCheck_Language_op_Explicit_System_String__DotNetBrowser_SpellCheck_Language">explicit operator Language(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns the <a class="xref" href="DotNetBrowser.SpellCheck.Language.html">Language</a> instance by its string representation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>
