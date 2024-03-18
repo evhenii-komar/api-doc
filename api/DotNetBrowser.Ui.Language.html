@@ -1,87 +1,123 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class Language | API </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Language | API ">
-    
-    <meta name="description" content="The supported user interface languages.">
-      <link rel="shortcut icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      
+      <meta name="description" content="The supported user interface languages.">
+      <link rel="icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_Ui_Language.md&amp;value=---%0Auid%3A%20DotNetBrowser.Ui.Language%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+  <script type="module" src="./../public/docfx.min.js"></script>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+            DotNetBrowser
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
+    </header>
 
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
+      </div>
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Ui.Language">
+
+        <article data-uid="DotNetBrowser.Ui.Language">
 
 
 
-  <h1 id="DotNetBrowser_Ui_Language" data-uid="DotNetBrowser.Ui.Language" class="text-break">Class Language</h1>
-  <div class="markdown level0 summary"><p>The supported user interface languages.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><a class="xref" href="DotNetBrowser.Util.TypedEnum-1.html">TypedEnum</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
-    <div class="level2"><span class="xref">Language</span></div>
+  <h1 id="DotNetBrowser_Ui_Language" data-uid="DotNetBrowser.Ui.Language" class="text-break">
+Class Language  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser/Ui/Language.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Ui.html">Ui</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DotNetBrowser.dll</dd></dl>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+  <div class="markdown summary"><p>The supported user interface languages.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Language : TypedEnum&lt;string&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="DotNetBrowser.Util.TypedEnum-1.html">TypedEnum</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+      <div><span class="xref">Language</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -100,479 +136,329 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Ui.html">Ui</a></h6>
-  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
-  <h5 id="DotNetBrowser_Ui_Language_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class Language : TypedEnum&lt;string&gt;</code></pre>
-  </div>
-  <h3 id="fields">Fields
-</h3>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Amharic" data-uid="DotNetBrowser.Ui.Language.Amharic">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Amharic.html">Amharic</a>
-        </td>
-        <td class="markdown level1 summary"><p>Amharic language (&quot;am&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Arabic" data-uid="DotNetBrowser.Ui.Language.Arabic">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Arabic.html">Arabic</a>
-        </td>
-        <td class="markdown level1 summary"><p>Arabic language (&quot;ar&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Bengali" data-uid="DotNetBrowser.Ui.Language.Bengali">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Bengali.html">Bengali</a>
-        </td>
-        <td class="markdown level1 summary"><p>Bengali language (&quot;bn&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Bulgarian" data-uid="DotNetBrowser.Ui.Language.Bulgarian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Bulgarian.html">Bulgarian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Bulgarian language (&quot;bg&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Catalan" data-uid="DotNetBrowser.Ui.Language.Catalan">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Catalan.html">Catalan</a>
-        </td>
-        <td class="markdown level1 summary"><p>Catalan language (&quot;ca&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Chinese" data-uid="DotNetBrowser.Ui.Language.Chinese">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Chinese.html">Chinese</a>
-        </td>
-        <td class="markdown level1 summary"><p>Chinese language (&quot;zh-cn&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_ChineseTaiwan" data-uid="DotNetBrowser.Ui.Language.ChineseTaiwan">
-          <a class="xref" href="DotNetBrowser.Ui.Language.ChineseTaiwan.html">ChineseTaiwan</a>
-        </td>
-        <td class="markdown level1 summary"><p>Chinese (Taiwan) language (&quot;zh-tw&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Czech" data-uid="DotNetBrowser.Ui.Language.Czech">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Czech.html">Czech</a>
-        </td>
-        <td class="markdown level1 summary"><p>Czech language (&quot;cs&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Danish" data-uid="DotNetBrowser.Ui.Language.Danish">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Danish.html">Danish</a>
-        </td>
-        <td class="markdown level1 summary"><p>Danish language (&quot;da&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Default" data-uid="DotNetBrowser.Ui.Language.Default">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Default.html">Default</a>
-        </td>
-        <td class="markdown level1 summary"><p>Default language (English).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Dutch" data-uid="DotNetBrowser.Ui.Language.Dutch">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Dutch.html">Dutch</a>
-        </td>
-        <td class="markdown level1 summary"><p>Dutch language (&quot;nl&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_EnglishUk" data-uid="DotNetBrowser.Ui.Language.EnglishUk">
-          <a class="xref" href="DotNetBrowser.Ui.Language.EnglishUk.html">EnglishUk</a>
-        </td>
-        <td class="markdown level1 summary"><p>English (UK) language (&quot;en-gb&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_EnglishUs" data-uid="DotNetBrowser.Ui.Language.EnglishUs">
-          <a class="xref" href="DotNetBrowser.Ui.Language.EnglishUs.html">EnglishUs</a>
-        </td>
-        <td class="markdown level1 summary"><p>English (US) language (&quot;en-us&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Estonian" data-uid="DotNetBrowser.Ui.Language.Estonian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Estonian.html">Estonian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Estonian language (&quot;et&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Filipino" data-uid="DotNetBrowser.Ui.Language.Filipino">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Filipino.html">Filipino</a>
-        </td>
-        <td class="markdown level1 summary"><p>Filipino language (&quot;fil&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Finnish" data-uid="DotNetBrowser.Ui.Language.Finnish">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Finnish.html">Finnish</a>
-        </td>
-        <td class="markdown level1 summary"><p>Finnish language (&quot;fi&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_French" data-uid="DotNetBrowser.Ui.Language.French">
-          <a class="xref" href="DotNetBrowser.Ui.Language.French.html">French</a>
-        </td>
-        <td class="markdown level1 summary"><p>French (France) language (&quot;fr&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_German" data-uid="DotNetBrowser.Ui.Language.German">
-          <a class="xref" href="DotNetBrowser.Ui.Language.German.html">German</a>
-        </td>
-        <td class="markdown level1 summary"><p>German language (&quot;de&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Greek" data-uid="DotNetBrowser.Ui.Language.Greek">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Greek.html">Greek</a>
-        </td>
-        <td class="markdown level1 summary"><p>Greek language (&quot;el&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Gujarati" data-uid="DotNetBrowser.Ui.Language.Gujarati">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Gujarati.html">Gujarati</a>
-        </td>
-        <td class="markdown level1 summary"><p>Gujarati language (&quot;gu&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Hebrew" data-uid="DotNetBrowser.Ui.Language.Hebrew">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Hebrew.html">Hebrew</a>
-        </td>
-        <td class="markdown level1 summary"><p>Hebrew language (&quot;he&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Hindi" data-uid="DotNetBrowser.Ui.Language.Hindi">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Hindi.html">Hindi</a>
-        </td>
-        <td class="markdown level1 summary"><p>Hindi language (&quot;hi&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Hungarian" data-uid="DotNetBrowser.Ui.Language.Hungarian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Hungarian.html">Hungarian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Hungarian language (&quot;hu&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Indonesian" data-uid="DotNetBrowser.Ui.Language.Indonesian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Indonesian.html">Indonesian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Indonesian language (&quot;id&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Italian" data-uid="DotNetBrowser.Ui.Language.Italian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Italian.html">Italian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Italian language (&quot;it&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Japanese" data-uid="DotNetBrowser.Ui.Language.Japanese">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Japanese.html">Japanese</a>
-        </td>
-        <td class="markdown level1 summary"><p>Japanese language (&quot;ja&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Kannada" data-uid="DotNetBrowser.Ui.Language.Kannada">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Kannada.html">Kannada</a>
-        </td>
-        <td class="markdown level1 summary"><p>Kannada language (&quot;kn&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Korean" data-uid="DotNetBrowser.Ui.Language.Korean">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Korean.html">Korean</a>
-        </td>
-        <td class="markdown level1 summary"><p>Korean language (&quot;ko&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Latvian" data-uid="DotNetBrowser.Ui.Language.Latvian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Latvian.html">Latvian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Latvian language (&quot;lv&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Lithuanian" data-uid="DotNetBrowser.Ui.Language.Lithuanian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Lithuanian.html">Lithuanian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Lithuanian language (&quot;lt&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Malay" data-uid="DotNetBrowser.Ui.Language.Malay">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Malay.html">Malay</a>
-        </td>
-        <td class="markdown level1 summary"><p>Malay language (&quot;ms&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Malayalam" data-uid="DotNetBrowser.Ui.Language.Malayalam">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Malayalam.html">Malayalam</a>
-        </td>
-        <td class="markdown level1 summary"><p>Malayalam language (&quot;ml&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Marathi" data-uid="DotNetBrowser.Ui.Language.Marathi">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Marathi.html">Marathi</a>
-        </td>
-        <td class="markdown level1 summary"><p>Marathi language (&quot;mr&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Norwegian" data-uid="DotNetBrowser.Ui.Language.Norwegian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Norwegian.html">Norwegian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Norwegian language (&quot;nb&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Persian" data-uid="DotNetBrowser.Ui.Language.Persian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Persian.html">Persian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Persian language (&quot;fa&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Polish" data-uid="DotNetBrowser.Ui.Language.Polish">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Polish.html">Polish</a>
-        </td>
-        <td class="markdown level1 summary"><p>Polish language (&quot;pl&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_PortugueseBrazil" data-uid="DotNetBrowser.Ui.Language.PortugueseBrazil">
-          <a class="xref" href="DotNetBrowser.Ui.Language.PortugueseBrazil.html">PortugueseBrazil</a>
-        </td>
-        <td class="markdown level1 summary"><p>Portuguese (Brazil) language (&quot;pt-br&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_PortuguesePortugal" data-uid="DotNetBrowser.Ui.Language.PortuguesePortugal">
-          <a class="xref" href="DotNetBrowser.Ui.Language.PortuguesePortugal.html">PortuguesePortugal</a>
-        </td>
-        <td class="markdown level1 summary"><p>Portuguese (Portugal) language (&quot;pt-pt&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Romanian" data-uid="DotNetBrowser.Ui.Language.Romanian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Romanian.html">Romanian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Romanian language (&quot;ro&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Russian" data-uid="DotNetBrowser.Ui.Language.Russian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Russian.html">Russian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Russian language (&quot;ru&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Serbian" data-uid="DotNetBrowser.Ui.Language.Serbian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Serbian.html">Serbian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Serbian language (&quot;sr&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Slovak" data-uid="DotNetBrowser.Ui.Language.Slovak">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Slovak.html">Slovak</a>
-        </td>
-        <td class="markdown level1 summary"><p>Slovak language (&quot;sk&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Slovenian" data-uid="DotNetBrowser.Ui.Language.Slovenian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Slovenian.html">Slovenian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Slovenian language (&quot;sl&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_SpanishLatinAmerica" data-uid="DotNetBrowser.Ui.Language.SpanishLatinAmerica">
-          <a class="xref" href="DotNetBrowser.Ui.Language.SpanishLatinAmerica.html">SpanishLatinAmerica</a>
-        </td>
-        <td class="markdown level1 summary"><p>Spanish (Latin America) language (&quot;es-419&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_SpanishSpain" data-uid="DotNetBrowser.Ui.Language.SpanishSpain">
-          <a class="xref" href="DotNetBrowser.Ui.Language.SpanishSpain.html">SpanishSpain</a>
-        </td>
-        <td class="markdown level1 summary"><p>Spanish language (Spain) (&quot;es&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Swahili" data-uid="DotNetBrowser.Ui.Language.Swahili">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Swahili.html">Swahili</a>
-        </td>
-        <td class="markdown level1 summary"><p>Swahili language (&quot;sw&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Swedish" data-uid="DotNetBrowser.Ui.Language.Swedish">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Swedish.html">Swedish</a>
-        </td>
-        <td class="markdown level1 summary"><p>Swedish language (&quot;sv&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Tamil" data-uid="DotNetBrowser.Ui.Language.Tamil">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Tamil.html">Tamil</a>
-        </td>
-        <td class="markdown level1 summary"><p>Tamil language (&quot;ta&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Telugu" data-uid="DotNetBrowser.Ui.Language.Telugu">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Telugu.html">Telugu</a>
-        </td>
-        <td class="markdown level1 summary"><p>Telugu language (&quot;te&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Thai" data-uid="DotNetBrowser.Ui.Language.Thai">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Thai.html">Thai</a>
-        </td>
-        <td class="markdown level1 summary"><p>Thai language (&quot;th&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Turkish" data-uid="DotNetBrowser.Ui.Language.Turkish">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Turkish.html">Turkish</a>
-        </td>
-        <td class="markdown level1 summary"><p>Turkish language (&quot;tr&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Ukrainian" data-uid="DotNetBrowser.Ui.Language.Ukrainian">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Ukrainian.html">Ukrainian</a>
-        </td>
-        <td class="markdown level1 summary"><p>Ukrainian language (&quot;uk&quot;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_Vietnamese" data-uid="DotNetBrowser.Ui.Language.Vietnamese">
-          <a class="xref" href="DotNetBrowser.Ui.Language.Vietnamese.html">Vietnamese</a>
-        </td>
-        <td class="markdown level1 summary"><p>Vietnamese language (&quot;vi&quot;)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_FromCulture_System_Globalization_CultureInfo_" data-uid="DotNetBrowser.Ui.Language.FromCulture(System.Globalization.CultureInfo)">
-          <a class="xref" href="DotNetBrowser.Ui.Language.FromCulture.html#DotNetBrowser_Ui_Language_FromCulture_System_Globalization_CultureInfo_">FromCulture(CultureInfo)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Initializes the <a class="xref" href="DotNetBrowser.Ui.Language.html">Language</a> instance from the specified culture information.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_FromString_System_String_" data-uid="DotNetBrowser.Ui.Language.FromString(System.String)">
-          <a class="xref" href="DotNetBrowser.Ui.Language.FromString.html#DotNetBrowser_Ui_Language_FromString_System_String_">FromString(string)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Returns the <a class="xref" href="DotNetBrowser.Ui.Language.html">Language</a> instance by its string representation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="operators">Operators
-</h3>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_op_Explicit_System_Globalization_CultureInfo__DotNetBrowser_Ui_Language" data-uid="DotNetBrowser.Ui.Language.op_Explicit(System.Globalization.CultureInfo)~DotNetBrowser.Ui.Language">
-          <a class="xref" href="DotNetBrowser.Ui.Language.op_Explicit.html#DotNetBrowser_Ui_Language_op_Explicit_System_Globalization_CultureInfo__DotNetBrowser_Ui_Language">explicit operator Language(CultureInfo)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Returns the <a class="xref" href="DotNetBrowser.Ui.Language.html">Language</a> instance by the specified culture information.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Ui_Language_op_Explicit_System_String__DotNetBrowser_Ui_Language" data-uid="DotNetBrowser.Ui.Language.op_Explicit(System.String)~DotNetBrowser.Ui.Language">
-          <a class="xref" href="DotNetBrowser.Ui.Language.op_Explicit.html#DotNetBrowser_Ui_Language_op_Explicit_System_String__DotNetBrowser_Ui_Language">explicit operator Language(string)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Returns the <a class="xref" href="DotNetBrowser.Ui.Language.html">Language</a> instance by its string representation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Amharic.html">Amharic</a></dt>
+    <dd><p>Amharic language (&quot;am&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Arabic.html">Arabic</a></dt>
+    <dd><p>Arabic language (&quot;ar&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Bengali.html">Bengali</a></dt>
+    <dd><p>Bengali language (&quot;bn&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Bulgarian.html">Bulgarian</a></dt>
+    <dd><p>Bulgarian language (&quot;bg&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Catalan.html">Catalan</a></dt>
+    <dd><p>Catalan language (&quot;ca&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Chinese.html">Chinese</a></dt>
+    <dd><p>Chinese language (&quot;zh-cn&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.ChineseTaiwan.html">ChineseTaiwan</a></dt>
+    <dd><p>Chinese (Taiwan) language (&quot;zh-tw&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Czech.html">Czech</a></dt>
+    <dd><p>Czech language (&quot;cs&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Danish.html">Danish</a></dt>
+    <dd><p>Danish language (&quot;da&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Default.html">Default</a></dt>
+    <dd><p>Default language (English).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Dutch.html">Dutch</a></dt>
+    <dd><p>Dutch language (&quot;nl&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.EnglishUk.html">EnglishUk</a></dt>
+    <dd><p>English (UK) language (&quot;en-gb&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.EnglishUs.html">EnglishUs</a></dt>
+    <dd><p>English (US) language (&quot;en-us&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Estonian.html">Estonian</a></dt>
+    <dd><p>Estonian language (&quot;et&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Filipino.html">Filipino</a></dt>
+    <dd><p>Filipino language (&quot;fil&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Finnish.html">Finnish</a></dt>
+    <dd><p>Finnish language (&quot;fi&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.French.html">French</a></dt>
+    <dd><p>French (France) language (&quot;fr&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.German.html">German</a></dt>
+    <dd><p>German language (&quot;de&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Greek.html">Greek</a></dt>
+    <dd><p>Greek language (&quot;el&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Gujarati.html">Gujarati</a></dt>
+    <dd><p>Gujarati language (&quot;gu&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Hebrew.html">Hebrew</a></dt>
+    <dd><p>Hebrew language (&quot;he&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Hindi.html">Hindi</a></dt>
+    <dd><p>Hindi language (&quot;hi&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Hungarian.html">Hungarian</a></dt>
+    <dd><p>Hungarian language (&quot;hu&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Indonesian.html">Indonesian</a></dt>
+    <dd><p>Indonesian language (&quot;id&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Italian.html">Italian</a></dt>
+    <dd><p>Italian language (&quot;it&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Japanese.html">Japanese</a></dt>
+    <dd><p>Japanese language (&quot;ja&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Kannada.html">Kannada</a></dt>
+    <dd><p>Kannada language (&quot;kn&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Korean.html">Korean</a></dt>
+    <dd><p>Korean language (&quot;ko&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Latvian.html">Latvian</a></dt>
+    <dd><p>Latvian language (&quot;lv&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Lithuanian.html">Lithuanian</a></dt>
+    <dd><p>Lithuanian language (&quot;lt&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Malay.html">Malay</a></dt>
+    <dd><p>Malay language (&quot;ms&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Malayalam.html">Malayalam</a></dt>
+    <dd><p>Malayalam language (&quot;ml&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Marathi.html">Marathi</a></dt>
+    <dd><p>Marathi language (&quot;mr&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Norwegian.html">Norwegian</a></dt>
+    <dd><p>Norwegian language (&quot;nb&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Persian.html">Persian</a></dt>
+    <dd><p>Persian language (&quot;fa&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Polish.html">Polish</a></dt>
+    <dd><p>Polish language (&quot;pl&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.PortugueseBrazil.html">PortugueseBrazil</a></dt>
+    <dd><p>Portuguese (Brazil) language (&quot;pt-br&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.PortuguesePortugal.html">PortuguesePortugal</a></dt>
+    <dd><p>Portuguese (Portugal) language (&quot;pt-pt&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Romanian.html">Romanian</a></dt>
+    <dd><p>Romanian language (&quot;ro&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Russian.html">Russian</a></dt>
+    <dd><p>Russian language (&quot;ru&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Serbian.html">Serbian</a></dt>
+    <dd><p>Serbian language (&quot;sr&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Slovak.html">Slovak</a></dt>
+    <dd><p>Slovak language (&quot;sk&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Slovenian.html">Slovenian</a></dt>
+    <dd><p>Slovenian language (&quot;sl&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.SpanishLatinAmerica.html">SpanishLatinAmerica</a></dt>
+    <dd><p>Spanish (Latin America) language (&quot;es-419&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.SpanishSpain.html">SpanishSpain</a></dt>
+    <dd><p>Spanish language (Spain) (&quot;es&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Swahili.html">Swahili</a></dt>
+    <dd><p>Swahili language (&quot;sw&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Swedish.html">Swedish</a></dt>
+    <dd><p>Swedish language (&quot;sv&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Tamil.html">Tamil</a></dt>
+    <dd><p>Tamil language (&quot;ta&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Telugu.html">Telugu</a></dt>
+    <dd><p>Telugu language (&quot;te&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Thai.html">Thai</a></dt>
+    <dd><p>Thai language (&quot;th&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Turkish.html">Turkish</a></dt>
+    <dd><p>Turkish language (&quot;tr&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Ukrainian.html">Ukrainian</a></dt>
+    <dd><p>Ukrainian language (&quot;uk&quot;)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.Vietnamese.html">Vietnamese</a></dt>
+    <dd><p>Vietnamese language (&quot;vi&quot;)</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.FromCulture.html#DotNetBrowser_Ui_Language_FromCulture_System_Globalization_CultureInfo_">FromCulture(CultureInfo)</a></dt>
+    <dd><p>Initializes the <a class="xref" href="DotNetBrowser.Ui.Language.html">Language</a> instance from the specified culture information.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.FromString.html#DotNetBrowser_Ui_Language_FromString_System_String_">FromString(string)</a></dt>
+    <dd><p>Returns the <a class="xref" href="DotNetBrowser.Ui.Language.html">Language</a> instance by its string representation.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.op_Explicit.html#DotNetBrowser_Ui_Language_op_Explicit_System_Globalization_CultureInfo__DotNetBrowser_Ui_Language">explicit operator Language(CultureInfo)</a></dt>
+    <dd><p>Returns the <a class="xref" href="DotNetBrowser.Ui.Language.html">Language</a> instance by the specified culture information.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Ui.Language.op_Explicit.html#DotNetBrowser_Ui_Language_op_Explicit_System_String__DotNetBrowser_Ui_Language">explicit operator Language(string)</a></dt>
+    <dd><p>Returns the <a class="xref" href="DotNetBrowser.Ui.Language.html">Language</a> instance by its string representation.</p>
+</dd>
+  </dl>
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
-        </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

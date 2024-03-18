@@ -1,90 +1,126 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class Level | API </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Level | API ">
-    
-    <meta name="description" content="A zoom level of a web page. Provides a set of the pre-defined constants. Each constant name consists of the P prefix followed by a number. The number represents a zoom level in percents. For example, the  and  values represent the 25% and 110% zoom levels accordingly.">
-      <link rel="shortcut icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      
+      <meta name="description" content="A zoom level of a web page. Provides a set of the pre-defined constants. Each constant name consists of the P prefix followed by a number. The number represents a zoom level in percents. For example, the  and  values represent the 25% and 110% zoom levels accordingly.">
+      <link rel="icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_Zoom_Level.md&amp;value=---%0Auid%3A%20DotNetBrowser.Zoom.Level%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+  <script type="module" src="./../public/docfx.min.js"></script>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+            DotNetBrowser
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
+    </header>
 
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
+      </div>
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Zoom.Level">
+
+        <article data-uid="DotNetBrowser.Zoom.Level">
 
 
 
-  <h1 id="DotNetBrowser_Zoom_Level" data-uid="DotNetBrowser.Zoom.Level" class="text-break">Class Level</h1>
-  <div class="markdown level0 summary"><p>A zoom level of a web page. Provides a set of the pre-defined constants. Each constant name
+  <h1 id="DotNetBrowser_Zoom_Level" data-uid="DotNetBrowser.Zoom.Level" class="text-break">
+Class Level  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser/Zoom/Level.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Zoom.html">Zoom</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>DotNetBrowser.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A zoom level of a web page. Provides a set of the pre-defined constants. Each constant name
 consists of the <code>P</code> prefix followed by a number. The number represents a zoom level in
 percents. For example, the <a class="xref" href="DotNetBrowser.Zoom.Level.P25.html">P25</a> and <a class="xref" href="DotNetBrowser.Zoom.Level.P110.html">P110</a> values represent the 25% and 110% zoom
 levels accordingly.</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><a class="xref" href="DotNetBrowser.Util.TypedEnum-1.html">TypedEnum</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</div>
-    <div class="level2"><span class="xref">Level</span></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Level : TypedEnum&lt;double&gt;</code></pre>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="DotNetBrowser.Util.TypedEnum-1.html">TypedEnum</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</div>
+      <div><span class="xref">Level</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -103,213 +139,139 @@ levels accordingly.</p>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Zoom.html">Zoom</a></h6>
-  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
-  <h5 id="DotNetBrowser_Zoom_Level_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class Level : TypedEnum&lt;double&gt;</code></pre>
-  </div>
-  <h3 id="fields">Fields
-</h3>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P100" data-uid="DotNetBrowser.Zoom.Level.P100">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P100.html">P100</a>
-        </td>
-        <td class="markdown level1 summary"><p>100% (default zoom level)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P110" data-uid="DotNetBrowser.Zoom.Level.P110">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P110.html">P110</a>
-        </td>
-        <td class="markdown level1 summary"><p>110%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P125" data-uid="DotNetBrowser.Zoom.Level.P125">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P125.html">P125</a>
-        </td>
-        <td class="markdown level1 summary"><p>125%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P150" data-uid="DotNetBrowser.Zoom.Level.P150">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P150.html">P150</a>
-        </td>
-        <td class="markdown level1 summary"><p>150%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P175" data-uid="DotNetBrowser.Zoom.Level.P175">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P175.html">P175</a>
-        </td>
-        <td class="markdown level1 summary"><p>175%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P200" data-uid="DotNetBrowser.Zoom.Level.P200">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P200.html">P200</a>
-        </td>
-        <td class="markdown level1 summary"><p>200%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P25" data-uid="DotNetBrowser.Zoom.Level.P25">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P25.html">P25</a>
-        </td>
-        <td class="markdown level1 summary"><p>25%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P250" data-uid="DotNetBrowser.Zoom.Level.P250">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P250.html">P250</a>
-        </td>
-        <td class="markdown level1 summary"><p>250%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P300" data-uid="DotNetBrowser.Zoom.Level.P300">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P300.html">P300</a>
-        </td>
-        <td class="markdown level1 summary"><p>300%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P33" data-uid="DotNetBrowser.Zoom.Level.P33">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P33.html">P33</a>
-        </td>
-        <td class="markdown level1 summary"><p>33%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P400" data-uid="DotNetBrowser.Zoom.Level.P400">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P400.html">P400</a>
-        </td>
-        <td class="markdown level1 summary"><p>400%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P50" data-uid="DotNetBrowser.Zoom.Level.P50">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P50.html">P50</a>
-        </td>
-        <td class="markdown level1 summary"><p>50%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P500" data-uid="DotNetBrowser.Zoom.Level.P500">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P500.html">P500</a>
-        </td>
-        <td class="markdown level1 summary"><p>500%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P67" data-uid="DotNetBrowser.Zoom.Level.P67">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P67.html">P67</a>
-        </td>
-        <td class="markdown level1 summary"><p>67%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P75" data-uid="DotNetBrowser.Zoom.Level.P75">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P75.html">P75</a>
-        </td>
-        <td class="markdown level1 summary"><p>75%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P80" data-uid="DotNetBrowser.Zoom.Level.P80">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P80.html">P80</a>
-        </td>
-        <td class="markdown level1 summary"><p>80%</p>
-</td>
-      </tr>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_P90" data-uid="DotNetBrowser.Zoom.Level.P90">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.P90.html">P90</a>
-        </td>
-        <td class="markdown level1 summary"><p>90%</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_Create_System_Double_" data-uid="DotNetBrowser.Zoom.Level.Create(System.Double)">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.Create.html#DotNetBrowser_Zoom_Level_Create_System_Double_">Create(double)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Initializes a new <a class="xref" href="DotNetBrowser.Zoom.Level.html">Level</a> instance from its double representation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="operators">Operators
-</h3>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="DotNetBrowser_Zoom_Level_op_Explicit_System_Double__DotNetBrowser_Zoom_Level" data-uid="DotNetBrowser.Zoom.Level.op_Explicit(System.Double)~DotNetBrowser.Zoom.Level">
-          <a class="xref" href="DotNetBrowser.Zoom.Level.op_Explicit.html#DotNetBrowser_Zoom_Level_op_Explicit_System_Double__DotNetBrowser_Zoom_Level">explicit operator Level(double)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Initializes a new <a class="xref" href="DotNetBrowser.Zoom.Level.html">Level</a> instance from its double representation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P100.html">P100</a></dt>
+    <dd><p>100% (default zoom level)</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P110.html">P110</a></dt>
+    <dd><p>110%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P125.html">P125</a></dt>
+    <dd><p>125%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P150.html">P150</a></dt>
+    <dd><p>150%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P175.html">P175</a></dt>
+    <dd><p>175%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P200.html">P200</a></dt>
+    <dd><p>200%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P25.html">P25</a></dt>
+    <dd><p>25%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P250.html">P250</a></dt>
+    <dd><p>250%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P300.html">P300</a></dt>
+    <dd><p>300%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P33.html">P33</a></dt>
+    <dd><p>33%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P400.html">P400</a></dt>
+    <dd><p>400%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P50.html">P50</a></dt>
+    <dd><p>50%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P500.html">P500</a></dt>
+    <dd><p>500%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P67.html">P67</a></dt>
+    <dd><p>67%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P75.html">P75</a></dt>
+    <dd><p>75%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P80.html">P80</a></dt>
+    <dd><p>80%</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.P90.html">P90</a></dt>
+    <dd><p>90%</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.Create.html#DotNetBrowser_Zoom_Level_Create_System_Double_">Create(double)</a></dt>
+    <dd><p>Initializes a new <a class="xref" href="DotNetBrowser.Zoom.Level.html">Level</a> instance from its double representation.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="DotNetBrowser.Zoom.Level.op_Explicit.html#DotNetBrowser_Zoom_Level_op_Explicit_System_Double__DotNetBrowser_Zoom_Level">explicit operator Level(double)</a></dt>
+    <dd><p>Initializes a new <a class="xref" href="DotNetBrowser.Zoom.Level.html">Level</a> instance from its double representation.</p>
+</dd>
+  </dl>
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
-        </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
