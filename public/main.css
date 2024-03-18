@@ -180,3 +180,7 @@ code {
   margin: 4px 2px;
   box-shadow: var(--card-box-shadow);
 }
+
+.svg {
+  margin-right: 10px;
+}
