@@ -1,261 +1,297 @@
 ﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Interface IProfile | API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Interface IProfile | API ">
-      
-      <meta name="description" content="The Chromium profile.">
-      <link rel="icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_Profile_IProfile.md&amp;value=---%0Auid%3A%20DotNetBrowser.Profile.IProfile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
+    
+    <meta name="description" content="The Chromium profile.">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <script type="module" src="./../public/docfx.min.js"></script>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
-
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-            DotNetBrowser
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Profile.IProfile">
 
-        <article data-uid="DotNetBrowser.Profile.IProfile">
 
 
-
-  <h1 id="DotNetBrowser_Profile_IProfile" data-uid="DotNetBrowser.Profile.IProfile" class="text-break">
-Interface IProfile  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser/Profile/IProfile.cs/#L30"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Profile.html">Profile</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>DotNetBrowser.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>The Chromium profile.</p>
+  <h1 id="DotNetBrowser_Profile_IProfile" data-uid="DotNetBrowser.Profile.IProfile" class="text-break">Interface IProfile</h1>
+  <div class="markdown level0 summary"><p>The Chromium profile.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IProfile : IAutoDisposable</code></pre>
-  </div>
-
-
-
-
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="DotNetBrowser.IAutoDisposable.IsDisposed.html#DotNetBrowser_IAutoDisposable_IsDisposed">IAutoDisposable.IsDisposed</a>
     </div>
     <div>
       <a class="xref" href="DotNetBrowser.IAutoDisposable.Disposed.html">IAutoDisposable.Disposed</a>
     </div>
-  </dd></dl>
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.CookieStore.html#DotNetBrowser_Profile_IProfile_CookieStore">CookieStore</a></dt>
-    <dd><p>Gets the cookie service that allows managing cookies.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.CreditCardStore.html#DotNetBrowser_Profile_IProfile_CreditCardStore">CreditCardStore</a></dt>
-    <dd><p>Gets the service that allows working with the credit card store.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Downloads.html#DotNetBrowser_Profile_IProfile_Downloads">Downloads</a></dt>
-    <dd><p>Gets the service that allows managing downloads.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Engine.html#DotNetBrowser_Profile_IProfile_Engine">Engine</a></dt>
-    <dd><p>Gets the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance associated with this object.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.HttpAuthCache.html#DotNetBrowser_Profile_IProfile_HttpAuthCache">HttpAuthCache</a></dt>
-    <dd><p>Gets the HTTP Authentication cache service, which is responsible for storing
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Profile.html">Profile</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
+  <h5 id="DotNetBrowser_Profile_IProfile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IProfile : IAutoDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_CookieStore" data-uid="DotNetBrowser.Profile.IProfile.CookieStore">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.CookieStore.html#DotNetBrowser_Profile_IProfile_CookieStore">CookieStore</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the cookie service that allows managing cookies.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_CreditCardStore" data-uid="DotNetBrowser.Profile.IProfile.CreditCardStore">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.CreditCardStore.html#DotNetBrowser_Profile_IProfile_CreditCardStore">CreditCardStore</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows working with the credit card store.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Downloads" data-uid="DotNetBrowser.Profile.IProfile.Downloads">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Downloads.html#DotNetBrowser_Profile_IProfile_Downloads">Downloads</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows managing downloads.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Engine" data-uid="DotNetBrowser.Profile.IProfile.Engine">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Engine.html#DotNetBrowser_Profile_IProfile_Engine">Engine</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DotNetBrowser.Engine.IEngine.html">IEngine</a> instance associated with this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_HttpAuthCache" data-uid="DotNetBrowser.Profile.IProfile.HttpAuthCache">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.HttpAuthCache.html#DotNetBrowser_Profile_IProfile_HttpAuthCache">HttpAuthCache</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the HTTP Authentication cache service, which is responsible for storing
 HTTP authentication identities and challenge info</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.HttpCache.html#DotNetBrowser_Profile_IProfile_HttpCache">HttpCache</a></dt>
-    <dd><p>Gets the HTTP cache service.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.IsDefault.html#DotNetBrowser_Profile_IProfile_IsDefault">IsDefault</a></dt>
-    <dd><p>Indicates whether this profile is default.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.MediaCasting.html#DotNetBrowser_Profile_IProfile_MediaCasting">MediaCasting</a></dt>
-    <dd><p>Gets the service that allows working with media casting.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Name.html#DotNetBrowser_Profile_IProfile_Name">Name</a></dt>
-    <dd><p>Gets the profile name.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Network.html#DotNetBrowser_Profile_IProfile_Network">Network</a></dt>
-    <dd><p>Gets the service that allows working with network.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.PasswordStore.html#DotNetBrowser_Profile_IProfile_PasswordStore">PasswordStore</a></dt>
-    <dd><p>Gets the service that allows working with the password store.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Path.html#DotNetBrowser_Profile_IProfile_Path">Path</a></dt>
-    <dd><p>Gets the profile path.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Permissions.html#DotNetBrowser_Profile_IProfile_Permissions">Permissions</a></dt>
-    <dd><p>Gets the service that allows managing permissions.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Plugins.html#DotNetBrowser_Profile_IProfile_Plugins">Plugins</a></dt>
-    <dd><p>Gets the service that allows configuring plugins.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Preferences.html#DotNetBrowser_Profile_IProfile_Preferences">Preferences</a></dt>
-    <dd><p>Gets the profile preferences.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Proxy.html#DotNetBrowser_Profile_IProfile_Proxy">Proxy</a></dt>
-    <dd><p>Gets the service that allows working with proxy.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.SpellChecker.html#DotNetBrowser_Profile_IProfile_SpellChecker">SpellChecker</a></dt>
-    <dd><p>Gets the service that allows working with spell checking functionality.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.Type.html#DotNetBrowser_Profile_IProfile_Type">Type</a></dt>
-    <dd><p>Gets the profile type.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.UserDataProfileStore.html#DotNetBrowser_Profile_IProfile_UserDataProfileStore">UserDataProfileStore</a></dt>
-    <dd><p>Gets the service that allows working with the user date profile store.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.ZoomLevels.html#DotNetBrowser_Profile_IProfile_ZoomLevels">ZoomLevels</a></dt>
-    <dd><p>Gets the service that allows working with zoom.</p>
-</dd>
-  </dl>
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Profile.IProfile.CreateBrowser.html#DotNetBrowser_Profile_IProfile_CreateBrowser">CreateBrowser()</a></dt>
-    <dd><p>Creates a new <a class="xref" href="DotNetBrowser.Browser.IBrowser.html">IBrowser</a> instance with the initial &quot;about:blank&quot; web page.</p>
-</dd>
-  </dl>
-
-
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_HttpCache" data-uid="DotNetBrowser.Profile.IProfile.HttpCache">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.HttpCache.html#DotNetBrowser_Profile_IProfile_HttpCache">HttpCache</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the HTTP cache service.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_IsDefault" data-uid="DotNetBrowser.Profile.IProfile.IsDefault">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.IsDefault.html#DotNetBrowser_Profile_IProfile_IsDefault">IsDefault</a>
+        </td>
+        <td class="markdown level1 summary"><p>Indicates whether this profile is default.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_MediaCasting" data-uid="DotNetBrowser.Profile.IProfile.MediaCasting">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.MediaCasting.html#DotNetBrowser_Profile_IProfile_MediaCasting">MediaCasting</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows working with media casting.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Name" data-uid="DotNetBrowser.Profile.IProfile.Name">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Name.html#DotNetBrowser_Profile_IProfile_Name">Name</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the profile name.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Network" data-uid="DotNetBrowser.Profile.IProfile.Network">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Network.html#DotNetBrowser_Profile_IProfile_Network">Network</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows working with network.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_PasswordStore" data-uid="DotNetBrowser.Profile.IProfile.PasswordStore">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.PasswordStore.html#DotNetBrowser_Profile_IProfile_PasswordStore">PasswordStore</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows working with the password store.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Path" data-uid="DotNetBrowser.Profile.IProfile.Path">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Path.html#DotNetBrowser_Profile_IProfile_Path">Path</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the profile path.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Permissions" data-uid="DotNetBrowser.Profile.IProfile.Permissions">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Permissions.html#DotNetBrowser_Profile_IProfile_Permissions">Permissions</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows managing permissions.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Plugins" data-uid="DotNetBrowser.Profile.IProfile.Plugins">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Plugins.html#DotNetBrowser_Profile_IProfile_Plugins">Plugins</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows configuring plugins.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Preferences" data-uid="DotNetBrowser.Profile.IProfile.Preferences">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Preferences.html#DotNetBrowser_Profile_IProfile_Preferences">Preferences</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the profile preferences.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Proxy" data-uid="DotNetBrowser.Profile.IProfile.Proxy">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Proxy.html#DotNetBrowser_Profile_IProfile_Proxy">Proxy</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows working with proxy.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_SpellChecker" data-uid="DotNetBrowser.Profile.IProfile.SpellChecker">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.SpellChecker.html#DotNetBrowser_Profile_IProfile_SpellChecker">SpellChecker</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows working with spell checking functionality.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_Type" data-uid="DotNetBrowser.Profile.IProfile.Type">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.Type.html#DotNetBrowser_Profile_IProfile_Type">Type</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the profile type.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_UserDataProfileStore" data-uid="DotNetBrowser.Profile.IProfile.UserDataProfileStore">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.UserDataProfileStore.html#DotNetBrowser_Profile_IProfile_UserDataProfileStore">UserDataProfileStore</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows working with the user date profile store.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_ZoomLevels" data-uid="DotNetBrowser.Profile.IProfile.ZoomLevels">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.ZoomLevels.html#DotNetBrowser_Profile_IProfile_ZoomLevels">ZoomLevels</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the service that allows working with zoom.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Profile_IProfile_CreateBrowser" data-uid="DotNetBrowser.Profile.IProfile.CreateBrowser">
+          <a class="xref" href="DotNetBrowser.Profile.IProfile.CreateBrowser.html#DotNetBrowser_Profile_IProfile_CreateBrowser">CreateBrowser()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new <a class="xref" href="DotNetBrowser.Browser.IBrowser.html">IBrowser</a> instance with the initial &quot;about:blank&quot; web page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

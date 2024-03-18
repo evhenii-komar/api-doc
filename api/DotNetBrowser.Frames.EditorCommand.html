@@ -1,122 +1,86 @@
 ﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class EditorCommand | API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class EditorCommand | API ">
-      
-      <meta name="description" content="Provides the supported commands that can be executed in a .">
-      <link rel="icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_Frames_EditorCommand.md&amp;value=---%0Auid%3A%20DotNetBrowser.Frames.EditorCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
+    
+    <meta name="description" content="Provides the supported commands that can be executed in a .">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <script type="module" src="./../public/docfx.min.js"></script>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
-
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-            DotNetBrowser
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Frames.EditorCommand">
 
-        <article data-uid="DotNetBrowser.Frames.EditorCommand">
 
 
-
-  <h1 id="DotNetBrowser_Frames_EditorCommand" data-uid="DotNetBrowser.Frames.EditorCommand" class="text-break">
-Class EditorCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser/Frames/EditorCommand.cs/#L17"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Frames.html">Frames</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>DotNetBrowser.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Provides the supported commands that can be executed in a <a class="xref" href="DotNetBrowser.Frames.IFrame.html">IFrame</a>.</p>
+  <h1 id="DotNetBrowser_Frames_EditorCommand" data-uid="DotNetBrowser.Frames.EditorCommand" class="text-break">Class EditorCommand</h1>
+  <div class="markdown level0 summary"><p>Provides the supported commands that can be executed in a <a class="xref" href="DotNetBrowser.Frames.IFrame.html">IFrame</a>.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class EditorCommand</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">EditorCommand</span></div>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">EditorCommand</span></div>
-    </dd>
-  </dl>
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -135,311 +99,433 @@ Class EditorCommand  <a class="header-action link-secondary" title="View source"
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </dd></dl>
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.BackColor.html#DotNetBrowser_Frames_EditorCommand_BackColor_System_String_">BackColor(string)</a></dt>
-    <dd><p>Returns a command that allows setting the background color for selected text in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Bold.html#DotNetBrowser_Frames_EditorCommand_Bold">Bold()</a></dt>
-    <dd><p>Returns a command that allows making the selected text bold in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Copy.html#DotNetBrowser_Frames_EditorCommand_Copy">Copy()</a></dt>
-    <dd><p>Returns a command that allows copying the selected text in the frame.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Cut.html#DotNetBrowser_Frames_EditorCommand_Cut">Cut()</a></dt>
-    <dd><p>Returns a command that allows cutting the selected text in a text field, text area or WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Delete.html#DotNetBrowser_Frames_EditorCommand_Delete">Delete()</a></dt>
-    <dd><p>Returns a command that allows deleting the selected text in a text field, text area or WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteBackward.html#DotNetBrowser_Frames_EditorCommand_DeleteBackward">DeleteBackward()</a></dt>
-    <dd><p>Returns a command that allows deleting character before the caret position in a text field,
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Frames.html">Frames</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
+  <h5 id="DotNetBrowser_Frames_EditorCommand_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class EditorCommand</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_BackColor_System_String_" data-uid="DotNetBrowser.Frames.EditorCommand.BackColor(System.String)">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.BackColor.html#DotNetBrowser_Frames_EditorCommand_BackColor_System_String_">BackColor(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows setting the background color for selected text in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Bold" data-uid="DotNetBrowser.Frames.EditorCommand.Bold">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Bold.html#DotNetBrowser_Frames_EditorCommand_Bold">Bold()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows making the selected text bold in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Copy" data-uid="DotNetBrowser.Frames.EditorCommand.Copy">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Copy.html#DotNetBrowser_Frames_EditorCommand_Copy">Copy()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows copying the selected text in the frame.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Cut" data-uid="DotNetBrowser.Frames.EditorCommand.Cut">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Cut.html#DotNetBrowser_Frames_EditorCommand_Cut">Cut()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows cutting the selected text in a text field, text area or WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Delete" data-uid="DotNetBrowser.Frames.EditorCommand.Delete">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Delete.html#DotNetBrowser_Frames_EditorCommand_Delete">Delete()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows deleting the selected text in a text field, text area or WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_DeleteBackward" data-uid="DotNetBrowser.Frames.EditorCommand.DeleteBackward">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteBackward.html#DotNetBrowser_Frames_EditorCommand_DeleteBackward">DeleteBackward()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows deleting character before the caret position in a text field,
 text area or WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteForward.html#DotNetBrowser_Frames_EditorCommand_DeleteForward">DeleteForward()</a></dt>
-    <dd><p>Returns a command that allows deleting character after the caret position in a text field,
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_DeleteForward" data-uid="DotNetBrowser.Frames.EditorCommand.DeleteForward">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteForward.html#DotNetBrowser_Frames_EditorCommand_DeleteForward">DeleteForward()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows deleting character after the caret position in a text field,
 text area or WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteToBeginningOfLine.html#DotNetBrowser_Frames_EditorCommand_DeleteToBeginningOfLine">DeleteToBeginningOfLine()</a></dt>
-    <dd><p>Returns a command that allows deleting character from the caret position to the beginning of
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_DeleteToBeginningOfLine" data-uid="DotNetBrowser.Frames.EditorCommand.DeleteToBeginningOfLine">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteToBeginningOfLine.html#DotNetBrowser_Frames_EditorCommand_DeleteToBeginningOfLine">DeleteToBeginningOfLine()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows deleting character from the caret position to the beginning of
 line in a text field, text area or WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteWordBackward.html#DotNetBrowser_Frames_EditorCommand_DeleteWordBackward">DeleteWordBackward()</a></dt>
-    <dd><p>Returns a command that allows deleting a word before the caret position in a text field,
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_DeleteWordBackward" data-uid="DotNetBrowser.Frames.EditorCommand.DeleteWordBackward">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteWordBackward.html#DotNetBrowser_Frames_EditorCommand_DeleteWordBackward">DeleteWordBackward()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows deleting a word before the caret position in a text field,
 text area or WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteWordForward.html#DotNetBrowser_Frames_EditorCommand_DeleteWordForward">DeleteWordForward()</a></dt>
-    <dd><p>Returns a command that allows deleting a word after the caret position in a text field,
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_DeleteWordForward" data-uid="DotNetBrowser.Frames.EditorCommand.DeleteWordForward">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.DeleteWordForward.html#DotNetBrowser_Frames_EditorCommand_DeleteWordForward">DeleteWordForward()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows deleting a word after the caret position in a text field,
 text area or WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.FindText.html#DotNetBrowser_Frames_EditorCommand_FindText_System_String_">FindText(string)</a></dt>
-    <dd><p>Returns a command that allows searching for the given <code class="paramref">text</code> occurrence from the
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_FindText_System_String_" data-uid="DotNetBrowser.Frames.EditorCommand.FindText(System.String)">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.FindText.html#DotNetBrowser_Frames_EditorCommand_FindText_System_String_">FindText(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows searching for the given <code class="paramref">text</code> occurrence from the
 current caret position in the frame. If match found, this command will select it and scroll
 down to make it visible, if needed.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.FontName.html#DotNetBrowser_Frames_EditorCommand_FontName_System_String_">FontName(string)</a></dt>
-    <dd><p>Returns a command that allows setting the given <code class="paramref">fontName</code> for the selected text in a WYSIWYG
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_FontName_System_String_" data-uid="DotNetBrowser.Frames.EditorCommand.FontName(System.String)">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.FontName.html#DotNetBrowser_Frames_EditorCommand_FontName_System_String_">FontName(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows setting the given <code class="paramref">fontName</code> for the selected text in a WYSIWYG
 editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.FontSize.html#DotNetBrowser_Frames_EditorCommand_FontSize_System_Int32_">FontSize(int)</a></dt>
-    <dd><p>Returns a command that allows setting the given <code class="paramref">fontSize</code> for the selected text in a WYSIWYG
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_FontSize_System_Int32_" data-uid="DotNetBrowser.Frames.EditorCommand.FontSize(System.Int32)">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.FontSize.html#DotNetBrowser_Frames_EditorCommand_FontSize_System_Int32_">FontSize(int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows setting the given <code class="paramref">fontSize</code> for the selected text in a WYSIWYG
 editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ForeColor.html#DotNetBrowser_Frames_EditorCommand_ForeColor_System_String_">ForeColor(string)</a></dt>
-    <dd><p>Returns a command that allows setting the given foreground <code class="paramref">color</code> for the selected
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ForeColor_System_String_" data-uid="DotNetBrowser.Frames.EditorCommand.ForeColor(System.String)">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ForeColor.html#DotNetBrowser_Frames_EditorCommand_ForeColor_System_String_">ForeColor(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows setting the given foreground <code class="paramref">color</code> for the selected
 text in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.IgnoreSpelling.html#DotNetBrowser_Frames_EditorCommand_IgnoreSpelling">IgnoreSpelling()</a></dt>
-    <dd><p>Returns a command that allows disabling the spelling mistakes highlighting in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertHtml.html#DotNetBrowser_Frames_EditorCommand_InsertHtml_System_String_">InsertHtml(string)</a></dt>
-    <dd><p>Returns a command that allows inserting the given <code class="paramref">html</code> content in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertImage.html#DotNetBrowser_Frames_EditorCommand_InsertImage_System_String_">InsertImage(string)</a></dt>
-    <dd><p>Returns a command that allows inserting an image with the given <code class="paramref">source</code> in a WYSIWYG editor.
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_IgnoreSpelling" data-uid="DotNetBrowser.Frames.EditorCommand.IgnoreSpelling">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.IgnoreSpelling.html#DotNetBrowser_Frames_EditorCommand_IgnoreSpelling">IgnoreSpelling()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows disabling the spelling mistakes highlighting in a text area or a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_InsertHtml_System_String_" data-uid="DotNetBrowser.Frames.EditorCommand.InsertHtml(System.String)">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertHtml.html#DotNetBrowser_Frames_EditorCommand_InsertHtml_System_String_">InsertHtml(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows inserting the given <code class="paramref">html</code> content in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_InsertImage_System_String_" data-uid="DotNetBrowser.Frames.EditorCommand.InsertImage(System.String)">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertImage.html#DotNetBrowser_Frames_EditorCommand_InsertImage_System_String_">InsertImage(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows inserting an image with the given <code class="paramref">source</code> in a WYSIWYG editor.
 If the <code class="paramref">source</code> points to an invalid location, then image won't be inserted.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertNewLine.html#DotNetBrowser_Frames_EditorCommand_InsertNewLine">InsertNewLine()</a></dt>
-    <dd><p>Returns a command that allows inserting a new line in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertParagraph.html#DotNetBrowser_Frames_EditorCommand_InsertParagraph">InsertParagraph()</a></dt>
-    <dd><p>Inserts new paragraph in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertTab.html#DotNetBrowser_Frames_EditorCommand_InsertTab">InsertTab()</a></dt>
-    <dd><p>Returns a command that allows inserting a tab character in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertText.html#DotNetBrowser_Frames_EditorCommand_InsertText_System_String_">InsertText(string)</a></dt>
-    <dd><p>Returns a command that allows inserting the given <code class="paramref">text</code> content in a WYSIWYG editor or a text
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_InsertNewLine" data-uid="DotNetBrowser.Frames.EditorCommand.InsertNewLine">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertNewLine.html#DotNetBrowser_Frames_EditorCommand_InsertNewLine">InsertNewLine()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows inserting a new line in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_InsertParagraph" data-uid="DotNetBrowser.Frames.EditorCommand.InsertParagraph">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertParagraph.html#DotNetBrowser_Frames_EditorCommand_InsertParagraph">InsertParagraph()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Inserts new paragraph in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_InsertTab" data-uid="DotNetBrowser.Frames.EditorCommand.InsertTab">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertTab.html#DotNetBrowser_Frames_EditorCommand_InsertTab">InsertTab()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows inserting a tab character in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_InsertText_System_String_" data-uid="DotNetBrowser.Frames.EditorCommand.InsertText(System.String)">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.InsertText.html#DotNetBrowser_Frames_EditorCommand_InsertText_System_String_">InsertText(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows inserting the given <code class="paramref">text</code> content in a WYSIWYG editor or a text
 field.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Italic.html#DotNetBrowser_Frames_EditorCommand_Italic">Italic()</a></dt>
-    <dd><p>Returns a command that allows making the selected text italic in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MovePageDown.html#DotNetBrowser_Frames_EditorCommand_MovePageDown">MovePageDown()</a></dt>
-    <dd><p>Returns a command that allows moving the caret position at one page down in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MovePageUp.html#DotNetBrowser_Frames_EditorCommand_MovePageUp">MovePageUp()</a></dt>
-    <dd><p>Returns a command that allows moving the caret position at one page up in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveToBeginningOfLine.html#DotNetBrowser_Frames_EditorCommand_MoveToBeginningOfLine">MoveToBeginningOfLine()</a></dt>
-    <dd><p>Returns a command that allows moving a word to the beginning of line in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveToBeginningOfLineAndModifySelection.html#DotNetBrowser_Frames_EditorCommand_MoveToBeginningOfLineAndModifySelection">MoveToBeginningOfLineAndModifySelection()</a></dt>
-    <dd><p>Returns a command that allows moving a word to the beginning of line and modifying selection
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Italic" data-uid="DotNetBrowser.Frames.EditorCommand.Italic">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Italic.html#DotNetBrowser_Frames_EditorCommand_Italic">Italic()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows making the selected text italic in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MovePageDown" data-uid="DotNetBrowser.Frames.EditorCommand.MovePageDown">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MovePageDown.html#DotNetBrowser_Frames_EditorCommand_MovePageDown">MovePageDown()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving the caret position at one page down in a text area or a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MovePageUp" data-uid="DotNetBrowser.Frames.EditorCommand.MovePageUp">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MovePageUp.html#DotNetBrowser_Frames_EditorCommand_MovePageUp">MovePageUp()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving the caret position at one page up in a text area or a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MoveToBeginningOfLine" data-uid="DotNetBrowser.Frames.EditorCommand.MoveToBeginningOfLine">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveToBeginningOfLine.html#DotNetBrowser_Frames_EditorCommand_MoveToBeginningOfLine">MoveToBeginningOfLine()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving a word to the beginning of line in a text area or a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MoveToBeginningOfLineAndModifySelection" data-uid="DotNetBrowser.Frames.EditorCommand.MoveToBeginningOfLineAndModifySelection">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveToBeginningOfLineAndModifySelection.html#DotNetBrowser_Frames_EditorCommand_MoveToBeginningOfLineAndModifySelection">MoveToBeginningOfLineAndModifySelection()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving a word to the beginning of line and modifying selection
 in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveToEndOfLine.html#DotNetBrowser_Frames_EditorCommand_MoveToEndOfLine">MoveToEndOfLine()</a></dt>
-    <dd><p>Returns a command that allows moving a word to the end of line in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveToEndOfLineAndModifySelection.html#DotNetBrowser_Frames_EditorCommand_MoveToEndOfLineAndModifySelection">MoveToEndOfLineAndModifySelection()</a></dt>
-    <dd><p>Returns a command that allows moving a word to the end of line and modifying selection in a
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MoveToEndOfLine" data-uid="DotNetBrowser.Frames.EditorCommand.MoveToEndOfLine">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveToEndOfLine.html#DotNetBrowser_Frames_EditorCommand_MoveToEndOfLine">MoveToEndOfLine()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving a word to the end of line in a text area or a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MoveToEndOfLineAndModifySelection" data-uid="DotNetBrowser.Frames.EditorCommand.MoveToEndOfLineAndModifySelection">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveToEndOfLineAndModifySelection.html#DotNetBrowser_Frames_EditorCommand_MoveToEndOfLineAndModifySelection">MoveToEndOfLineAndModifySelection()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving a word to the end of line and modifying selection in a
 text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveWordLeft.html#DotNetBrowser_Frames_EditorCommand_MoveWordLeft">MoveWordLeft()</a></dt>
-    <dd><p>Returns a command that allows moving a word left in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveWordLeftAndModifySelection.html#DotNetBrowser_Frames_EditorCommand_MoveWordLeftAndModifySelection">MoveWordLeftAndModifySelection()</a></dt>
-    <dd><p>Returns a command that allows moving a word left and modifying selection in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveWordRight.html#DotNetBrowser_Frames_EditorCommand_MoveWordRight">MoveWordRight()</a></dt>
-    <dd><p>Returns a command that allows moving a word right in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveWordRightAndModifySelection.html#DotNetBrowser_Frames_EditorCommand_MoveWordRightAndModifySelection">MoveWordRightAndModifySelection()</a></dt>
-    <dd><p>Returns a command that allows moving a word right and modifying selection in a text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Paste.html#DotNetBrowser_Frames_EditorCommand_Paste">Paste()</a></dt>
-    <dd><p>Returns a command that allows pasting content of the clipboard in a text field, text area or
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MoveWordLeft" data-uid="DotNetBrowser.Frames.EditorCommand.MoveWordLeft">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveWordLeft.html#DotNetBrowser_Frames_EditorCommand_MoveWordLeft">MoveWordLeft()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving a word left in a text area or a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MoveWordLeftAndModifySelection" data-uid="DotNetBrowser.Frames.EditorCommand.MoveWordLeftAndModifySelection">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveWordLeftAndModifySelection.html#DotNetBrowser_Frames_EditorCommand_MoveWordLeftAndModifySelection">MoveWordLeftAndModifySelection()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving a word left and modifying selection in a text area or a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MoveWordRight" data-uid="DotNetBrowser.Frames.EditorCommand.MoveWordRight">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveWordRight.html#DotNetBrowser_Frames_EditorCommand_MoveWordRight">MoveWordRight()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving a word right in a text area or a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_MoveWordRightAndModifySelection" data-uid="DotNetBrowser.Frames.EditorCommand.MoveWordRightAndModifySelection">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.MoveWordRightAndModifySelection.html#DotNetBrowser_Frames_EditorCommand_MoveWordRightAndModifySelection">MoveWordRightAndModifySelection()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows moving a word right and modifying selection in a text area or a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Paste" data-uid="DotNetBrowser.Frames.EditorCommand.Paste">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Paste.html#DotNetBrowser_Frames_EditorCommand_Paste">Paste()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows pasting content of the clipboard in a text field, text area or
 a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Redo.html#DotNetBrowser_Frames_EditorCommand_Redo">Redo()</a></dt>
-    <dd><p>Returns a command that allows reversing the last <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Undo.html#DotNetBrowser_Frames_EditorCommand_Undo">Undo()</a> action.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollLineDown.html#DotNetBrowser_Frames_EditorCommand_ScrollLineDown">ScrollLineDown()</a></dt>
-    <dd><p>Returns a command that allows scrolling one line down.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollLineUp.html#DotNetBrowser_Frames_EditorCommand_ScrollLineUp">ScrollLineUp()</a></dt>
-    <dd><p>Returns a command that allows scrolling one line up.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollPageBackward.html#DotNetBrowser_Frames_EditorCommand_ScrollPageBackward">ScrollPageBackward()</a></dt>
-    <dd><p>Returns a command that allows scrolling a page backward.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollPageForward.html#DotNetBrowser_Frames_EditorCommand_ScrollPageForward">ScrollPageForward()</a></dt>
-    <dd><p>Returns a command that allows scrolling a page forward.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollToBeginningOfDocument.html#DotNetBrowser_Frames_EditorCommand_ScrollToBeginningOfDocument">ScrollToBeginningOfDocument()</a></dt>
-    <dd><p>Returns a command that allows scrolling content to the beginning of the document in the frame.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollToEndOfDocument.html#DotNetBrowser_Frames_EditorCommand_ScrollToEndOfDocument">ScrollToEndOfDocument()</a></dt>
-    <dd><p>Returns a command that allows scrolling content to the end of the document in the frame.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectAll.html#DotNetBrowser_Frames_EditorCommand_SelectAll">SelectAll()</a></dt>
-    <dd><p>Returns a command that allows selecting all text in the frame or the currently focused text
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Redo" data-uid="DotNetBrowser.Frames.EditorCommand.Redo">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Redo.html#DotNetBrowser_Frames_EditorCommand_Redo">Redo()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows reversing the last <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Undo.html#DotNetBrowser_Frames_EditorCommand_Undo">Undo()</a> action.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ScrollLineDown" data-uid="DotNetBrowser.Frames.EditorCommand.ScrollLineDown">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollLineDown.html#DotNetBrowser_Frames_EditorCommand_ScrollLineDown">ScrollLineDown()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows scrolling one line down.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ScrollLineUp" data-uid="DotNetBrowser.Frames.EditorCommand.ScrollLineUp">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollLineUp.html#DotNetBrowser_Frames_EditorCommand_ScrollLineUp">ScrollLineUp()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows scrolling one line up.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ScrollPageBackward" data-uid="DotNetBrowser.Frames.EditorCommand.ScrollPageBackward">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollPageBackward.html#DotNetBrowser_Frames_EditorCommand_ScrollPageBackward">ScrollPageBackward()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows scrolling a page backward.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ScrollPageForward" data-uid="DotNetBrowser.Frames.EditorCommand.ScrollPageForward">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollPageForward.html#DotNetBrowser_Frames_EditorCommand_ScrollPageForward">ScrollPageForward()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows scrolling a page forward.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ScrollToBeginningOfDocument" data-uid="DotNetBrowser.Frames.EditorCommand.ScrollToBeginningOfDocument">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollToBeginningOfDocument.html#DotNetBrowser_Frames_EditorCommand_ScrollToBeginningOfDocument">ScrollToBeginningOfDocument()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows scrolling content to the beginning of the document in the frame.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ScrollToEndOfDocument" data-uid="DotNetBrowser.Frames.EditorCommand.ScrollToEndOfDocument">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ScrollToEndOfDocument.html#DotNetBrowser_Frames_EditorCommand_ScrollToEndOfDocument">ScrollToEndOfDocument()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows scrolling content to the end of the document in the frame.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_SelectAll" data-uid="DotNetBrowser.Frames.EditorCommand.SelectAll">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectAll.html#DotNetBrowser_Frames_EditorCommand_SelectAll">SelectAll()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows selecting all text in the frame or the currently focused text
 field, text area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectLine.html#DotNetBrowser_Frames_EditorCommand_SelectLine">SelectLine()</a></dt>
-    <dd><p>Returns a command that allows selecting a line at the caret position in a text area or a
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_SelectLine" data-uid="DotNetBrowser.Frames.EditorCommand.SelectLine">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectLine.html#DotNetBrowser_Frames_EditorCommand_SelectLine">SelectLine()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows selecting a line at the caret position in a text area or a
 WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectParagraph.html#DotNetBrowser_Frames_EditorCommand_SelectParagraph">SelectParagraph()</a></dt>
-    <dd><p>Returns a command that allows selecting the whole paragraph at the caret position in a text
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_SelectParagraph" data-uid="DotNetBrowser.Frames.EditorCommand.SelectParagraph">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectParagraph.html#DotNetBrowser_Frames_EditorCommand_SelectParagraph">SelectParagraph()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows selecting the whole paragraph at the caret position in a text
 area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectSentence.html#DotNetBrowser_Frames_EditorCommand_SelectSentence">SelectSentence()</a></dt>
-    <dd><p>Returns a command that allows selecting the whole sentence at the caret position in a text
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_SelectSentence" data-uid="DotNetBrowser.Frames.EditorCommand.SelectSentence">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectSentence.html#DotNetBrowser_Frames_EditorCommand_SelectSentence">SelectSentence()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows selecting the whole sentence at the caret position in a text
 area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectWord.html#DotNetBrowser_Frames_EditorCommand_SelectWord">SelectWord()</a></dt>
-    <dd><p>Returns a command that allows selecting the word at the caret position in a text field, text
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_SelectWord" data-uid="DotNetBrowser.Frames.EditorCommand.SelectWord">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.SelectWord.html#DotNetBrowser_Frames_EditorCommand_SelectWord">SelectWord()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows selecting the word at the caret position in a text field, text
 area or a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ToggleBold.html#DotNetBrowser_Frames_EditorCommand_ToggleBold">ToggleBold()</a></dt>
-    <dd><p>Returns a command that allows toggling bold style for the selected text in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ToggleItalic.html#DotNetBrowser_Frames_EditorCommand_ToggleItalic">ToggleItalic()</a></dt>
-    <dd><p>Returns a command that allows toggling italic style for the selected text in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.ToggleUnderline.html#DotNetBrowser_Frames_EditorCommand_ToggleUnderline">ToggleUnderline()</a></dt>
-    <dd><p>Returns a command that allows toggling underline style for the selected text in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Underline.html#DotNetBrowser_Frames_EditorCommand_Underline">Underline()</a></dt>
-    <dd><p>Returns a command that allows underlying the selected text in a WYSIWYG editor.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Undo.html#DotNetBrowser_Frames_EditorCommand_Undo">Undo()</a></dt>
-    <dd><p>Returns a command that allows reversing the last action.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Frames.EditorCommand.Unselect.html#DotNetBrowser_Frames_EditorCommand_Unselect">Unselect()</a></dt>
-    <dd><p>Returns a command that allows clearing the current selection in a frame.</p>
-</dd>
-  </dl>
-
-
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ToggleBold" data-uid="DotNetBrowser.Frames.EditorCommand.ToggleBold">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ToggleBold.html#DotNetBrowser_Frames_EditorCommand_ToggleBold">ToggleBold()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows toggling bold style for the selected text in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ToggleItalic" data-uid="DotNetBrowser.Frames.EditorCommand.ToggleItalic">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ToggleItalic.html#DotNetBrowser_Frames_EditorCommand_ToggleItalic">ToggleItalic()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows toggling italic style for the selected text in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_ToggleUnderline" data-uid="DotNetBrowser.Frames.EditorCommand.ToggleUnderline">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.ToggleUnderline.html#DotNetBrowser_Frames_EditorCommand_ToggleUnderline">ToggleUnderline()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows toggling underline style for the selected text in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Underline" data-uid="DotNetBrowser.Frames.EditorCommand.Underline">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Underline.html#DotNetBrowser_Frames_EditorCommand_Underline">Underline()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows underlying the selected text in a WYSIWYG editor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Undo" data-uid="DotNetBrowser.Frames.EditorCommand.Undo">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Undo.html#DotNetBrowser_Frames_EditorCommand_Undo">Undo()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows reversing the last action.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Frames_EditorCommand_Unselect" data-uid="DotNetBrowser.Frames.EditorCommand.Unselect">
+          <a class="xref" href="DotNetBrowser.Frames.EditorCommand.Unselect.html#DotNetBrowser_Frames_EditorCommand_Unselect">Unselect()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a command that allows clearing the current selection in a frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

@@ -1,266 +1,309 @@
 ﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Interface IEvents | API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Interface IEvents | API ">
-      
-      <meta name="description" content="A collection of custom DOM events that can be listened and/or handled.">
-      <link rel="icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_Dom_Events_IEvents.md&amp;value=---%0Auid%3A%20DotNetBrowser.Dom.Events.IEvents%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
+    
+    <meta name="description" content="A collection of custom DOM events that can be listened and/or handled.">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <script type="module" src="./../public/docfx.min.js"></script>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
-
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-            DotNetBrowser
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Dom.Events.IEvents">
 
-        <article data-uid="DotNetBrowser.Dom.Events.IEvents">
 
 
-
-  <h1 id="DotNetBrowser_Dom_Events_IEvents" data-uid="DotNetBrowser.Dom.Events.IEvents" class="text-break">
-Interface IEvents  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser/Dom/Events/IEvents.cs/#L16"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Dom.html">Dom</a>.<a class="xref" href="DotNetBrowser.Dom.Events.html">Events</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>DotNetBrowser.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>A collection of custom DOM events that can be listened and/or handled.</p>
+  <h1 id="DotNetBrowser_Dom_Events_IEvents" data-uid="DotNetBrowser.Dom.Events.IEvents" class="text-break">Interface IEvents</h1>
+  <div class="markdown level0 summary"><p>A collection of custom DOM events that can be listened and/or handled.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Dom.html">Dom</a>.<a class="xref" href="DotNetBrowser.Dom.Events.html">Events</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.dll</h6>
+  <h5 id="DotNetBrowser_Dom_Events_IEvents_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IEvents</code></pre>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Item.html#DotNetBrowser_Dom_Events_IEvents_Item_DotNetBrowser_Dom_Events_EventType_System_Boolean_">this[EventType, bool]</a></dt>
-    <dd><p>Gets or sets the custom DOM event to listen.</p>
-</dd>
-  </dl>
-
-  <h2 class="section" id="events">Events
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Abort.html">Abort</a></dt>
-    <dd><p>Occurs when the loading of a resource has been aborted.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Blur.html">Blur</a></dt>
-    <dd><p>Occurs when an element loses focus.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Change.html">Change</a></dt>
-    <dd><p>Occurs when the content of a form element, the selection,
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Item_DotNetBrowser_Dom_Events_EventType_System_Boolean_" data-uid="DotNetBrowser.Dom.Events.IEvents.Item(DotNetBrowser.Dom.Events.EventType,System.Boolean)">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Item.html#DotNetBrowser_Dom_Events_IEvents_Item_DotNetBrowser_Dom_Events_EventType_System_Boolean_">this[EventType, bool]</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the custom DOM event to listen.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Abort" data-uid="DotNetBrowser.Dom.Events.IEvents.Abort">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Abort.html">Abort</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the loading of a resource has been aborted.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Blur" data-uid="DotNetBrowser.Dom.Events.IEvents.Blur">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Blur.html">Blur</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when an element loses focus.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Change" data-uid="DotNetBrowser.Dom.Events.IEvents.Change">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Change.html">Change</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the content of a form element, the selection,
 or the checked state have changed (for &lt;input&gt;, &lt;select&gt;, and &lt;textarea&gt;).</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Click.html">Click</a></dt>
-    <dd><p>Occurs when the user clicks on an element.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.DoubleClick.html">DoubleClick</a></dt>
-    <dd><p>Occurs when the user double-clicks on an element.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Error.html">Error</a></dt>
-    <dd><p>Occurs when an error occurs while loading an external file.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Focus.html">Focus</a></dt>
-    <dd><p>Occurs when an element gets focus.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.KeyDown.html">KeyDown</a></dt>
-    <dd><p>Occurs when the user presses a key.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.KeyPress.html">KeyPress</a></dt>
-    <dd><p>Occurs when the user presses a key that produces a character value.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.KeyUp.html">KeyUp</a></dt>
-    <dd><p>Occurs when the user releases a key.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Load.html">Load</a></dt>
-    <dd><p>Occurs when an object has loaded.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseDown.html">MouseDown</a></dt>
-    <dd><p>Occurs when the user presses a mouse button over an element.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseMove.html">MouseMove</a></dt>
-    <dd><p>Occurs when the pointer is moving while it is over an element.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseOut.html">MouseOut</a></dt>
-    <dd><p>Occurs when a user moves the mouse pointer out of an element, or out of one of its children</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseOver.html">MouseOver</a></dt>
-    <dd><p>Occurs when the pointer is moved onto an element, or onto one of its children.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseUp.html">MouseUp</a></dt>
-    <dd><p>Occurs when a user releases a mouse button over an element.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Reset.html">Reset</a></dt>
-    <dd><p>Occurs when a form is reset.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Resize.html">Resize</a></dt>
-    <dd><p>Occurs when the document view is resized.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Scroll.html">Scroll</a></dt>
-    <dd><p>Occurs when an element's scrollbar is being scrolled.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Select.html">Select</a></dt>
-    <dd><p>Occurs after the user selects some text (for &lt;input&gt; and &lt;textarea&gt;).</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Submit.html">Submit</a></dt>
-    <dd><p>Occurs when a form is submitted.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Unload.html">Unload</a></dt>
-    <dd><p>Occurs once a page has unloaded (for &lt;body&gt;).</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Wheel.html">Wheel</a></dt>
-    <dd><p>Occurs when user scrolls a mouse wheel over an element.</p>
-</dd>
-  </dl>
-
-
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Click" data-uid="DotNetBrowser.Dom.Events.IEvents.Click">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Click.html">Click</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the user clicks on an element.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_DoubleClick" data-uid="DotNetBrowser.Dom.Events.IEvents.DoubleClick">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.DoubleClick.html">DoubleClick</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the user double-clicks on an element.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Error" data-uid="DotNetBrowser.Dom.Events.IEvents.Error">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Error.html">Error</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when an error occurs while loading an external file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Focus" data-uid="DotNetBrowser.Dom.Events.IEvents.Focus">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Focus.html">Focus</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when an element gets focus.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_KeyDown" data-uid="DotNetBrowser.Dom.Events.IEvents.KeyDown">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.KeyDown.html">KeyDown</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the user presses a key.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_KeyPress" data-uid="DotNetBrowser.Dom.Events.IEvents.KeyPress">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.KeyPress.html">KeyPress</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the user presses a key that produces a character value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_KeyUp" data-uid="DotNetBrowser.Dom.Events.IEvents.KeyUp">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.KeyUp.html">KeyUp</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the user releases a key.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Load" data-uid="DotNetBrowser.Dom.Events.IEvents.Load">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Load.html">Load</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when an object has loaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_MouseDown" data-uid="DotNetBrowser.Dom.Events.IEvents.MouseDown">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseDown.html">MouseDown</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the user presses a mouse button over an element.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_MouseMove" data-uid="DotNetBrowser.Dom.Events.IEvents.MouseMove">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseMove.html">MouseMove</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the pointer is moving while it is over an element.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_MouseOut" data-uid="DotNetBrowser.Dom.Events.IEvents.MouseOut">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseOut.html">MouseOut</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when a user moves the mouse pointer out of an element, or out of one of its children</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_MouseOver" data-uid="DotNetBrowser.Dom.Events.IEvents.MouseOver">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseOver.html">MouseOver</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the pointer is moved onto an element, or onto one of its children.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_MouseUp" data-uid="DotNetBrowser.Dom.Events.IEvents.MouseUp">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.MouseUp.html">MouseUp</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when a user releases a mouse button over an element.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Reset" data-uid="DotNetBrowser.Dom.Events.IEvents.Reset">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Reset.html">Reset</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when a form is reset.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Resize" data-uid="DotNetBrowser.Dom.Events.IEvents.Resize">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Resize.html">Resize</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when the document view is resized.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Scroll" data-uid="DotNetBrowser.Dom.Events.IEvents.Scroll">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Scroll.html">Scroll</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when an element's scrollbar is being scrolled.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Select" data-uid="DotNetBrowser.Dom.Events.IEvents.Select">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Select.html">Select</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs after the user selects some text (for &lt;input&gt; and &lt;textarea&gt;).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Submit" data-uid="DotNetBrowser.Dom.Events.IEvents.Submit">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Submit.html">Submit</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when a form is submitted.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Unload" data-uid="DotNetBrowser.Dom.Events.IEvents.Unload">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Unload.html">Unload</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs once a page has unloaded (for &lt;body&gt;).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Dom_Events_IEvents_Wheel" data-uid="DotNetBrowser.Dom.Events.IEvents.Wheel">
+          <a class="xref" href="DotNetBrowser.Dom.Events.IEvents.Wheel.html">Wheel</a>
+        </td>
+        <td class="markdown level1 summary"><p>Occurs when user scrolls a mouse wheel over an element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

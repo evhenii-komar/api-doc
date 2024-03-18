@@ -1,128 +1,90 @@
 ﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class BrowserView | API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class BrowserView | API ">
-      
-      <meta name="description" content="The Wpf-based implementation of browser view.">
-      <link rel="icon" href="../icons/favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/TeamDev-IP/DotNetBrowser/new/api-doc/apiSpec/new?filename=DotNetBrowser_Wpf_BrowserView.md&amp;value=---%0Auid%3A%20DotNetBrowser.Wpf.BrowserView%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
+    
+    <meta name="description" content="The Wpf-based implementation of browser view.">
+      <link rel="shortcut icon" href="../icons/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <script type="module" src="./../public/docfx.min.js"></script>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
-
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
-            DotNetBrowser
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../icons/favicon.ico" alt="DotNetBrowser">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetBrowser.Wpf.BrowserView">
 
-        <article data-uid="DotNetBrowser.Wpf.BrowserView">
 
 
-
-  <h1 id="DotNetBrowser_Wpf_BrowserView" data-uid="DotNetBrowser.Wpf.BrowserView" class="text-break">
-Class BrowserView  <a class="header-action link-secondary" title="View source" href="https://github.com/TeamDev-IP/DotNetBrowser/blob/api-doc/DotNetBrowser.Wpf/BrowserView.xaml.cs/#L106"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Wpf.html">Wpf</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>DotNetBrowser.Wpf.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>The Wpf-based implementation of browser view.</p>
+  <h1 id="DotNetBrowser_Wpf_BrowserView" data-uid="DotNetBrowser.Wpf.BrowserView" class="text-break">Class BrowserView</h1>
+  <div class="markdown level0 summary"><p>The Wpf-based implementation of browser view.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BrowserView : IBrowserView</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">BrowserView</span></div>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">BrowserView</span></div>
-    </dd>
-  </dl>
-
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="DotNetBrowser.Browser.IBrowserView.html">IBrowserView</a></div>
-    </dd>
-  </dl>
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DotNetBrowser.Browser.IBrowserView.html">IBrowserView</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
@@ -144,11 +106,25 @@ Class BrowserView  <a class="header-action link-secondary" title="View source" h
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
-  </dd></dl>
-
-
-
-  <h2 id="DotNetBrowser_Wpf_BrowserView_examples">Examples</h2>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetBrowser.html">DotNetBrowser</a>.<a class="xref" href="DotNetBrowser.Wpf.html">Wpf</a></h6>
+  <h6><strong>Assembly</strong>: DotNetBrowser.Wpf.dll</h6>
+  <h5 id="DotNetBrowser_Wpf_BrowserView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BrowserView : IBrowserView</code></pre>
+  </div>
+  <h5 id="DotNetBrowser_Wpf_BrowserView_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+    To bind an instance of this view to a particular browser, use its
+    <a class="xref" href="DotNetBrowser.Browser.BrowserViewExtensions.InitializeFrom.html#DotNetBrowser_Browser_BrowserViewExtensions_InitializeFrom_DotNetBrowser_Browser_IBrowserView_DotNetBrowser_Browser_IBrowser_">InitializeFrom(IBrowserView, IBrowser)</a>
+    method:
+</p>
+<code>
+    browserView.InitializeFrom(browser);
+</code>
+<p>This method should be called from the UI thread.</p>
+</div>
+  <h5 id="DotNetBrowser_Wpf_BrowserView_examples"><strong>Examples</strong></h5>
   <pre><code class="lang-csharp">&lt;Window x:Class="WpfApp1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -198,113 +174,157 @@ Class BrowserView  <a class="header-action link-secondary" title="View source" h
     }
 }</code></pre>
 
-
-  <h2 id="DotNetBrowser_Wpf_BrowserView_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>
-    To bind an instance of this view to a particular browser, use its
-    <a class="xref" href="DotNetBrowser.Browser.BrowserViewExtensions.InitializeFrom.html#DotNetBrowser_Browser_BrowserViewExtensions_InitializeFrom_DotNetBrowser_Browser_IBrowserView_DotNetBrowser_Browser_IBrowser_">InitializeFrom(IBrowserView, IBrowser)</a>
-    method:
-</p>
-<code>
-    browserView.InitializeFrom(browser);
-</code>
-<p>This method should be called from the UI thread.</p>
-</div>
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.-ctor.html#DotNetBrowser_Wpf_BrowserView__ctor">BrowserView()</a></dt>
-    <dd><p>Initializes a new instance of the <a class="xref" href="DotNetBrowser.Wpf.BrowserView.html">BrowserView</a> class.</p>
-</dd>
-  </dl>
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.MenuItems.html#DotNetBrowser_Wpf_BrowserView_MenuItems">MenuItems</a></dt>
-    <dd><p>The collection of the current context menu items.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.SaveCreditCardHandler.html#DotNetBrowser_Wpf_BrowserView_SaveCreditCardHandler">SaveCreditCardHandler</a></dt>
-    <dd><p>This handler is used when the user is prompted to save the credit cards in the credit card store,
+  <h3 id="constructors">Constructors
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView__ctor" data-uid="DotNetBrowser.Wpf.BrowserView.#ctor">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.-ctor.html#DotNetBrowser_Wpf_BrowserView__ctor">BrowserView()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DotNetBrowser.Wpf.BrowserView.html">BrowserView</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_MenuItems" data-uid="DotNetBrowser.Wpf.BrowserView.MenuItems">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.MenuItems.html#DotNetBrowser_Wpf_BrowserView_MenuItems">MenuItems</a>
+        </td>
+        <td class="markdown level1 summary"><p>The collection of the current context menu items.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_SaveCreditCardHandler" data-uid="DotNetBrowser.Wpf.BrowserView.SaveCreditCardHandler">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.SaveCreditCardHandler.html#DotNetBrowser_Wpf_BrowserView_SaveCreditCardHandler">SaveCreditCardHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>This handler is used when the user is prompted to save the credit cards in the credit card store,
 if a different handler was not configured for the browser.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.SavePasswordHandler.html#DotNetBrowser_Wpf_BrowserView_SavePasswordHandler">SavePasswordHandler</a></dt>
-    <dd><p>This handler is used when the user is prompted to save the credentials in the password store,
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_SavePasswordHandler" data-uid="DotNetBrowser.Wpf.BrowserView.SavePasswordHandler">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.SavePasswordHandler.html#DotNetBrowser_Wpf_BrowserView_SavePasswordHandler">SavePasswordHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>This handler is used when the user is prompted to save the credentials in the password store,
 if a different handler was not configured for the browser.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.SaveUserDataProfileHandler.html#DotNetBrowser_Wpf_BrowserView_SaveUserDataProfileHandler">SaveUserDataProfileHandler</a></dt>
-    <dd><p>This handler is used when the user is prompted to save the user data profiles in the user data profile store,
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_SaveUserDataProfileHandler" data-uid="DotNetBrowser.Wpf.BrowserView.SaveUserDataProfileHandler">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.SaveUserDataProfileHandler.html#DotNetBrowser_Wpf_BrowserView_SaveUserDataProfileHandler">SaveUserDataProfileHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>This handler is used when the user is prompted to save the user data profiles in the user data profile store,
 if a different handler was not configured for the browser.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.SelectCertificateHandler.html#DotNetBrowser_Wpf_BrowserView_SelectCertificateHandler">SelectCertificateHandler</a></dt>
-    <dd><p>This handler is used when the client SSL certificate should be selected,
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_SelectCertificateHandler" data-uid="DotNetBrowser.Wpf.BrowserView.SelectCertificateHandler">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.SelectCertificateHandler.html#DotNetBrowser_Wpf_BrowserView_SelectCertificateHandler">SelectCertificateHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>This handler is used when the client SSL certificate should be selected,
 if a different handler was not configured for the browser.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.ShowContextMenuHandler.html#DotNetBrowser_Wpf_BrowserView_ShowContextMenuHandler">ShowContextMenuHandler</a></dt>
-    <dd><p>The default context menu handler implementation for this browser view.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.StartDownloadHandler.html#DotNetBrowser_Wpf_BrowserView_StartDownloadHandler">StartDownloadHandler</a></dt>
-    <dd><p>This handler is used when the browser is about to start downloading the file,
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_ShowContextMenuHandler" data-uid="DotNetBrowser.Wpf.BrowserView.ShowContextMenuHandler">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.ShowContextMenuHandler.html#DotNetBrowser_Wpf_BrowserView_ShowContextMenuHandler">ShowContextMenuHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>The default context menu handler implementation for this browser view.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_StartDownloadHandler" data-uid="DotNetBrowser.Wpf.BrowserView.StartDownloadHandler">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.StartDownloadHandler.html#DotNetBrowser_Wpf_BrowserView_StartDownloadHandler">StartDownloadHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>This handler is used when the browser is about to start downloading the file,
 if a different handler was not configured for the browser.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.UpdatePasswordHandler.html#DotNetBrowser_Wpf_BrowserView_UpdatePasswordHandler">UpdatePasswordHandler</a></dt>
-    <dd><p>This handler is used when the user is prompted to update the password in the password store,
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_UpdatePasswordHandler" data-uid="DotNetBrowser.Wpf.BrowserView.UpdatePasswordHandler">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.UpdatePasswordHandler.html#DotNetBrowser_Wpf_BrowserView_UpdatePasswordHandler">UpdatePasswordHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>This handler is used when the user is prompted to update the password in the password store,
 if a different handler was not configured for the browser.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.UpdateUserDataProfileHandler.html#DotNetBrowser_Wpf_BrowserView_UpdateUserDataProfileHandler">UpdateUserDataProfileHandler</a></dt>
-    <dd><p>This handler is used when the user is prompted to update the user data profile in the user data profile store,
+</td>
+      </tr>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_UpdateUserDataProfileHandler" data-uid="DotNetBrowser.Wpf.BrowserView.UpdateUserDataProfileHandler">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.UpdateUserDataProfileHandler.html#DotNetBrowser_Wpf_BrowserView_UpdateUserDataProfileHandler">UpdateUserDataProfileHandler</a>
+        </td>
+        <td class="markdown level1 summary"><p>This handler is used when the user is prompted to update the user data profile in the user data profile store,
 if a different handler was not configured for the browser.</p>
-</dd>
-  </dl>
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-  <dl class="jumplist">
-    <dt><a class="xref" href="DotNetBrowser.Wpf.BrowserView.OnFocusRequested.html#DotNetBrowser_Wpf_BrowserView_OnFocusRequested_System_Object_System_EventArgs_">OnFocusRequested(object, EventArgs)</a></dt>
-    <dd><p>This method is used to handle <a class="xref" href="DotNetBrowser.Browser.IBrowser.FocusRequested.html">FocusRequested</a> event.</p>
-</dd>
-  </dl>
-
-
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DotNetBrowser_Wpf_BrowserView_OnFocusRequested_System_Object_System_EventArgs_" data-uid="DotNetBrowser.Wpf.BrowserView.OnFocusRequested(System.Object,System.EventArgs)">
+          <a class="xref" href="DotNetBrowser.Wpf.BrowserView.OnFocusRequested.html#DotNetBrowser_Wpf_BrowserView_OnFocusRequested_System_Object_System_EventArgs_">OnFocusRequested(object, EventArgs)</a>
+        </td>
+        <td class="markdown level1 summary"><p>This method is used to handle <a class="xref" href="DotNetBrowser.Browser.IBrowser.FocusRequested.html">FocusRequested</a> event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>
