@@ -189,7 +189,16 @@ reason.</p>
 
 
 <h4 class="section" id="DotNetBrowser_Engine_EngineFactory_CreateAsync_DotNetBrowser_Engine_EngineOptions__examples">Examples</h4>
-<pre><code class="lang-cs"></code></pre>
+<pre><code class="lang-cs">string dataDir = TestUtil.GenerateCustomFolderPath();
+Debug.WriteLine($"Data directory: {dataDir}");
+Directory.CreateDirectory(dataDir);
+
+EngineOptions engineOptions = new EngineOptions.Builder
+    {
+        UserDataDirectory = dataDir
+    }
+   .Build();
+IEngine engine = await EngineFactory.CreateAsync(engineOptions);</code></pre>
 
 
 
@@ -257,7 +266,7 @@ method with the <a class="xref" href="DotNetBrowser.Engine.EngineOptions.html">E
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="/terms-and-privacy" class="footer-link">Terms and privacy</a></span>
+          <span>© 2024 <a class="footer-link" href="https://www.teamdev.com/" target="_blank">TeamDev</a>. All rights reserved.&emsp;&emsp;&emsp;</span><span><a href="https://teamdev.com/terms-and-privacy/" class="footer-link">Terms and privacy</a></span>
         </div>
       </div>
     </footer>
